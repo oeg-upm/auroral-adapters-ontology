@@ -1,0 +1,16 @@
+{
+  "@context" : {
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}
