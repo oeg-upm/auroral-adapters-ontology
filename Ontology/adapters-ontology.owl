@@ -1,0 +1,369 @@
+@prefix : <https://auroral.iot.linkeddata.es/def/adapters#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ssn: <http:///www.w3.org/ns/ssn/> .
+@prefix wot: <https://www.w3.org/2019/wot/td#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <<https://www.w3.org/2019/wot/td#>> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix saref: <https://saref.etsi.org/core#> .
+@prefix adapters: <https://auroral.iot.linkeddata.es/def/adapters#> .
+@base <https://auroral.iot.linkeddata.es/def/adapters#> .
+
+<https://auroral.iot.linkeddata.es/def/adapters#> rdf:type owl:Ontology ;
+                                                   owl:versionIRI <https://auroral.iot.linkeddata.es/def/adapters#/1.0.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/ns/sosa/forProperty
+sosa:forProperty rdf:type owl:ObjectProperty ;
+                 rdfs:domain core:Actuator ;
+                 rdfs:range ssn:Property .
+
+
+###  http://www.w3.org/ns/sosa/observes
+sosa:observes rdf:type owl:ObjectProperty ;
+              rdfs:domain core:Sensor ;
+              rdfs:range ssn:Property .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http:///www.w3.org/ns/ssn/Property
+ssn:Property rdf:type owl:Class .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-#Unit_of_measure
+<http://www.ontology-of-units-of-measure.org/resource/om-#Unit_of_measure> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty
+adapters:AmbientProperty rdf:type owl:Class ;
+                         rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#AmbientSolarRadiation
+adapters:AmbientSolarRadiation rdf:type owl:Class ;
+                               rdfs:subClassOf adapters:AmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#CarbonDioxideProperty
+adapters:CarbonDioxideProperty rdf:type owl:Class ;
+                               rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#EnergyMonitor
+adapters:EnergyMonitor rdf:type owl:Class ;
+                       rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty
+adapters:EnergyProperty rdf:type owl:Class ;
+                        rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#FloodAmbientProperty
+adapters:FloodAmbientProperty rdf:type owl:Class ;
+                              rdfs:subClassOf adapters:AmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#FloodSensor
+adapters:FloodSensor rdf:type owl:Class ;
+                     rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#GPSEmergencyButton
+adapters:GPSEmergencyButton rdf:type owl:Class ;
+                            rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#HumidityAmbientProperty
+adapters:HumidityAmbientProperty rdf:type owl:Class ;
+                                 rdfs:subClassOf adapters:AmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#HumiditySensor
+adapters:HumiditySensor rdf:type owl:Class ;
+                        rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#LightProperty
+adapters:LightProperty rdf:type owl:Class ;
+                       rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#LuminusFlux
+adapters:LuminusFlux rdf:type owl:Class ;
+                     rdfs:subClassOf adapters:LightProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor
+adapters:MonitoringSensor rdf:type owl:Class ;
+                          rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MotionProperty
+adapters:MotionProperty rdf:type owl:Class ;
+                        rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MotionSensor
+adapters:MotionSensor rdf:type owl:Class ;
+                      rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Pressure
+adapters:Pressure rdf:type owl:Class ;
+                  rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSensor
+adapters:SoilMoistureSensor rdf:type owl:Class ;
+                            rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Sound
+adapters:Sound rdf:type owl:Class ;
+               rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty
+adapters:SpaceProperty rdf:type owl:Class ;
+                       rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty
+adapters:TemperatureAmbientProperty rdf:type owl:Class ;
+                                    rdfs:subClassOf adapters:AmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Thermometer
+adapters:Thermometer rdf:type owl:Class ;
+                     rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor
+adapters:WasteBinSensor rdf:type owl:Class ;
+                        rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Water
+adapters:Water rdf:type owl:Class ;
+               rdfs:subClassOf ssn:Property .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#WaterAMRSensor
+adapters:WaterAMRSensor rdf:type owl:Class ;
+                        rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor
+adapters:WeatherSensor rdf:type owl:Class ;
+                       rdfs:subClassOf core:Sensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty
+adapters:WindAmbientProperty rdf:type owl:Class ;
+                             rdfs:subClassOf adapters:AmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Actuator
+core:Actuator rdf:type owl:Class ;
+              rdfs:subClassOf core:Device .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Device
+core:Device rdf:type owl:Class ;
+            rdfs:subClassOf saref:Device .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Sensor
+core:Sensor rdf:type owl:Class ;
+            rdfs:subClassOf core:Device .
+
+
+###  https://saref.etsi.org/core#Device
+saref:Device rdf:type owl:Class .
+
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation
+adapters:AccumulatedPercipitation rdf:type owl:NamedIndividual ,
+                                           adapters:Water .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedWater
+adapters:AccumulatedWater rdf:type owl:NamedIndividual ,
+                                   adapters:FloodAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#AmbientTemperature
+adapters:AmbientTemperature rdf:type owl:NamedIndividual ,
+                                     adapters:TemperatureAmbientProperty 
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#AtmosphoricPressure
+adapters:AtmosphoricPressure rdf:type owl:NamedIndividual ,
+                                      adapters:Pressure .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#BatteryLevel
+adapters:BatteryLevel rdf:type owl:NamedIndividual ,
+                               adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#BeaconMac
+adapters:BeaconMac rdf:type owl:NamedIndividual ,
+                            adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#CO2Concentration
+adapters:CO2Concentration rdf:type owl:NamedIndividual ,
+                                   adapters:CarbonDioxideProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Distance
+adapters:Distance rdf:type owl:NamedIndividual ,
+                           adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DivPosition
+adapters:DivPosition rdf:type owl:NamedIndividual ,
+                              adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#ElectricCurrent
+adapters:ElectricCurrent rdf:type owl:NamedIndividual ,
+                                  adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Flood
+adapters:Flood rdf:type owl:NamedIndividual ,
+                        adapters:FloodAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#GPSAltitude
+adapters:GPSAltitude rdf:type owl:NamedIndividual ,
+                              adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#GPSLatitude
+adapters:GPSLatitude rdf:type owl:NamedIndividual ,
+                              adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#GPSLongitude
+adapters:GPSLongitude rdf:type owl:NamedIndividual ,
+                               adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#GridVoltage
+adapters:GridVoltage rdf:type owl:NamedIndividual ,
+                              adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Illuminance
+adapters:Illuminance rdf:type owl:NamedIndividual ,
+                              adapters:LuminusFlux .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#InstantaneousActivePower
+adapters:InstantaneousActivePower rdf:type owl:NamedIndividual ,
+                                           adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Motion
+adapters:Motion rdf:type owl:NamedIndividual ,
+                         adapters:MotionProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#NoiseLevel
+adapters:NoiseLevel rdf:type owl:NamedIndividual ,
+                             adapters:Sound .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#PowerFactor
+adapters:PowerFactor rdf:type owl:NamedIndividual ,
+                              adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#RelativeHumidity
+adapters:RelativeHumidity rdf:type owl:NamedIndividual ,
+                                   adapters:HumidityAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#ReturnedEnergy
+adapters:ReturnedEnergy rdf:type owl:NamedIndividual ,
+                                 adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureHeight
+adapters:SoilMoistureHeight rdf:type owl:NamedIndividual ,
+                                     adapters:Water .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureVolume
+adapters:SoilMoistureVolume rdf:type owl:NamedIndividual ,
+                                     adapters:Water .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#TotalEnergy
+adapters:TotalEnergy rdf:type owl:NamedIndividual ,
+                              adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#TotalreturnedEnergy
+adapters:TotalreturnedEnergy rdf:type owl:NamedIndividual ,
+                                      adapters:EnergyProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#UVIndex
+adapters:UVIndex rdf:type owl:NamedIndividual ,
+                          adapters:AmbientSolarRadiation .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Vibration
+adapters:Vibration rdf:type owl:NamedIndividual ,
+                            adapters:MotionProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#WindDirection
+adapters:WindDirection rdf:type owl:NamedIndividual ,
+                                adapters:WindAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#WindSpeed
+adapters:WindSpeed rdf:type owl:NamedIndividual ,
+                            adapters:WindAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#XAxisAcceleration
+adapters:XAxisAcceleration rdf:type owl:NamedIndividual ,
+                                    adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#YAxisAcceleration
+adapters:YAxisAcceleration rdf:type owl:NamedIndividual ,
+                                    adapters:SpaceProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#ZAxisAcceleration
+adapters:ZAxisAcceleration rdf:type owl:NamedIndividual ,
+                                    adapters:SpaceProperty .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
