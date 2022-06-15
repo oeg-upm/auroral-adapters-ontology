@@ -1,0 +1,36 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:TemperatureAmbientProperty" "base:SpaceProperty" "base:LightProperty" "base:EnergyMonitor" "base:Pressure" "base:MonitoringSensor" "base:WaterAMRSensor" "base:AmbientProperty" "base:HumiditySensor" "ssn:Property" "base:AmbientSolarRadiation" "core:Actuator" "base:HumidityAmbientProperty" "base:MotionSensor" "base:LuminusFlux" "base:WindAmbientProperty" "base:WaterValveActuator" "base:EnergyProperty" "base:SoilMoistureSEnsor" "base:FloodAmbientProperty" "base:Sound" "base:FloodSensor" "core:Device" "base:Thermometer" "base:SoilMoisture" "core:Sensor" "base:WeatherSensor" "base:Rain" "base:WasteBinSensor" "base:MotionProperty" "base:GPSEmergencyButton" "base:CrabonDioxide" ; /*classes style*/
+	"base:EnergyProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:Rain" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:WeatherSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:CrabonDioxide" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:HumiditySensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:MotionProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:WasteBinSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:AmbientProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:HumidityAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:MotionSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:SoilMoisture" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:FloodAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:MonitoringSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:EnergyMonitor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:GPSEmergencyButton" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:FloodSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:SoilMoistureSEnsor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:Sound" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:WindAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:Pressure" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:LuminusFlux" -> "base:LightProperty" [ label = "rdfs:subClassOf" ];
+	"base:WaterAMRSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"core:Sensor" -> "core:Device" [ label = "rdfs:subClassOf" ];
+	"base:LightProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"core:Actuator" -> "core:Device" [ label = "rdfs:subClassOf" ];
+	"base:Thermometer" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:TemperatureAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:SpaceProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"base:WaterValveActuator" -> "core:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:AmbientSolarRadiation" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+
+}

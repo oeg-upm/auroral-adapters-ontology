@@ -1,0 +1,126 @@
+{
+  "@context" : {
+    "MotionProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "MonitoringSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor"
+    },
+    "EnergyProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "SoilMoistureSEnsor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor"
+    },
+    "MotionSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor"
+    },
+    "GPSEmergencyButton" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton"
+    },
+    "TemperatureAmbientProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty"
+    },
+    "WindAmbientProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Sound" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound"
+    },
+    "Thermometer" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer"
+    },
+    "WaterValveActuator" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator"
+    },
+    "CrabonDioxide" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide"
+    },
+    "WaterAMRSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor"
+    },
+    "LuminusFlux" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux"
+    },
+    "AmbientProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "HumidityAmbientProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty"
+    },
+    "FloodAmbientProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty"
+    },
+    "FloodSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor"
+    },
+    "Pressure" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure"
+    },
+    "observes" : {
+      "@id" : "http://www.w3.org/ns/sosa/observes",
+      "@type" : "@id"
+    },
+    "forProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/forProperty",
+      "@type" : "@id"
+    },
+    "WasteBinSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor"
+    },
+    "Property" : {
+      "@id" : "http:///www.w3.org/ns/ssn/Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "EnergyMonitor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor"
+    },
+    "AmbientSolarRadiation" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation"
+    },
+    "Actuator" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
+    },
+    "WeatherSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor"
+    },
+    "SoilMoisture" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture"
+    },
+    "Rain" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain"
+    },
+    "LightProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty"
+    },
+    "HumiditySensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor"
+    },
+    "Device" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+    },
+    "SpaceProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Sensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+    }
+  }
+}
