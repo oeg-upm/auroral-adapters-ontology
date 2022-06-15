@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "ssn:Property" "core:Actuator" "core:Sensor" ; /*classes style*/
+	"https://auroral.iot.linkeddata.es/def/adapters" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
+	"core:Actuator" -> "ssn:Property" [ label = "sosa:forProperty" ];
+	"core:Sensor" -> "ssn:Property" [ label = "sosa:observes" ];
+
+}
