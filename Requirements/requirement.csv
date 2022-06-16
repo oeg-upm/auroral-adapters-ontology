@@ -47,31 +47,28 @@ core28;UPM;;;In which location the sensor is deployed ?;indicates the location w
 core29;UPM;;;At which time the accumulated value of water was detected;Time (instant, intervall, period, etc…);P;;covered in adapters auroral ontology ;;;;
 ;;;;Monitoring Device;;;;;;;;
 core30;UPM;;;What is the type of the deployed sensor ? ;Monitoring device is the deployed device;P;;covered in adapters auroral ontology ;;;;core:Sensor
-core31;UPM;;;Which are the attributes of the sensor ? ;l'identifiant du device;P;;covered in adapters auroral ontology ;;;;
+core31;UPM;;;Which are the attributes of the sensor ? ;The device ID;P;;covered in adapters auroral ontology ;;;;
 core32;UPM;;;At which time the data was collected ? ;indicates the timestamp of the detected data;P;;covered in adapters auroral ontology ;;;;ssn:Property
 core33;UPM;;;What are the detected measurement ? ;the detected measurement are: Total ReturnedEnergy, GridVoltage, PowerFcator, Returned energy, Total Energy;P;;covered in adapters auroral ontology ;;;;
 core34;UPM;;;What is the unit of each measure ? ;The unit of each detected data (Watt, Volt, etc…);P;;covered in adapters auroral ontology ;;;;
 ;;;;Weather Sensor ;;;;;;;;
-core 35;UPM;;;Which are the attributes of the sensor ? ;l'identifiant du device;P;;covered in adapters auroral ontology ;;;;
+core 35;UPM;;;Which are the attributes of the sensor ? ;The Device ID;P;;covered in adapters auroral ontology ;;;;
 core 36;UPM;;;What are the detected measurement ? ;Temperature, relative-humidity, Dew point, solar irradiation, Atmosphoric pressure, rain;P;;covered in adapters auroral ontology ;;;;ssn:Property
 core 37;UPM;;;What is the unit of each measure ? ;ºC, %RH, W/m2, hPa, mm;P;;covered in adapters auroral ontology ;;;;
 core 38 ;UPM;;;At which time the data was collected ? ;Timestamp;P;;covered in adapters auroral ontology ;;;;
 core 39;UPM;;;In which location the sensor is deployed ?;Location;P;;covered in adapters auroral ontology ;;;;
 ;;;;Waste bin Sensor;;;;;;;;
-core 40;UPM;;;Which are the attributes of the sensor ? ;l'identifiant du device, battery-Level;P;;covered in adapters auroral ontology ;;;;
+core 40;UPM;;;Which are the attributes of the sensor ? ;the device ID, battery-Level;P;;covered in adapters auroral ontology ;;;;
 core 41;UPM;;;What are the detected measurement ? ;Distance, div-position;P;;covered in adapters auroral ontology ;;;;ssn:Property
 core 42;UPM;;;What is the unit of each measure ? ;Millimeter;P;;covered in adapters auroral ontology ;;;;
 core 43;UPM;;;At which time the data was collected ? ;Timestamp;P;;covered in adapters auroral ontology ;;;;
 core 44;UPM;;;In which location the sensor is deployed ?;Location;P;;covered in adapters auroral ontology ;;;;
 ;;;; Soil moisture sensor;;;;;;;;
-core 45;UPM;;;Which are the attributes of the sensor ? ;l'identifiant du device;P;;covered in adapters auroral ontology ;;;;
+core 45;UPM;;;Which are the attributes of the sensor ? ;The device ID;P;;covered in adapters auroral ontology ;;;;
 core 46;UPM;;;What are the detected measurement ? ;Soil moistrue (volume, height);P;;covered in adapters auroral ontology ;;;;
 core 47;UPM;;;What is the unit of each measure ? ;centimeter;P;;covered in adapters auroral ontology ;;;;
 core 48;UPM;;;At which time the data was collected ? ;Timestamp;P;;covered in adapters auroral ontology ;;;;
 core 49;UPM;;;In which location the sensor is deployed ?;Location;P;;covered in adapters auroral ontology ;;;;
 ;;;; Water Valve control ;;;;;;;;
-core 50;UPM;;;Which are the attributes of the actuator ? ;L'identifiant de device;P;;covered in adapters auroral ontology ;;;;
+core 50;UPM;;;Which are the attributes of the actuator ? ;The device ID;P;;covered in adapters auroral ontology ;;;;
 core 51;UPM;;;What are the returned actions? ;actions (active, open, close, on, off);P;;covered in adapters auroral ontology ;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
