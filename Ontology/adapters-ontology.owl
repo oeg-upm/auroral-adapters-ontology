@@ -53,7 +53,7 @@ sosa:description rdf:type owl:AnnotationProperty .
 ###  http://www.w3.org/ns/sosa/forProperty
 sosa:forProperty rdf:type owl:ObjectProperty ;
                  rdfs:domain core:Actuator ;
-                 rdfs:range ssn:Property ;
+                 rdfs:range <http://www.w3.org/ns/ssn/Property> ;
                  rdfs:comment "Presents the relationship between the actuator and the detected properties. It has a domain the Actuator and a range the ssn:Property" ;
                  rdfs:label "for property" .
 
@@ -61,7 +61,7 @@ sosa:forProperty rdf:type owl:ObjectProperty ;
 ###  http://www.w3.org/ns/sosa/observes
 sosa:observes rdf:type owl:ObjectProperty ;
               rdfs:domain core:Sensor ;
-              rdfs:range ssn:Property ;
+              rdfs:range <http://www.w3.org/ns/ssn/Property> ;
               rdfs:comment "The relation between the Sensor device and the property. It has the Sensor as domain and the ssn:property the range." ;
               rdfs:label "observes" .
 
@@ -137,15 +137,9 @@ sosa:observes rdf:type owl:ObjectProperty ;
 #    Classes
 #################################################################
 
-###  http:///www.w3.org/ns/ssn/Property
-ssn:Property rdf:type owl:Class ;
-             rdfs:comment "It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below." ;
-             rdfs:label "ssn:Property" .
-
-
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty
 :AmbientProperty rdf:type owl:Class ;
-                 rdfs:subClassOf ssn:Property ;
+                 rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
                  rdfs:comment "Ambient Property" ,
                               "This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties." .
 
@@ -159,7 +153,7 @@ ssn:Property rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide
 :CrabonDioxide rdf:type owl:Class ;
-               rdfs:subClassOf ssn:Property ;
+               rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
                rdfs:comment "regroups measurement about the CO2 concentration" ;
                rdfs:label "CO2 Carbon Dioxide" .
 
@@ -173,7 +167,7 @@ ssn:Property rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty
 :EnergyProperty rdf:type owl:Class ;
-                rdfs:subClassOf ssn:Property ;
+                rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
                 rdfs:comment "It regroups the properties related to the energy such as: the battery level, the totalreturnedEnergy, the TotalEnergy, the PowerFactor, the Gridvoltage, and so one." ;
                 rdfs:label "Energy Property" .
 
@@ -215,7 +209,7 @@ ssn:Property rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty
 :LightProperty rdf:type owl:Class ;
-               rdfs:subClassOf ssn:Property ;
+               rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
                rdfs:comment "it describes properties about illuminance." ;
                rdfs:label "Light Property" .
 
@@ -235,7 +229,7 @@ ssn:Property rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty
 :MotionProperty rdf:type owl:Class ;
-                rdfs:subClassOf ssn:Property ;
+                rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
                 rdfs:comment "it is  about the motion and the vibration properties." ;
                 rdfs:label "Motion Property" .
 
@@ -249,21 +243,21 @@ ssn:Property rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure
 :Pressure rdf:type owl:Class ;
-          rdfs:subClassOf ssn:Property ;
+          rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
           rdfs:comment "provides information about the pressure properties (for example the atmospheric pressure)." ;
           rdfs:label "Pressure" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain
 :Rain rdf:type owl:Class ;
-      rdfs:subClassOf ssn:Property ;
+      rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
       rdfs:comment "refers to the accumulated precipitation" ;
       rdfs:label "Rain" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture
 :SoilMoisture rdf:type owl:Class ;
-              rdfs:subClassOf ssn:Property ;
+              rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
               rdfs:comment "presents the soil moisture height and volume" ;
               rdfs:label "Soil Moisture" .
 
@@ -277,14 +271,14 @@ ssn:Property rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound
 :Sound rdf:type owl:Class ;
-       rdfs:subClassOf ssn:Property ;
+       rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
        rdfs:comment "This concept defines the Noise Level properties." ;
        rdfs:label "Sound Property" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty
 :SpaceProperty rdf:type owl:Class ;
-               rdfs:subClassOf ssn:Property ;
+               rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
                rdfs:comment "describes properties related to space such as the  GPS latitude, the GPS altitude, the GPS longitude, the XAxis Acceleration, the YAxisAcceleration, the ZAxis acceleration, the distance, etc." ;
                rdfs:label "Space Property" .
 
@@ -335,6 +329,12 @@ ssn:Property rdf:type owl:Class ;
 :WindAmbientProperty rdf:type owl:Class ;
                      rdfs:subClassOf :AmbientProperty ;
                      rdfs:label "Wind Ambient Property" .
+
+
+###  http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> rdf:type owl:Class ;
+                                    rdfs:comment "It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below." ;
+                                    rdfs:label "ssn:Property" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Actuator
