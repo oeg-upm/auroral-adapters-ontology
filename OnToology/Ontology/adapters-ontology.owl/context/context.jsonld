@@ -3,6 +3,9 @@
     "MotionProperty" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"
     },
+    "QRGeneratorSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#QRGeneratorSensor"
+    },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
@@ -36,6 +39,9 @@
     "Sound" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound"
     },
+    "to-timestamp" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp"
+    },
     "Thermometer" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer"
     },
@@ -54,8 +60,17 @@
     "AmbientProperty" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"
     },
+    "has-timestamp" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp"
+    },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "PersonCounter" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#PersonCounter"
+    },
+    "PersonCounterSensor" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#PersonCounterSensor"
     },
     "HumidityAmbientProperty" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty"
@@ -69,6 +84,9 @@
     "Pressure" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure"
     },
+    "ID-Device" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device"
+    },
     "observes" : {
       "@id" : "http://www.w3.org/ns/sosa/observes",
       "@type" : "@id"
@@ -81,13 +99,16 @@
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor"
     },
     "Property" : {
-      "@id" : "http:///www.w3.org/ns/ssn/Property"
+      "@id" : "http://www.w3.org/ns/ssn/Property"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
     "EnergyMonitor" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor"
+    },
+    "TRAFXProperty" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#TRAFXProperty"
     },
     "AmbientSolarRadiation" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation"
@@ -97,6 +118,9 @@
     },
     "WeatherSensor" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "SoilMoisture" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture"
@@ -116,8 +140,17 @@
     "SpaceProperty" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
     },
+    "has-location" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location"
+    },
+    "from-timestamp" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp"
+    },
     "description" : {
-      "@id" : "http://purl.org/dc/elements/1.1/description"
+      "@id" : "http://www.w3.org/ns/sosa/description"
+    },
+    "QRCounter" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#QRCounter"
     },
     "Sensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
