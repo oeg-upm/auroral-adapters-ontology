@@ -442,7 +442,8 @@ core:Sensor rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AngularUnit
 :AngularUnit rdf:type owl:NamedIndividual ,
-                      :SpaceProperty .
+                      :SpaceProperty ;
+             rdfs:label "Angular Unit" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AtmosphoricPressure
@@ -459,7 +460,8 @@ core:Sensor rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac
 :BeaconMac rdf:type owl:NamedIndividual ,
-                    :SpaceProperty .
+                    :SpaceProperty ;
+           rdfs:label "Beacon Mac" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration
@@ -475,12 +477,14 @@ core:Sensor rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance
 :Distance rdf:type owl:NamedIndividual ,
-                   :SpaceProperty .
+                   :SpaceProperty ;
+          rdfs:label "Distance" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#DivPosition
 :DivPosition rdf:type owl:NamedIndividual ,
-                      :SpaceProperty .
+                      :SpaceProperty ;
+             rdfs:label "Div Position" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent
@@ -496,17 +500,20 @@ core:Sensor rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSAltitude
 :GPSAltitude rdf:type owl:NamedIndividual ,
-                      :SpaceProperty .
+                      :SpaceProperty ;
+             rdfs:label "GPS Altitude" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLatitude
 :GPSLatitude rdf:type owl:NamedIndividual ,
-                      :SpaceProperty .
+                      :SpaceProperty ;
+             rdfs:label "GPS Latitude" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLongitude
 :GPSLongitude rdf:type owl:NamedIndividual ,
-                       :SpaceProperty .
+                       :SpaceProperty ;
+              rdfs:label "GPS Longitude" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage
@@ -547,7 +554,8 @@ core:Sensor rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel
 :NoiseLevel rdf:type owl:NamedIndividual ,
-                     :Sound .
+                     :Sound ;
+            rdfs:label "Noise Level" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#PowerFactor
@@ -599,17 +607,20 @@ core:Sensor rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#XAxisAcceleration
 :XAxisAcceleration rdf:type owl:NamedIndividual ,
-                            :SpaceProperty .
+                            :SpaceProperty ;
+                   rdfs:label "XAxix Acceleration" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#YAxisAcceleration
 :YAxisAcceleration rdf:type owl:NamedIndividual ,
-                            :SpaceProperty .
+                            :SpaceProperty ;
+                   rdfs:label "YAxis Acceleration" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#ZAxisAcceleration
 :ZAxisAcceleration rdf:type owl:NamedIndividual ,
-                            :SpaceProperty .
+                            :SpaceProperty ;
+                   rdfs:label "ZAxis Acceleration" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#relativeHumidity
