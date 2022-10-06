@@ -1,9 +1,8 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:TRAFXProperty" "base:TemperatureAmbientProperty" "base:SpaceProperty" "base:LightProperty" "base:EnergyMonitor" "base:QRGeneratorSensor" "base:Pressure" "base:MonitoringSensor" "base:WaterAMRSensor" "base:AmbientProperty" "base:HumiditySensor" "base:AmbientSolarRadiation" "core:Actuator" "base:HumidityAmbientProperty" "base:MotionSensor" "base:LuminusFlux" "base:WindAmbientProperty" "base:WaterValveActuator" "base:EnergyProperty" "base:QRCounter" "base:PersonCounterSensor" "base:SoilMoistureSEnsor" "base:FloodAmbientProperty" "http://www.w3.org/ns/ssn/Property" "base:Sound" "base:FloodSensor" "core:Device" "base:Thermometer" "base:SoilMoisture" "core:Sensor" "base:PersonCounter" "base:WeatherSensor" "base:Rain" "base:WasteBinSensor" "base:MotionProperty" "base:GPSEmergencyButton" "base:CrabonDioxide" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:TRAFXProperty" "base:TemperatureAmbientProperty" "base:SpaceProperty" "base:LightProperty" "base:EnergyMonitor" "base:QRGeneratorSensor" "base:Pressure" "base:MonitoringSensor" "base:WaterAMRSensor" "base:AmbientProperty" "base:HumiditySensor" "base:AmbientSolarRadiation" "core:Actuator" "base:HumidityAmbientProperty" "base:MotionSensor" "base:LuminusFlux" "base:WindAmbientProperty" "base:WaterValveActuator" "base:EnergyProperty" "base:AccumulatedPercipitation" "base:QRCounter" "base:SoilMoistureSEnsor" "base:PersonCounterSensor" "base:FloodAmbientProperty" "http://www.w3.org/ns/ssn/Property" "base:Sound" "base:FloodSensor" "core:Device" "base:Thermometer" "base:SoilMoisture" "core:Sensor" "base:PersonCounter" "base:WeatherSensor" "base:WasteBinSensor" "base:MotionProperty" "base:GPSEmergencyButton" "base:CrabonDioxide" ; /*classes style*/
 	"base:EnergyProperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
-	"base:Rain" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
 	"base:WeatherSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:PersonCounterSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:QRGeneratorSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
@@ -29,8 +28,9 @@ node [shape = rectangle, color="black"]; "base:TRAFXProperty" "base:TemperatureA
 	"base:LuminusFlux" -> "base:LightProperty" [ label = "rdfs:subClassOf" ];
 	"base:WaterAMRSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"core:Sensor" -> "core:Device" [ label = "rdfs:subClassOf" ];
-	"base:LightProperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
 	"core:Actuator" -> "core:Device" [ label = "rdfs:subClassOf" ];
+	"base:LightProperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
+	"base:AccumulatedPercipitation" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
 	"base:Thermometer" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:TemperatureAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"base:SpaceProperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];

@@ -123,6 +123,20 @@
                                                                            rdfs:comment "Timestamp when the measure was detected" .
 
 
+###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasHeight
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasHeight> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> ;
+                                                                       rdfs:range xsd:float ;
+                                                                       rdfs:label "has height" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasVolume
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasVolume> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> ;
+                                                                       rdfs:range xsd:float ;
+                                                                       rdfs:label "has volume" .
+
+
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp> rdf:type owl:DatatypeProperty ;
                                                                           rdfs:comment "UTC time in ISO 8601 formatted timestamp for when to get data TO" .
@@ -131,6 +145,11 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedPercipitation
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedPercipitation> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> .
+
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> rdf:type owl:Class ;
@@ -243,7 +262,9 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#PersonCounterSensor
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#PersonCounterSensor> rdf:type owl:Class ;
-                                                                                 rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+                                                                                 rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
+                                                                                 rdfs:comment "The person sounter sensor is designed to count the number of person that visit a specific city" ;
+                                                                                 rdfs:label "Peron Counter Sensor" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure
@@ -260,14 +281,9 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#QRGeneratorSensor
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#QRGeneratorSensor> rdf:type owl:Class ;
-                                                                               rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> .
-
-
-###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain
-<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
-                                                                  rdfs:comment "refers to the accumulated precipitation" ;
-                                                                  rdfs:label "Rain" .
+                                                                               rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
+                                                                               rdfs:comment "The QR Generator sensor is designed to count the numebr of person that scan the QR code when they visit a specific city" ;
+                                                                               rdfs:label "QR Generator Sensor" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture
@@ -381,24 +397,55 @@
 #    Individuals
 #################################################################
 
+###  http://www.opengis.net/ont/geosparql#ActiveEnergy
+<http://www.opengis.net/ont/geosparql#ActiveEnergy> rdf:type owl:NamedIndividual ,
+                                                             <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                    rdfs:comment "Active Energy" ;
+                                                    rdfs:label "Active Energy" .
+
+
+###  http://www.opengis.net/ont/geosparql#InstantaneousReactiveInductivePower
+<http://www.opengis.net/ont/geosparql#InstantaneousReactiveInductivePower> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                           rdfs:label "Instantaneous Reactive Inductive Power" .
+
+
+###  http://www.opengis.net/ont/geosparql#ReactiveCpacitiveEnergy
+<http://www.opengis.net/ont/geosparql#ReactiveCpacitiveEnergy> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                               rdfs:label "Reactive Capacitive Energy" .
+
+
+###  http://www.opengis.net/ont/geosparql#ReactiveInductiveEnergy
+<http://www.opengis.net/ont/geosparql#ReactiveInductiveEnergy> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                               rdfs:label "Reactive Inductive Energy" .
+
+
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedWater
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedWater> rdf:type owl:NamedIndividual ,
-                                                                                       <http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> .
+                                                                                       <http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> ;
+                                                                              rdfs:comment "Accumulated Water" ;
+                                                                              rdfs:label "Accumulated Water" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientTemperature
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientTemperature> rdf:type owl:NamedIndividual ,
-                                                                                         <http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty> .
+                                                                                         <http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty> ;
+                                                                                rdfs:label "Ambient Temperature" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AngularUnit
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AngularUnit> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                         rdfs:label "Angular Unit" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#AtmosphoricPressure
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AtmosphoricPressure> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure> .
+                                                                                          <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure> ;
+                                                                                 rdfs:comment "Atmosphoric Pressure" ;
+                                                                                 rdfs:label "Atmospheric Pressure" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel
@@ -408,7 +455,8 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac> rdf:type owl:NamedIndividual ,
-                                                                                <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                       rdfs:label "Beacon Mac" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration
@@ -424,17 +472,20 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance> rdf:type owl:NamedIndividual ,
-                                                                               <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                               <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                      rdfs:label "Distance" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#DivPosition
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#DivPosition> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                         rdfs:label "Div Position" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent> rdf:type owl:NamedIndividual ,
-                                                                                      <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+                                                                                      <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                             rdfs:label "Electric Current" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Flood
@@ -444,22 +495,26 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSAltitude
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSAltitude> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                         rdfs:label "GPS Altitude" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLatitude
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLatitude> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                         rdfs:label "GPS Latitude" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLongitude
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLongitude> rdf:type owl:NamedIndividual ,
-                                                                                   <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                   <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                          rdfs:label "GPS Longitude" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                         rdfs:label "Grid Voltage" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#HourlyPersonCounter
@@ -470,12 +525,20 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Illuminance
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Illuminance> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux> ;
+                                                                         rdfs:label "Illuminance" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousActivePower
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousActivePower> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+                                                                                               <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                                      rdfs:label "Instantaneous Active Power" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousCapacitiveInductivePower
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousCapacitiveInductivePower> rdf:type owl:NamedIndividual ,
+                                                                                                            <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                                                   rdfs:label "Instantaneous Capacitive Inductive Power" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonthlyPersonCounter
@@ -486,42 +549,38 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Motion
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Motion> rdf:type owl:NamedIndividual ,
-                                                                             <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> .
+                                                                             <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> ;
+                                                                    rdfs:label "Motion" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel> rdf:type owl:NamedIndividual ,
-                                                                                 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound> .
+                                                                                 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound> ;
+                                                                        rdfs:label "Noise Level" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#PowerFactor
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#PowerFactor> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                         rdfs:label "Power Factor" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy> rdf:type owl:NamedIndividual ,
-                                                                                     <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
-
-
-###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureHeight
-<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureHeight> rdf:type owl:NamedIndividual ,
-                                                                                         <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> .
-
-
-###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureVolume
-<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureVolume> rdf:type owl:NamedIndividual ,
-                                                                                         <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> .
+                                                                                     <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                            rdfs:label "Returned Energy" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalEnergy
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalEnergy> rdf:type owl:NamedIndividual ,
-                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+                                                                                  <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                         rdfs:label "Total Energy" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+                                                                                          <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> ;
+                                                                                 rdfs:label "Accumulated Percipitation" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#UVIndex
@@ -531,7 +590,8 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Vibration
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Vibration> rdf:type owl:NamedIndividual ,
-                                                                                <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> .
+                                                                                <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> ;
+                                                                       rdfs:label "Vibration" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeeklyPersonCounter
@@ -542,22 +602,26 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection> rdf:type owl:NamedIndividual ,
-                                                                                    <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty> .
+                                                                                    <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty> ;
+                                                                           rdfs:label "Wind Direction" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#XAxisAcceleration
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#XAxisAcceleration> rdf:type owl:NamedIndividual ,
-                                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                               rdfs:label "XAxix Acceleration" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#YAxisAcceleration
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#YAxisAcceleration> rdf:type owl:NamedIndividual ,
-                                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                               rdfs:label "YAxis Acceleration" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#ZAxisAcceleration
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#ZAxisAcceleration> rdf:type owl:NamedIndividual ,
-                                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+                                                                                        <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> ;
+                                                                               rdfs:label "ZAxis Acceleration" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#relativeHumidity
