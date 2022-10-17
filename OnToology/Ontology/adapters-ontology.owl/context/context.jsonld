@@ -6,6 +6,10 @@
     "QRGeneratorSensor" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#QRGeneratorSensor"
     },
+    "hasVolume" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasVolume",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
@@ -75,6 +79,9 @@
     "HumidityAmbientProperty" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty"
     },
+    "AccumulatedPercipitation" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedPercipitation"
+    },
     "FloodAmbientProperty" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty"
     },
@@ -83,6 +90,10 @@
     },
     "Pressure" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure"
+    },
+    "hasHeight" : {
+      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasHeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "ID-Device" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device"
@@ -124,9 +135,6 @@
     },
     "SoilMoisture" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture"
-    },
-    "Rain" : {
-      "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain"
     },
     "LightProperty" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty"

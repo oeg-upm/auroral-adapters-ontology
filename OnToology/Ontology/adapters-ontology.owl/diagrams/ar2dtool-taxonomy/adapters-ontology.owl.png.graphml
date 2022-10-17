@@ -41,29 +41,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:Rain">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Rain</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf1" source="nid_base:Rain" target="nid_http://www.w3.org/ns/ssn/Property">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_base:WeatherSensor">
          <data key="d0">
             <y:ShapeNode>
@@ -88,7 +65,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf2" source="nid_base:WeatherSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf1" source="nid_base:WeatherSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -111,7 +88,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf3" source="nid_base:PersonCounterSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf2" source="nid_base:PersonCounterSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -134,7 +111,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf4" source="nid_base:QRGeneratorSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf3" source="nid_base:QRGeneratorSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -157,7 +134,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf5" source="nid_base:CrabonDioxide" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf4" source="nid_base:CrabonDioxide" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -192,7 +169,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf6" source="nid_base:PersonCounter" target="nid_base:TRAFXProperty">
+    <edge id="eid_rdfs:subClassOf5" source="nid_base:PersonCounter" target="nid_base:TRAFXProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -215,7 +192,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf7" source="nid_base:HumiditySensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf6" source="nid_base:HumiditySensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -238,7 +215,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf8" source="nid_base:MotionProperty" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf7" source="nid_base:MotionProperty" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -261,7 +238,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf9" source="nid_base:WasteBinSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf8" source="nid_base:WasteBinSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -284,7 +261,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf10" source="nid_base:QRCounter" target="nid_base:TRAFXProperty">
+    <edge id="eid_rdfs:subClassOf9" source="nid_base:QRCounter" target="nid_base:TRAFXProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -307,7 +284,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_base:AmbientProperty" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf10" source="nid_base:AmbientProperty" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -330,7 +307,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_base:HumidityAmbientProperty" target="nid_base:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf11" source="nid_base:HumidityAmbientProperty" target="nid_base:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -353,7 +330,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_base:MotionSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf12" source="nid_base:MotionSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -376,7 +353,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_base:SoilMoisture" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf13" source="nid_base:SoilMoisture" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -399,7 +376,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_base:FloodAmbientProperty" target="nid_base:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf14" source="nid_base:FloodAmbientProperty" target="nid_base:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -422,7 +399,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_base:MonitoringSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf15" source="nid_base:MonitoringSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -445,7 +422,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_base:GPSEmergencyButton" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf16" source="nid_base:GPSEmergencyButton" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -468,7 +445,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_base:EnergyMonitor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf17" source="nid_base:EnergyMonitor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -491,7 +468,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_base:FloodSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf18" source="nid_base:FloodSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -514,7 +491,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_base:SoilMoistureSEnsor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf19" source="nid_base:SoilMoistureSEnsor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -537,7 +514,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_base:Sound" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf20" source="nid_base:Sound" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -560,7 +537,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_base:WindAmbientProperty" target="nid_base:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf21" source="nid_base:WindAmbientProperty" target="nid_base:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -583,7 +560,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf23" source="nid_base:Pressure" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf22" source="nid_base:Pressure" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -618,7 +595,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf24" source="nid_base:LuminusFlux" target="nid_base:LightProperty">
+    <edge id="eid_rdfs:subClassOf23" source="nid_base:LuminusFlux" target="nid_base:LightProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -641,7 +618,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_base:WaterAMRSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf24" source="nid_base:WaterAMRSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -664,18 +641,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf26" source="nid_core:Sensor" target="nid_core:Device">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdfs:subClassOf27" source="nid_base:LightProperty" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf25" source="nid_core:Sensor" target="nid_core:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -698,7 +664,41 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf28" source="nid_core:Actuator" target="nid_core:Device">
+    <edge id="eid_rdfs:subClassOf26" source="nid_core:Actuator" target="nid_core:Device">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf27" source="nid_base:LightProperty" target="nid_http://www.w3.org/ns/ssn/Property">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_base:AccumulatedPercipitation">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="290.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:AccumulatedPercipitation</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf28" source="nid_base:AccumulatedPercipitation" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
