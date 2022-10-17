@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:MonitoringSensor" "core:Actuator" "base:MotionSensor" "http://www.w3.org/ns/ssn/Property" "base:FloodSensor" "core:Device" "base:SoilMoisture" "core:Sensor" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "core:Device" "core:Sensor" "core:Actuator" "base:MotionSensor" "base:SoilMoisture" "base:MonitoringSensor" "base:FloodSensor" "http://www.w3.org/ns/ssn/Property" ; /*classes style*/
 	"https://auroral.iot.linkeddata.es/def/adapters" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
 	"base:SoilMoisture" -> "xsd:float" [ label = "base:hasHeight" ];
 	"core:Actuator" -> "http://www.w3.org/ns/ssn/Property" [ label = "sosa:forProperty" ];

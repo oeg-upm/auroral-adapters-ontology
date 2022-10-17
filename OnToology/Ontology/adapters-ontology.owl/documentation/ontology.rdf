@@ -240,6 +240,26 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedPercipitation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label>Accumulated Percipitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQualitySensor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQualitySensor">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label>Air Quality Sensor</rdfs:label>
     </owl:Class>
     
 
@@ -251,6 +271,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>Ambient Property</rdfs:comment>
         <rdfs:comment>This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties.</rdfs:comment>
+        <rdfs:label>Ambient Property</rdfs:label>
     </owl:Class>
     
 
@@ -266,13 +287,48 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide -->
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Ammonia -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment>regroups measurement about the CO2 concentration</rdfs:comment>
-        <rdfs:label>CO2 Carbon Dioxide</rdfs:label>
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Ammonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Battery -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Battery">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label>Battery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#CarbonDioxide -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CarbonDioxide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#CarbonMonoxide -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CarbonMonoxide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#CoarseParticulateMatter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CoarseParticulateMatter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
     </owl:Class>
     
 
@@ -295,6 +351,15 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>It regroups the properties related to the energy such as: the battery level, the totalreturnedEnergy, the TotalEnergy, the PowerFactor, the Gridvoltage, and so one.</rdfs:comment>
         <rdfs:label>Energy Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#FineParticlesMatter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#FineParticlesMatter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
     </owl:Class>
     
 
@@ -332,6 +397,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label>Health Property</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty -->
 
 
@@ -350,6 +425,16 @@
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
         <rdfs:comment>It is a device that detects and measures water vapor in its environment and converts its findings into a corresponding electrical signal.</rdfs:comment>
         <rdfs:label>Humidity Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightBulb -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightBulb">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label>Light Bulb</rdfs:label>
     </owl:Class>
     
 
@@ -408,6 +493,64 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#NitrogenDioxide -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NitrogenDioxide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#NitrogenMonoxide -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NitrogenMonoxide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Noise -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Noise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"/>
+        <rdfs:comment>mesure the noise in a place</rdfs:comment>
+        <rdfs:label>Noise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Ozone -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Ozone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#PV -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#PV">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label>PV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Percipitation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Percipitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"/>
+        <rdfs:label>Percipitation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#PersonCounter -->
 
 
@@ -428,11 +571,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Presence_Sensor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Presence_Sensor">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:comment>it detects the presence of an object in a place</rdfs:comment>
+        <rdfs:label>Presence Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure -->
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"/>
         <rdfs:comment>provides information about the pressure properties (for example the atmospheric pressure).</rdfs:comment>
         <rdfs:label>Pressure</rdfs:label>
     </owl:Class>
@@ -455,6 +609,36 @@
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
         <rdfs:comment>The QR Generator sensor is designed to count the numebr of person that scan the QR code when they visit a specific city</rdfs:comment>
         <rdfs:label>QR Generator Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Relay -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Relay">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Actuator"/>
+        <rdfs:label>Relay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#SmartPlug -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SmartPlug">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label>Smart Plug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#SmartValve -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SmartValve">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Actuator"/>
+        <rdfs:label>Smart Valve</rdfs:label>
     </owl:Class>
     
 
@@ -499,6 +683,34 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>describes properties related to space such as the  GPS latitude, the GPS altitude, the GPS longitude, the XAxis Acceleration, the YAxisAcceleration, the ZAxis acceleration, the distance, etc.</rdfs:comment>
         <rdfs:label>Space Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#StatusProperty -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#StatusProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#SulphurDioxide -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SulphurDioxide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Switch -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Switch">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Actuator"/>
+        <rdfs:label>Switch</rdfs:label>
     </owl:Class>
     
 
@@ -562,7 +774,16 @@
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator">
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Actuator"/>
         <rdfs:comment>it is used to control the water valve. It generates an acknowledgement message indicating that the command has been accepted. The generated command can be: ON, OFF, active, close.</rdfs:comment>
-        <rdfs:label>WaterValveActuator</rdfs:label>
+        <rdfs:label>Water Valve Actuator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Weather -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Weather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"/>
     </owl:Class>
     
 
@@ -694,6 +915,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Alert -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Alert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#StatusProperty"/>
+        <rdfs:label>Alert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientTemperature -->
 
 
@@ -725,6 +956,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#AverageMovementShare -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AverageMovementShare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"/>
+        <rdfs:label>Average Movement Share</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#AverageMovementTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#AverageMovementTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"/>
+        <rdfs:label>Average Movement Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#BasalMetabolicRate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#BasalMetabolicRate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Basal Metabolic Rate (BMR) is the number of calories you burn as your body performs basic (basal) life-sustaining function.</rdfs:comment>
+        <rdfs:label>Basal Metabolic Rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel -->
 
 
@@ -744,11 +1006,66 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#BodyFatPercentage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#BodyFatPercentage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>The amount of essential fat differs between men and women, and is typically around 2-5% in men, and 10-13% in women.</rdfs:comment>
+        <rdfs:label>Body Fat Percentage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#BodyMassIndex -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#BodyMassIndex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</rdfs:comment>
+        <rdfs:label>Body Mass Index</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#BoneMineralContent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#BoneMineralContent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Calcium is the largest contributor to bone mineral content. It exists in hydroxyapatite crystals, which contribute to bone strength, and acts as a reserve to maintain serum calcium levels within a narrow range during periods of dietary calcium inadequacy.</rdfs:comment>
+        <rdfs:label>Bone Mineral Content</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration -->
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration">
-        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CarbonDioxide"/>
+        <rdfs:label>CO2 Concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#COConcentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#COConcentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CarbonMonoxide"/>
+        <rdfs:label>CO Concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#CaloriesBurned -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CaloriesBurned">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>indicates how many clories were burned by wlking for example</rdfs:comment>
+        <rdfs:label>Calories Burned</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -763,12 +1080,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#DiastolicBloodPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#DiastolicBloodPressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Diastolic blood level for a patient</rdfs:comment>
+        <rdfs:label>Diastolic Blood Pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance -->
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"/>
         <rdfs:label>Distance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#DistanceWalked -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#DistanceWalked">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"/>
+        <rdfs:label>Distance Walked</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -789,6 +1127,37 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
         <rdfs:label>Electric Current</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricVoltage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricVoltage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:comment>Electric Voltage</rdfs:comment>
+        <rdfs:label>Electric Voltage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyConsumption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:label>Energy Consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:label>Energy Production</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -832,12 +1201,53 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridCapacity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridCapacity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:label>Grid Capacity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridDemand -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridDemand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:label>Grid Demand</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridFrequency -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridFrequency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:label>Grid Frequency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage -->
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
         <rdfs:label>Grid Voltage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#HeartRate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HeartRate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Heart rate level for a patient</rdfs:comment>
+        <rdfs:label>Heart Rate</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -872,12 +1282,43 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousApparentPower -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousApparentPower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:comment>Instantaneous Apparent Power</rdfs:comment>
+        <rdfs:label>Instantaneous Apparent Power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousCapacitiveInductivePower -->
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousCapacitiveInductivePower">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
         <rdfs:label>Instantaneous Capacitive Inductive Power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousReactivePower -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousReactivePower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
+        <rdfs:label>Instantaneous Reactive Power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightColor -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightColor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty"/>
+        <rdfs:label>Light Color</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -902,12 +1343,88 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#MuscleMass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#MuscleMass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Muscle mass is the amount of muscle in your body, including skeletal muscles, smooth muscles, and cardiac muscles.</rdfs:comment>
+        <rdfs:label>Muscle Mass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#NH3Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NH3Concentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Ammonia"/>
+        <rdfs:comment>Ammonia - NH3 - is a gas commonly used as a refrigerant in cooling systems.</rdfs:comment>
+        <rdfs:label>NH3 Concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#NO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NO2Concentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NitrogenDioxide"/>
+        <rdfs:label>NO2 Concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#NOConcentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NOConcentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NitrogenMonoxide"/>
+        <rdfs:label>No Concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel -->
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound"/>
         <rdfs:label>Noise Level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#O3Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#O3Concentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Ozone"/>
+        <rdfs:comment>O3 Concentration</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#PM10Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#PM10Concentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#CoarseParticulateMatter"/>
+        <rdfs:comment>PM10 are very small particles found in dust and smoke. They have a diameter of 10 micrometres (0.01 mm) or smaller.
+
+PM10 particles are a common air pollutant.</rdfs:comment>
+        <rdfs:label>PM10 Concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#PM2.5Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#PM2.5Concentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#FineParticlesMatter"/>
+        <rdfs:comment>Fine particulate matter (PM2.5) is an air pollutant that is a concern for people&apos;s health when levels in air are high.</rdfs:comment>
+        <rdfs:label>PM2.5 Concentration</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -922,12 +1439,146 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Presence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Presence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#StatusProperty"/>
+        <rdfs:label>Presence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Protein -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Protein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:label>Protein</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pulse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pulse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>The rhythmic dilation of an artery that results from beating of the heart. Pulse is often measured by feeling the arteries of the wrist or neck.</rdfs:comment>
+        <rdfs:label>Pulse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rainfall -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rainfall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Percipitation"/>
+        <rdfs:label>Rainfall</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy -->
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"/>
         <rdfs:label>Returned Energy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#SO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SO2Concentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SulphurDioxide"/>
+        <rdfs:label>SO2 Concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sleep -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sleep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>control the sleep disorders of a patient</rdfs:comment>
+        <rdfs:label>Sleep</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Snowfall -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Snowfall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Percipitation"/>
+        <rdfs:label>Snowfall</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Steps -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Steps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#StorageCapacity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#StorageCapacity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#StatusProperty"/>
+        <rdfs:label>Storage Capacity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#SugarLevel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SugarLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>A blood sugar level less than 140 mg/dL (7.8 mmol/L) is normal. A reading of more than 200 mg/dL (11.1 mmol/L) after two hours means you have diabetes. A reading between 140 and 199 mg/dL (7.8 mmol/L and 11.0 mmol/L) means you have prediabetes.</rdfs:comment>
+        <rdfs:label>Sugar Level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#SwitchStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SwitchStatus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#StatusProperty"/>
+        <rdfs:label>Switch Status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#SystolicBloodPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#SystolicBloodPressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>niveau de systolic blood pressure for a patient</rdfs:comment>
+        <rdfs:label>Systolic Blood Pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalBodyWaterPercentage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalBodyWaterPercentage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Most of the human body is water, with an average of roughly 60%. The amount of water in the body changes slightly with age, sex, and hydration levels.</rdfs:comment>
+        <rdfs:label>Total Body Water Percentage</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -971,12 +1622,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#VisceralFatRating -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#VisceralFatRating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>According to the manufacturer&apos;s information, a rating between 1 and 12 indicates a healthy level of visceral fat, whereas a rating between 13 and 59 indicates excess visceral fat.</rdfs:comment>
+        <rdfs:label>Visceral Fat Rating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherCondition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherCondition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Weather"/>
+        <rdfs:label>Weather Condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeeklyPersonCounter -->
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeeklyPersonCounter">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#PersonCounter"/>
         <rdfs:label>Weekly person counter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/5/adapters#Weight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/5/adapters#Weight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/5/adapters#HealthProperty"/>
+        <rdfs:comment>Weight of patient</rdfs:comment>
+        <rdfs:label>Weight</rdfs:label>
     </owl:NamedIndividual>
     
 
