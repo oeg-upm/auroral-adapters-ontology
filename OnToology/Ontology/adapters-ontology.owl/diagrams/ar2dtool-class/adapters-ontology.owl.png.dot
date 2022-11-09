@@ -1,15 +1,15 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "core:Device" "core:Sensor" "core:Actuator" "base:MotionSensor" "base:SoilMoisture" "base:MonitoringSensor" "base:FloodSensor" "http://www.w3.org/ns/ssn/Property" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "base:FloodSensor" "core:Sensor" "core:Actuator" "base:SoilMoisture" "base:WasteBinSensor" "saref:Property" "base:MonitoringSensor" "base:MotionSensor" ; /*classes style*/
 	"https://auroral.iot.linkeddata.es/def/adapters" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
-	"base:SoilMoisture" -> "xsd:float" [ label = "base:hasHeight" ];
-	"core:Actuator" -> "http://www.w3.org/ns/ssn/Property" [ label = "sosa:forProperty" ];
-	"base:SoilMoisture" -> "xsd:float" [ label = "base:hasVolume" ];
-	"base:FloodSensor" -> "owl:Thing" [ label = "base:has-location" ];
-	"core:Sensor" -> "http://www.w3.org/ns/ssn/Property" [ label = "sosa:observes" ];
-	"base:MonitoringSensor" -> "owl:Thing" [ label = "base:from-timestamp" ];
-	"base:MotionSensor" -> "owl:Thing" [ label = "base:has-timestamp" ];
-	"core:Device" -> "owl:Thing" [ label = "base:ID-Device" ];
+	"base:SoilMoisture" -> "xsd:float" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasHeight" ];
+	"core:Actuator" -> "saref:Property" [ label = "sosa:forProperty" ];
+	"base:SoilMoisture" -> "xsd:float" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasVolume" ];
+	"base:FloodSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location" ];
+	"core:Sensor" -> "saref:Property" [ label = "sosa:observes" ];
+	"base:MonitoringSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp" ];
+	"base:MotionSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp" ];
+	"base:WasteBinSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device" ];
 
 }
