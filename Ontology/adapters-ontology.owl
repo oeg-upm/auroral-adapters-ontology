@@ -345,12 +345,6 @@ sosa:observes rdf:type owl:ObjectProperty ;
     rdfs:label "PV" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#Percipitation
-:Percipitation rdf:type owl:Class ;
-               rdfs:subClassOf :AmbientProperty ;
-               rdfs:label "Percipitation" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/adapters#PersonCounter
 :PersonCounter rdf:type owl:Class ;
                rdfs:subClassOf :TRAFXProperty ;
@@ -362,6 +356,12 @@ sosa:observes rdf:type owl:ObjectProperty ;
                      rdfs:subClassOf core:Sensor ;
                      rdfs:comment "The person sounter sensor is designed to count the number of person that visit a specific city" ;
                      rdfs:label "Peron Counter Sensor" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Precipitation
+:Precipitation rdf:type owl:Class ;
+               rdfs:subClassOf :AmbientProperty ;
+               rdfs:label "Precipitation" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Presence_Sensor
@@ -926,7 +926,7 @@ PM10 particles are a common air pollutant.""" ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rainfall
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rainfall> rdf:type owl:NamedIndividual ,
-                                                                               :Percipitation ;
+                                                                               :Precipitation ;
                                                                       rdfs:label "Rainfall" .
 
 
@@ -951,7 +951,7 @@ PM10 particles are a common air pollutant.""" ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Snowfall
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Snowfall> rdf:type owl:NamedIndividual ,
-                                                                               :Percipitation ;
+                                                                               :Precipitation ;
                                                                       rdfs:label "Snowfall" .
 
 
