@@ -534,6 +534,7 @@ core:BatterySensor rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
 core:Device rdf:type owl:Class ;
+            rdfs:subClassOf saref:Device ;
             rdfs:comment "It is designed to realize a specific task. This task can be a detection of an occurred event or the initiation of an action. It has two sub-classes (sensor and actuator)." ;
             rdfs:label "Device" .
 
@@ -565,6 +566,11 @@ core:StorageCapacity rdf:type owl:Class ;
 core:SwitchStatus rdf:type owl:Class ;
                   rdfs:subClassOf :StatusProperty ;
                   rdfs:label "Switch Status" .
+
+
+###  https://saref.etsi.org/core#Device
+saref:Device rdf:type owl:Class ;
+             rdfs:label "Device" .
 
 
 ###  https://saref.etsi.org/core#Property
