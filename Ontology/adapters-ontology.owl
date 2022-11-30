@@ -207,6 +207,11 @@ sosa:observes rdf:type owl:ObjectProperty ;
                 rdfs:label "Carbon Monoxide" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#CloudCover
+:CloudCover rdf:type owl:Class ;
+            rdfs:subClassOf :AmbientProperty .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#CoarseParticulateMatter
 :CoarseParticulateMatter rdf:type owl:Class ;
                          rdfs:subClassOf :AirQuality ;
@@ -655,7 +660,8 @@ saref:Property rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel> rdf:type owl:NamedIndividual ,
-                                                                                   :EnergyProperty .
+                                                                                   :EnergyProperty ;
+                                                                          rdfs:label "Battery level" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac
@@ -994,8 +1000,7 @@ PM10 particles are a common air pollutant.""" ;
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy
-<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy> rdf:type owl:NamedIndividual ,
-                                                                                          :EnergyProperty ;
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy> rdf:type owl:NamedIndividual ;
                                                                                  rdfs:label "Accumulated Percipitation" .
 
 
@@ -1062,6 +1067,12 @@ PM10 particles are a common air pollutant.""" ;
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed> rdf:type owl:NamedIndividual ,
                                                                                 :WindAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity
+:EnergyUseIntensity rdf:type owl:NamedIndividual ,
+                             :EnergyProperty ;
+                    rdfs:label "Energy use intensity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Alarm
