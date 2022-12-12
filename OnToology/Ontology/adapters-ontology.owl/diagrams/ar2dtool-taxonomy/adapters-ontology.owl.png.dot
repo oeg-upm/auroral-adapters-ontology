@@ -1,15 +1,22 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "core:Presence" "base:NitrogenDioxide" "base:QRCounter" "base:LightProperty" "base:FloodSensor" "base:Switch" "base:Sound" "base:HumiditySensor" "base:EnergyProperty" "base:WeatherSensor" "base:AirQuality" "base:HumidityAmbientProperty" "base:SulphurDioxide" "base:QRGeneratorSensor" "base:FloodAmbientProperty" "core:Device" "core:Sensor" "base:CarbonMonoxide" "core:Actuator" "base:LuminusFlux" "base:TRAFXProperty" "base:CoarseParticulateMatter" "base:AmbientSolarRadiation" "base:SoilMoisture" "base:SpaceProperty" "base:AmbientProperty" "base:WasteBinSensor" "core:Error" "saref:Property" "core:SwitchStatus" "base:SmartValve" "base:TemperatureAmbientProperty" "base:ActReason" "base:WaterValveActuator" "base:Presence_Sensor" "base:Relay" "base:AccumulatedPercipitation" "base:HealthProperty" "base:MotionProperty" "base:NitrogenMonoxide" "base:Weather" "base:Ozone" "base:Ammonia" "base:PV" "core:BatterySensor" "base:EnergyMonitor" "base:WindAmbientProperty" "base:Percipitation" "base:Thermometer" "base:SoilMoistureSEnsor" "base:SmartPlug" "base:Noise" "base:AirQualitySensor" "base:PersonCounterSensor" "base:MonitoringSensor" "base:WaterAMRSensor" "base:LightBulb" "base:FineParticlesMatter" "base:GPSEmergencyButton" "base:CarbonDioxide" "core:Alert" "base:Pressure" "core:StorageCapacity" "base:StatusProperty" "base:MotionSensor" "base:PersonCounter" ; /*classes style*/
+node [shape = rectangle, color="black"]; "core:Presence" "base:AirConditionningBasic" "base:NitrogenDioxide" "base:PVBIntegrated" "base:QRCounter" "base:LightProperty" "base:FloodSensor" "saref:Device" "base:Switch" "base:Sound" "base:CoolingSensor" "base:HumiditySensor" "base:BoilerOil" "base:PVGround" "base:EnergyProperty" "base:WeatherSensor" "base:AirQuality" "base:HumidityAmbientProperty" "base:SulphurDioxide" "base:QRGeneratorSensor" "base:BoilerSensor" "base:FloodAmbientProperty" "core:Device" "core:Sensor" "base:HeatPumpAirtoWater" "base:CarbonMonoxide" "core:Actuator" "base:LuminusFlux" "base:TRAFXProperty" "base:CoarseParticulateMatter" "base:AmbientSolarRadiation" "base:SoilMoisture" "base:SpaceProperty" "base:AmbientProperty" "base:WasteBinSensor" "core:Error" "saref:Property" "core:SwitchStatus" "base:SmartValve" "base:TemperatureAmbientProperty" "base:ActReason" "base:WaterValveActuator" "base:Relay" "base:Presence_Sensor" "base:AccumulatedPercipitation" "base:HealthProperty" "base:MotionProperty" "base:NitrogenMonoxide" "base:Precipitation" "base:Weather" "base:Ozone" "base:Ammonia" "base:CloudCover" "base:HeatPumpAirtoAir" "base:PV" "core:BatterySensor" "base:PVRoofStanled" "base:PVRoofFlat" "base:EnergyMonitor" "base:WindAmbientProperty" "base:BoilerBiomass" "base:Thermometer" "base:SoilMoistureSEnsor" "base:SmartPlug" "base:HeatingSensor" "base:Noise" "base:AirQualitySensor" "base:PersonCounterSensor" "base:MonitoringSensor" "base:BoilerNgas" "base:WaterAMRSensor" "base:LightBulb" "base:PVFaçade" "base:FineParticlesMatter" "base:GPSEmergencyButton" "base:CarbonDioxide" "core:Alert" "base:Pressure" "core:StorageCapacity" "base:StatusProperty" "base:MotionSensor" "base:PersonCounter" ; /*classes style*/
+	"base:HeatPumpAirtoAir" -> "base:HeatingSensor" [ label = "rdfs:subClassOf" ];
+	"base:HeatPumpAirtoAir" -> "base:CoolingSensor" [ label = "rdfs:subClassOf" ];
 	"base:CarbonMonoxide" -> "base:AirQuality" [ label = "rdfs:subClassOf" ];
 	"base:Presence_Sensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:HeatPumpAirtoWater" -> "base:HeatingSensor" [ label = "rdfs:subClassOf" ];
+	"base:HeatPumpAirtoWater" -> "base:CoolingSensor" [ label = "rdfs:subClassOf" ];
 	"base:Relay" -> "core:Actuator" [ label = "rdfs:subClassOf" ];
 	"base:SpaceProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"base:WindAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:PVRoofFlat" -> "base:PV" [ label = "rdfs:subClassOf" ];
+	"base:PVFaçade" -> "base:PV" [ label = "rdfs:subClassOf" ];
 	"core:BatterySensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"core:Presence" -> "base:StatusProperty" [ label = "rdfs:subClassOf" ];
 	"core:Sensor" -> "core:Device" [ label = "rdfs:subClassOf" ];
+	"base:Precipitation" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"base:PersonCounter" -> "base:TRAFXProperty" [ label = "rdfs:subClassOf" ];
 	"base:LightProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"base:LuminusFlux" -> "base:LightProperty" [ label = "rdfs:subClassOf" ];
@@ -20,6 +27,7 @@ node [shape = rectangle, color="black"]; "core:Presence" "base:NitrogenDioxide" 
 	"base:AirQuality" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"core:Alert" -> "base:StatusProperty" [ label = "rdfs:subClassOf" ];
 	"base:SmartPlug" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:HeatingSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:WasteBinSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:AmbientSolarRadiation" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"base:NitrogenMonoxide" -> "base:AirQuality" [ label = "rdfs:subClassOf" ];
@@ -35,7 +43,9 @@ node [shape = rectangle, color="black"]; "core:Presence" "base:NitrogenDioxide" 
 	"base:EnergyProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"base:StatusProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"base:WaterValveActuator" -> "core:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:BoilerSensor" -> "base:HeatingSensor" [ label = "rdfs:subClassOf" ];
 	"base:Sound" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"core:Device" -> "saref:Device" [ label = "rdfs:subClassOf" ];
 	"base:Ozone" -> "base:AirQuality" [ label = "rdfs:subClassOf" ];
 	"base:CarbonDioxide" -> "base:AirQuality" [ label = "rdfs:subClassOf" ];
 	"base:PV" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
@@ -44,6 +54,8 @@ node [shape = rectangle, color="black"]; "core:Presence" "base:NitrogenDioxide" 
 	"base:MotionSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:AirQualitySensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:Weather" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:BoilerBiomass" -> "base:BoilerSensor" [ label = "rdfs:subClassOf" ];
+	"base:PVRoofStanled" -> "base:PV" [ label = "rdfs:subClassOf" ];
 	"base:Ammonia" -> "base:AirQuality" [ label = "rdfs:subClassOf" ];
 	"base:SulphurDioxide" -> "base:AirQuality" [ label = "rdfs:subClassOf" ];
 	"base:FineParticlesMatter" -> "base:AirQuality" [ label = "rdfs:subClassOf" ];
@@ -51,14 +63,20 @@ node [shape = rectangle, color="black"]; "core:Presence" "base:NitrogenDioxide" 
 	"base:EnergyMonitor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:QRGeneratorSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:FloodSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:CoolingSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:HealthProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"base:AirConditionningBasic" -> "base:HeatingSensor" [ label = "rdfs:subClassOf" ];
+	"base:AirConditionningBasic" -> "base:CoolingSensor" [ label = "rdfs:subClassOf" ];
+	"base:BoilerNgas" -> "base:BoilerSensor" [ label = "rdfs:subClassOf" ];
 	"base:FloodAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:BoilerOil" -> "base:BoilerSensor" [ label = "rdfs:subClassOf" ];
 	"base:Switch" -> "core:Actuator" [ label = "rdfs:subClassOf" ];
 	"base:Pressure" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:CloudCover" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"base:PVGround" -> "base:PV" [ label = "rdfs:subClassOf" ];
 	"core:StorageCapacity" -> "base:StatusProperty" [ label = "rdfs:subClassOf" ];
 	"base:SoilMoistureSEnsor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:WeatherSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
-	"base:Percipitation" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"base:AmbientProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"core:SwitchStatus" -> "base:StatusProperty" [ label = "rdfs:subClassOf" ];
 	"base:TRAFXProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
@@ -66,5 +84,6 @@ node [shape = rectangle, color="black"]; "core:Presence" "base:NitrogenDioxide" 
 	"base:MonitoringSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"base:HumidityAmbientProperty" -> "base:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"base:AccumulatedPercipitation" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"base:PVBIntegrated" -> "base:PV" [ label = "rdfs:subClassOf" ];
 
 }
