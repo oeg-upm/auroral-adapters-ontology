@@ -1142,6 +1142,42 @@ PM10 particles are a common air pollutant.""" ;
                                                                                 :WindAmbientProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#DiffuseRadiation
+:DiffuseRadiation rdf:type owl:NamedIndividual ,
+                           :AmbientSolarRadiation ;
+                  rdfs:label "Diffuse Radiation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DiffuseRadiationInstant
+:DiffuseRadiationInstant rdf:type owl:NamedIndividual ,
+                                  :AmbientSolarRadiation ;
+                         rdfs:label "Diffuse Radiation Instant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectNormalIrradiance
+:DirectNormalIrradiance rdf:type owl:NamedIndividual ,
+                                 :AmbientSolarRadiation ;
+                        rdfs:label "Direct Normal Irradiance" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectNormalIrradianceInstant
+:DirectNormalIrradianceInstant rdf:type owl:NamedIndividual ,
+                                        :AmbientSolarRadiation ;
+                               rdfs:label "Direct Normal Irradiance Instant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectRadiation
+:DirectRadiation rdf:type owl:NamedIndividual ,
+                          :AmbientSolarRadiation ;
+                 rdfs:label "Direct Radiation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectRadiationInstant
+:DirectRadiationInstant rdf:type owl:NamedIndividual ,
+                                 :AmbientSolarRadiation ;
+                        rdfs:label "Direct Radiation Instant" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity
 :EnergyUseIntensity rdf:type owl:NamedIndividual ,
                              :EnergyProperty ;
@@ -1158,6 +1194,23 @@ PM10 particles are a common air pollutant.""" ;
 :OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                     :TemperatureAmbientProperty ;
                            rdfs:label "Outdoor Ambient Temperature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#ShortwaveRadiationInstant
+:ShortwaveRadiationInstant rdf:type owl:NamedIndividual ,
+                                    :AmbientSolarRadiation ;
+                           rdfs:label "Shortwave Radiation Instant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#TerrestrialRadiation
+:TerrestrialRadiation rdf:type owl:NamedIndividual ,
+                               :AmbientSolarRadiation ;
+                      rdfs:label "Terrestrial Radiation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#TerrestrialRadiationInstant
+:TerrestrialRadiationInstant rdf:type owl:NamedIndividual ,
+                                      :AmbientSolarRadiation .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Alarm
