@@ -158,6 +158,12 @@
            rdfs:label "Act reason" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#AirConditionningBasic
+:AirConditionningBasic rdf:type owl:Class ;
+                       rdfs:subClassOf :CoolingSensor ,
+                                       :HeatingSensor .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#AirQuality
 :AirQuality rdf:type owl:Class ;
             rdfs:subClassOf :AmbientProperty .
@@ -190,6 +196,26 @@
          rdfs:label "Ammonia" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#BoilerBiomass
+:BoilerBiomass rdf:type owl:Class ;
+               rdfs:subClassOf :BoilerSensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#BoilerNgas
+:BoilerNgas rdf:type owl:Class ;
+            rdfs:subClassOf :BoilerSensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#BoilerOil
+:BoilerOil rdf:type owl:Class ;
+           rdfs:subClassOf :BoilerSensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#BoilerSensor
+:BoilerSensor rdf:type owl:Class ;
+              rdfs:subClassOf :HeatingSensor .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#CarbonDioxide
 :CarbonDioxide rdf:type owl:Class ;
                rdfs:subClassOf :AirQuality ;
@@ -202,10 +228,20 @@
                 rdfs:label "Carbon Monoxide" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#CloudCover
+:CloudCover rdf:type owl:Class ;
+            rdfs:subClassOf :AmbientProperty .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#CoarseParticulateMatter
 :CoarseParticulateMatter rdf:type owl:Class ;
                          rdfs:subClassOf :AirQuality ;
                          rdfs:label "Coarse Particulate Matter" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#CoolingSensor
+:CoolingSensor rdf:type owl:Class ;
+               rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#EnergyMonitor
@@ -253,6 +289,23 @@
 :HealthProperty rdf:type owl:Class ;
                 rdfs:subClassOf <https://saref.etsi.org/core#Property> ;
                 rdfs:label "Health Property" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#HeatPumpAirtoAir
+:HeatPumpAirtoAir rdf:type owl:Class ;
+                  rdfs:subClassOf :CoolingSensor ,
+                                  :HeatingSensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#HeatPumpAirtoWater
+:HeatPumpAirtoWater rdf:type owl:Class ;
+                    rdfs:subClassOf :CoolingSensor ,
+                                    :HeatingSensor .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#HeatingSensor
+:HeatingSensor rdf:type owl:Class ;
+               rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#HumidityAmbientProperty
@@ -340,10 +393,29 @@
     rdfs:label "PV" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#Percipitation
-:Percipitation rdf:type owl:Class ;
-               rdfs:subClassOf :AmbientProperty ;
-               rdfs:label "Percipitation" .
+###  https://auroral.iot.linkeddata.es/def/adapters#PVBIntegrated
+:PVBIntegrated rdf:type owl:Class ;
+               rdfs:subClassOf :PV .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#PVFaçade
+:PVFaçade rdf:type owl:Class ;
+          rdfs:subClassOf :PV .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#PVGround
+:PVGround rdf:type owl:Class ;
+          rdfs:subClassOf :PV .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#PVRoofFlat
+:PVRoofFlat rdf:type owl:Class ;
+            rdfs:subClassOf :PV .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#PVRoofStanled
+:PVRoofStanled rdf:type owl:Class ;
+               rdfs:subClassOf :PV .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PersonCounter
@@ -357,6 +429,12 @@
                      rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
                      rdfs:comment "The person sounter sensor is designed to count the number of person that visit a specific city" ;
                      rdfs:label "Peron Counter Sensor" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Precipitation
+:Precipitation rdf:type owl:Class ;
+               rdfs:subClassOf :AmbientProperty ;
+               rdfs:label "Precipitation" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Presence_Sensor
@@ -529,6 +607,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
 <https://auroral.iot.linkeddata.es/def/core#Device> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://saref.etsi.org/core#Device> ;
                                                     rdfs:comment "It is designed to realize a specific task. This task can be a detection of an occurred event or the initiation of an action. It has two sub-classes (sensor and actuator)." ;
                                                     rdfs:label "Device" .
 
@@ -560,6 +639,11 @@
 <https://auroral.iot.linkeddata.es/def/core#SwitchStatus> rdf:type owl:Class ;
                                                           rdfs:subClassOf :StatusProperty ;
                                                           rdfs:label "Switch Status" .
+
+
+###  https://saref.etsi.org/core#Device
+<https://saref.etsi.org/core#Device> rdf:type owl:Class ;
+                                     rdfs:label "Device" .
 
 
 ###  https://saref.etsi.org/core#Property
@@ -644,7 +728,8 @@
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel> rdf:type owl:NamedIndividual ,
-                                                                                   :EnergyProperty .
+                                                                                   :EnergyProperty ;
+                                                                          rdfs:label "Battery level" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac
@@ -921,7 +1006,7 @@ PM10 particles are a common air pollutant.""" ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rainfall
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rainfall> rdf:type owl:NamedIndividual ,
-                                                                               :Percipitation ;
+                                                                               :Precipitation ;
                                                                       rdfs:label "Rainfall" .
 
 
@@ -946,7 +1031,7 @@ PM10 particles are a common air pollutant.""" ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#Snowfall
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Snowfall> rdf:type owl:NamedIndividual ,
-                                                                               :Percipitation ;
+                                                                               :Precipitation ;
                                                                       rdfs:label "Snowfall" .
 
 
@@ -983,8 +1068,7 @@ PM10 particles are a common air pollutant.""" ;
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy
-<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy> rdf:type owl:NamedIndividual ,
-                                                                                          :EnergyProperty ;
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy> rdf:type owl:NamedIndividual ;
                                                                                  rdfs:label "Accumulated Percipitation" .
 
 
@@ -1051,6 +1135,77 @@ PM10 particles are a common air pollutant.""" ;
 ###  http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed
 <http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed> rdf:type owl:NamedIndividual ,
                                                                                 :WindAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DiffuseRadiation
+:DiffuseRadiation rdf:type owl:NamedIndividual ,
+                           :AmbientSolarRadiation ;
+                  rdfs:label "Diffuse Radiation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DiffuseRadiationInstant
+:DiffuseRadiationInstant rdf:type owl:NamedIndividual ,
+                                  :AmbientSolarRadiation ;
+                         rdfs:label "Diffuse Radiation Instant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectNormalIrradiance
+:DirectNormalIrradiance rdf:type owl:NamedIndividual ,
+                                 :AmbientSolarRadiation ;
+                        rdfs:label "Direct Normal Irradiance" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectNormalIrradianceInstant
+:DirectNormalIrradianceInstant rdf:type owl:NamedIndividual ,
+                                        :AmbientSolarRadiation ;
+                               rdfs:label "Direct Normal Irradiance Instant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectRadiation
+:DirectRadiation rdf:type owl:NamedIndividual ,
+                          :AmbientSolarRadiation ;
+                 rdfs:label "Direct Radiation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DirectRadiationInstant
+:DirectRadiationInstant rdf:type owl:NamedIndividual ,
+                                 :AmbientSolarRadiation ;
+                        rdfs:label "Direct Radiation Instant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity
+:EnergyUseIntensity rdf:type owl:NamedIndividual ,
+                             :EnergyProperty ;
+                    rdfs:label "Energy use intensity" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientTemperature
+:IndoorAmbientTemperature rdf:type owl:NamedIndividual ,
+                                   :TemperatureAmbientProperty ;
+                          rdfs:label "Indoor Ambient Temperature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature
+:OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
+                                    :TemperatureAmbientProperty ;
+                           rdfs:label "Outdoor Ambient Temperature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#ShortwaveRadiationInstant
+:ShortwaveRadiationInstant rdf:type owl:NamedIndividual ,
+                                    :AmbientSolarRadiation ;
+                           rdfs:label "Shortwave Radiation Instant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#TerrestrialRadiation
+:TerrestrialRadiation rdf:type owl:NamedIndividual ,
+                               :AmbientSolarRadiation ;
+                      rdfs:label "Terrestrial Radiation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#TerrestrialRadiationInstant
+:TerrestrialRadiationInstant rdf:type owl:NamedIndividual ,
+                                      :AmbientSolarRadiation .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Alarm
