@@ -16,14 +16,23 @@
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasVolume",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
+    "AirConditionningBasic" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AirConditionningBasic"
+    },
     "BatterySensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#BatterySensor"
+    },
+    "BoilerNgas" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BoilerNgas"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "MonitoringSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor"
+    },
+    "PVRoofFlat" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVRoofFlat"
     },
     "EnergyProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty"
@@ -58,6 +67,9 @@
     "WindAmbientProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty"
     },
+    "BoilerOil" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BoilerOil"
+    },
     "CoarseParticulateMatter" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#CoarseParticulateMatter"
     },
@@ -69,6 +81,9 @@
     },
     "to-timestamp" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp"
+    },
+    "CoolingSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#CoolingSensor"
     },
     "Thermometer" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Thermometer"
@@ -85,11 +100,20 @@
     "CarbonMonoxide" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#CarbonMonoxide"
     },
+    "PVFaçade" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVFaçade"
+    },
+    "BoilerSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BoilerSensor"
+    },
     "AmbientProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty"
     },
     "has-timestamp" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp"
+    },
+    "Precipitation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Precipitation"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
@@ -108,6 +132,9 @@
     },
     "HumidityAmbientProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HumidityAmbientProperty"
+    },
+    "PVGround" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVGround"
     },
     "StorageCapacity" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#StorageCapacity"
@@ -133,6 +160,9 @@
     "AirQuality" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AirQuality"
     },
+    "CloudCover" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#CloudCover"
+    },
     "hasHeight" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasHeight",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
@@ -157,6 +187,9 @@
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
+    "PVRoofStanled" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVRoofStanled"
+    },
     "EnergyMonitor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyMonitor"
     },
@@ -172,6 +205,9 @@
     "Weather" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Weather"
     },
+    "PVBIntegrated" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVBIntegrated"
+    },
     "Ozone" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Ozone"
     },
@@ -183,9 +219,6 @@
     },
     "Actuator" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
-    },
-    "Percipitation" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Percipitation"
     },
     "WeatherSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor"
@@ -202,6 +235,9 @@
     "HumiditySensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HumiditySensor"
     },
+    "BoilerBiomass" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BoilerBiomass"
+    },
     "AirQualitySensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AirQualitySensor"
     },
@@ -217,11 +253,17 @@
     "SpaceProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty"
     },
+    "HeatPumpAirtoAir" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HeatPumpAirtoAir"
+    },
     "has-location" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location"
     },
     "from-timestamp" : {
       "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp"
+    },
+    "HeatPumpAirtoWater" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HeatPumpAirtoWater"
     },
     "SwitchStatus" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#SwitchStatus"
@@ -240,6 +282,9 @@
     },
     "Presence" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Presence"
+    },
+    "HeatingSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HeatingSensor"
     },
     "Sensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
