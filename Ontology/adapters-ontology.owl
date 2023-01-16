@@ -70,62 +70,11 @@ sosa:observes rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/adapters#ID-Device
-adapters:ID-Device rdf:type owl:DatatypeProperty ;
-                   rdfs:domain adapters:EnergyMonitor ,
-                               adapters:FloodSensor ,
-                               adapters:GPSEmergencyButton ,
-                               adapters:HumiditySensor ,
-                               adapters:MonitoringSensor ,
-                               adapters:MotionSensor ,
-                               adapters:SoilMoistureSEnsor ,
-                               adapters:Thermometer ,
-                               adapters:WasteBinSensor ,
-                               adapters:WaterAMRSensor ,
-                               adapters:WaterValveActuator ,
-                               adapters:WeatherSensor ,
-                               core:Actuator ,
-                               core:Device ,
-                               core:Sensor ;
-                   rdfs:comment "Device Identifier" ;
-                   rdfs:label "ID Device" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/adapters#from-timestamp
 adapters:from-timestamp rdf:type owl:DatatypeProperty ;
                         rdfs:domain adapters:MonitoringSensor ,
                                     adapters:WeatherSensor ;
                         rdfs:comment "UTC time in ISO 8601 formatted timestamp for when to get data From" .
-
-
-###  https://auroral.iot.linkeddata.es/def/adapters#has-location
-adapters:has-location rdf:type owl:DatatypeProperty ;
-                      rdfs:domain adapters:EnergyMonitor ,
-                                  adapters:FloodSensor ,
-                                  adapters:GPSEmergencyButton ,
-                                  adapters:HumiditySensor ,
-                                  adapters:MonitoringSensor ,
-                                  adapters:MotionSensor ,
-                                  adapters:SoilMoistureSEnsor ,
-                                  adapters:Thermometer ,
-                                  adapters:WasteBinSensor ,
-                                  adapters:WaterAMRSensor ,
-                                  adapters:WaterValveActuator ,
-                                  adapters:WeatherSensor ,
-                                  core:Actuator ,
-                                  core:Device ,
-                                  core:Sensor ;
-                      rdfs:comment "location of the device" .
-
-
-###  https://auroral.iot.linkeddata.es/def/adapters#has-timestamp
-adapters:has-timestamp rdf:type owl:DatatypeProperty ;
-                       rdfs:domain adapters:MotionSensor ,
-                                   adapters:SoilMoistureSEnsor ,
-                                   adapters:WasteBinSensor ,
-                                   adapters:WaterAMRSensor ,
-                                   adapters:WeatherSensor ;
-                       rdfs:comment "Timestamp when the measure was detected" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#hasHeight
@@ -145,6 +94,13 @@ adapters:hasVolume rdf:type owl:DatatypeProperty ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#to-timestamp
 adapters:to-timestamp rdf:type owl:DatatypeProperty ;
                       rdfs:comment "UTC time in ISO 8601 formatted timestamp for when to get data TO" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasId
+core:hasId rdf:type owl:DatatypeProperty ;
+           rdfs:domain saref:Device ;
+           rdfs:range xsd:string ;
+           rdfs:label "has id" .
 
 
 #################################################################
