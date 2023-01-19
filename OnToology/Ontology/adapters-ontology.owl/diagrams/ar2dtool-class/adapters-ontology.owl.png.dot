@@ -1,15 +1,15 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:FloodSensor" "core:Sensor" "core:Actuator" "base:SoilMoisture" "base:WasteBinSensor" "saref:Property" "base:MonitoringSensor" "base:MotionSensor" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "saref:Device" "core:Sensor" "core:Actuator" "adapters:SoilMoisture" "saref:Property" "adapters:MonitoringSensor" ; /*classes style*/
 	"https://auroral.iot.linkeddata.es/def/adapters" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
-	"base:SoilMoisture" -> "xsd:float" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasHeight" ];
+	"saref:Device" -> "xsd:string" [ label = "core:hasId" ];
 	"core:Actuator" -> "saref:Property" [ label = "sosa:forProperty" ];
-	"base:SoilMoisture" -> "xsd:float" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#hasVolume" ];
-	"base:FloodSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location" ];
+	"adapters:SoilMoisture" -> "xsd:float" [ label = "adapters:hasVolume" ];
 	"core:Sensor" -> "saref:Property" [ label = "sosa:observes" ];
-	"base:MonitoringSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp" ];
-	"base:MotionSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp" ];
-	"base:WasteBinSensor" -> "owl:Thing" [ label = "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device" ];
+	"saref:Device" -> "xsd:string" [ label = "core:versionNumber" ];
+	"adapters:MonitoringSensor" -> "owl:Thing" [ label = "adapters:from-timestamp" ];
+	"adapters:SoilMoisture" -> "xsd:float" [ label = "adapters:hasHeight" ];
+	"saref:Device" -> "xsd:string" [ label = "core:serialNumber" ];
 
 }
