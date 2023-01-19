@@ -103,6 +103,18 @@ core:hasId rdf:type owl:DatatypeProperty ;
            rdfs:label "has id" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#serialNumber
+core:serialNumber rdf:type owl:DatatypeProperty ;
+                  rdfs:domain saref:Device ;
+                  rdfs:range xsd:string .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#versionNumber
+core:versionNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:domain saref:Device ;
+                   rdfs:range xsd:string .
+
+
 #################################################################
 #    Classes
 #################################################################
