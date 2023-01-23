@@ -677,6 +677,11 @@ adapters:AtmosphoricPressure rdf:type owl:NamedIndividual ,
                              rdfs:label "Atmospheric Pressure" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Available
+adapters:Available rdf:type owl:NamedIndividual ,
+                            adapters:StatusProperty .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#AverageMovementShare
 adapters:AverageMovementShare rdf:type owl:NamedIndividual ,
                                        adapters:MotionProperty ;
@@ -1003,6 +1008,16 @@ adapters:O3Concentration rdf:type owl:NamedIndividual ,
                          rdfs:comment "O3 Concentration" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Off
+adapters:Off rdf:type owl:NamedIndividual ,
+                      adapters:StatusProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#On
+adapters:On rdf:type owl:NamedIndividual ,
+                     adapters:StatusProperty .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature
 adapters:OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                             adapters:TemperatureAmbientProperty ;
@@ -1161,6 +1176,11 @@ adapters:TotalEnergy rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/adapters#UVIndex
 adapters:UVIndex rdf:type owl:NamedIndividual ,
                           adapters:AmbientSolarRadiation .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Unavailable
+adapters:Unavailable rdf:type owl:NamedIndividual ,
+                              adapters:StatusProperty .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Vibration
