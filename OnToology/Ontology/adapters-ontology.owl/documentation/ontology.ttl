@@ -672,6 +672,11 @@
                      rdfs:label "Atmospheric Pressure" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Available
+:Available rdf:type owl:NamedIndividual ,
+                    :StatusProperty .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#AverageMovementShare
 :AverageMovementShare rdf:type owl:NamedIndividual ,
                                :MotionProperty ;
@@ -998,6 +1003,16 @@
                  rdfs:comment "O3 Concentration" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Off
+:Off rdf:type owl:NamedIndividual ,
+              :StatusProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#On
+:On rdf:type owl:NamedIndividual ,
+             :StatusProperty .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature
 :OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                     :TemperatureAmbientProperty ;
@@ -1156,6 +1171,11 @@ PM10 particles are a common air pollutant.""" ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#UVIndex
 :UVIndex rdf:type owl:NamedIndividual ,
                   :AmbientSolarRadiation .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Unavailable
+:Unavailable rdf:type owl:NamedIndividual ,
+                      :StatusProperty .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Vibration

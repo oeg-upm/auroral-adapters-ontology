@@ -1128,6 +1128,15 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#Available -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Available">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#AverageMovementShare -->
 
 
@@ -1666,6 +1675,24 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#Off -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Off">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#On -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#On">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature -->
 
 
@@ -1926,6 +1953,15 @@ PM10 particles are a common air pollutant.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#UVIndex">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#AmbientSolarRadiation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#Unavailable -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Unavailable">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"/>
     </owl:NamedIndividual>
     
 
