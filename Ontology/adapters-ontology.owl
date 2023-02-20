@@ -6,7 +6,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix saref: <https://saref.etsi.org/core#> .
 @prefix adapters: <https://auroral.iot.linkeddata.es/def/adapters#> .
 @base <https://auroral.iot.linkeddata.es/def/adapters> .
@@ -43,27 +42,25 @@
 
 
 ###  http://www.w3.org/ns/sosa/description
-sosa:description rdf:type owl:AnnotationProperty .
+<http://www.w3.org/ns/sosa/description> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.w3.org/ns/sosa/forProperty
-sosa:forProperty rdf:type owl:ObjectProperty ;
-                 rdfs:domain core:Actuator ;
-                 rdfs:range saref:Property ;
-                 rdfs:comment "Presents the relationship between the actuator and the detected properties. It has a domain the Actuator and a range the ssn:Property" ;
-                 rdfs:label "for property" .
+###  https://saref.etsi.org/core#controlsProperty
+saref:controlsProperty rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain saref:Device ;
+                       rdfs:range saref:Property .
 
 
-###  http://www.w3.org/ns/sosa/observes
-sosa:observes rdf:type owl:ObjectProperty ;
-              rdfs:domain core:Sensor ;
-              rdfs:range saref:Property ;
-              rdfs:comment "The relation between the Sensor device and the property. It has the Sensor as domain and the ssn:property the range." ;
-              rdfs:label "observes" .
+###  https://saref.etsi.org/core#measuresProperty
+saref:measuresProperty rdf:type owl:ObjectProperty ;
+                       rdfs:domain saref:Device ;
+                       rdfs:range saref:Property ;
+                       rdfs:comment "measures property" .
 
 
 #################################################################
@@ -591,7 +588,8 @@ adapters:WindAmbientProperty rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Actuator
 core:Actuator rdf:type owl:Class ;
-              rdfs:subClassOf core:Device ;
+              rdfs:subClassOf core:Device ,
+                              saref:Actuator ;
               rdfs:comment "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world" ;
               rdfs:label "Actuator" .
 
@@ -611,7 +609,13 @@ core:Device rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Sensor
 core:Sensor rdf:type owl:Class ;
-            rdfs:subClassOf core:Device .
+            rdfs:subClassOf core:Device ,
+                            saref:Sensor .
+
+
+###  https://saref.etsi.org/core#Actuator
+saref:Actuator rdf:type owl:Class ;
+               rdfs:label "Actuator" .
 
 
 ###  https://saref.etsi.org/core#Device
@@ -623,6 +627,11 @@ saref:Device rdf:type owl:Class ;
 saref:Property rdf:type owl:Class ;
                rdfs:comment "It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below." ;
                rdfs:label "Property" .
+
+
+###  https://saref.etsi.org/core#Sensor
+saref:Sensor rdf:type owl:Class ;
+             rdfs:label "Sensor" .
 
 
 #################################################################
