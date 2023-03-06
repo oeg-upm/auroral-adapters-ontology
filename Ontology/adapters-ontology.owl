@@ -116,6 +116,11 @@ core:versionNumber rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Accelerometer
+adapters:Accelerometer rdf:type owl:Class ;
+                       rdfs:subClassOf core:Sensor .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation
 adapters:AccumulatedPercipitation rdf:type owl:Class ;
                                   rdfs:subClassOf saref:Property .
