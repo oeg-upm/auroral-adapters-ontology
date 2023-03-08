@@ -64,6 +64,10 @@
     "SmartValve" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SmartValve"
     },
+    "measuresProperty" : {
+      "@id" : "https://saref.etsi.org/core#measuresProperty",
+      "@type" : "@id"
+    },
     "WindAmbientProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty"
     },
@@ -114,6 +118,10 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
     },
     "NitrogenDioxide" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#NitrogenDioxide"
@@ -168,14 +176,6 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#hasHeight",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
-    "observes" : {
-      "@id" : "http://www.w3.org/ns/sosa/observes",
-      "@type" : "@id"
-    },
-    "forProperty" : {
-      "@id" : "http://www.w3.org/ns/sosa/forProperty",
-      "@type" : "@id"
-    },
     "WasteBinSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor"
     },
@@ -228,6 +228,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#versionNumber",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "controlsProperty" : {
+      "@id" : "https://saref.etsi.org/core#controlsProperty",
+      "@type" : "@id"
+    },
     "SoilMoisture" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SoilMoisture"
     },
@@ -242,6 +246,9 @@
     },
     "AirQualitySensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AirQualitySensor"
+    },
+    "Accelerometer" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Accelerometer"
     },
     "StatusProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
@@ -290,7 +297,7 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HeatingSensor"
     },
     "Sensor" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+      "@id" : "https://saref.etsi.org/core#Sensor"
     },
     "Noise" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Noise"

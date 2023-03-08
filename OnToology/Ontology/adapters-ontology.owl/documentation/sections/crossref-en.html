@@ -4,6 +4,12 @@ This section provides details for each class and property defined by The AURORAL
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#Accelerometer"
+            title="https://auroral.iot.linkeddata.es/def/adapters#Accelerometer">
+            <span>accelerometer</span>
+         </a>
+      </li>
+      <li>
          <a href="#AccumulatedPercipitation"
             title="https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation">
             <span>Accumulated Percipitation</span>
@@ -16,6 +22,9 @@ This section provides details for each class and property defined by The AURORAL
       <li>
          <a href="#https://auroral.iot.linkeddata.es/def/core#Actuator"
             title="https://auroral.iot.linkeddata.es/def/core#Actuator">Actuator</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core#Actuator" title="https://saref.etsi.org/core#Actuator">Actuator</a>
       </li>
       <li>
          <a href="#AirConditionningBasic"
@@ -288,6 +297,9 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
+         <a href="#https://saref.etsi.org/core#Sensor" title="https://saref.etsi.org/core#Sensor">Sensor</a>
+      </li>
+      <li>
          <a href="#SmartPlug"
             title="https://auroral.iot.linkeddata.es/def/adapters#SmartPlug">Smart Plug</a>
       </li>
@@ -368,6 +380,22 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty">Wind Ambient Property</a>
       </li>
    </ul>
+   <div class="entity" id="Accelerometer">
+      <h3>accelerometer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#Accelerometer</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://auroral.iot.linkeddata.es/def/core#Sensor"
+               title="https://auroral.iot.linkeddata.es/def/core#Sensor">sensor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AccumulatedPercipitation">
       <h3>Accumulated Percipitation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -430,7 +458,8 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://auroral.iot.linkeddata.es/def/core#Device"
+            <a href="#https://saref.etsi.org/core#Actuator" title="https://saref.etsi.org/core#Actuator">Actuator</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#Device"
                title="https://auroral.iot.linkeddata.es/def/core#Device">Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -446,10 +475,21 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/adapters#WaterValveActuator">Water Valve Actuator</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
+      </dl>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#Actuator">
+      <h3>Actuator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#Actuator</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/sosa/forProperty" title="http://www.w3.org/ns/sosa/forProperty">for property</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#https://auroral.iot.linkeddata.es/def/core#Actuator"
+               title="https://auroral.iot.linkeddata.es/def/core#Actuator">Actuator</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -944,8 +984,10 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://auroral.iot.linkeddata.es/def/core#hasId" title="https://auroral.iot.linkeddata.es/def/core#hasId">has id</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#serialNumber"
+            <a href="#https://saref.etsi.org/core#controlsProperty" title="https://saref.etsi.org/core#controlsProperty">controls property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#hasId" title="https://auroral.iot.linkeddata.es/def/core#hasId">has id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">measures property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#serialNumber"
                title="https://auroral.iot.linkeddata.es/def/core#serialNumber">serial number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#versionNumber"
                title="https://auroral.iot.linkeddata.es/def/core#versionNumber">version number</a>
@@ -1732,8 +1774,8 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/sosa/forProperty" title="http://www.w3.org/ns/sosa/forProperty">for property</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a>
+            <a href="#https://saref.etsi.org/core#controlsProperty" title="https://saref.etsi.org/core#controlsProperty">controls property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">measures property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1847,6 +1889,7 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#https://auroral.iot.linkeddata.es/def/core#Device"
                title="https://auroral.iot.linkeddata.es/def/core#Device">Device</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://saref.etsi.org/core#Sensor" title="https://saref.etsi.org/core#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1889,16 +1932,29 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/adapters#WaterAMRSensor">Water AMR Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#WeatherSensor"
                title="https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor">Weather Sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Accelerometer"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Accelerometer">accelerometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#CoolingSensor"
                title="https://auroral.iot.linkeddata.es/def/adapters#CoolingSensor">cooling sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HeatingSensor"
                title="https://auroral.iot.linkeddata.es/def/adapters#HeatingSensor">heating sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
+      </dl>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#Sensor">
+      <h3>Sensor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#Sensor</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#https://auroral.iot.linkeddata.es/def/core#Sensor"
+               title="https://auroral.iot.linkeddata.es/def/core#Sensor">sensor</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2332,28 +2388,34 @@ This section provides details for each class and property defined by The AURORAL
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://www.w3.org/ns/sosa/forProperty" title="http://www.w3.org/ns/sosa/forProperty">for property</a>
+         <a href="#https://saref.etsi.org/core#controlsProperty" title="https://saref.etsi.org/core#controlsProperty">
+            <span>controls property</span>
+         </a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a>
+         <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">
+            <span>measures property</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="http://www.w3.org/ns/sosa/forProperty">
-      <h3>for property<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://saref.etsi.org/core#controlsProperty">
+      <h3>controls property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/sosa/forProperty</p>
-      <div class="comment">
-         <span class="markdown">Presents the relationship between the actuator and the detected properties. It has a domain the Actuator and a range the ssn:Property</span>
-      </div>
+         <strong>IRI:</strong> https://saref.etsi.org/core#controlsProperty</p>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Actuator"
-                  title="https://auroral.iot.linkeddata.es/def/core#Actuator">Actuator</a>
+               <a href="#https://saref.etsi.org/core#Device" title="https://saref.etsi.org/core#Device">Device</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2364,22 +2426,21 @@ This section provides details for each class and property defined by The AURORAL
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.w3.org/ns/sosa/observes">
-      <h3>observes<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://saref.etsi.org/core#measuresProperty">
+      <h3>measures property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/sosa/observes</p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#measuresProperty</p>
       <div class="comment">
-         <span class="markdown">The relation between the Sensor device and the property. It has the Sensor as domain and the ssn:property the range.</span>
+         <span class="markdown">measures property</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Sensor"
-                  title="https://auroral.iot.linkeddata.es/def/core#Sensor">sensor</a>
+               <a href="#https://saref.etsi.org/core#Device" title="https://saref.etsi.org/core#Device">Device</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
