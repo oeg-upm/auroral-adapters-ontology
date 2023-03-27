@@ -444,6 +444,12 @@ adapters:Pressure rdf:type owl:Class ;
                   rdfs:label "Pressure" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#PressureSensor
+adapters:PressureSensor rdf:type owl:Class ;
+                        rdfs:subClassOf core:Sensor ;
+                        rdfs:label "Pressure Sensor" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#QRCounter
 adapters:QRCounter rdf:type owl:Class ;
                    rdfs:subClassOf adapters:TRAFXProperty ;
@@ -494,6 +500,12 @@ adapters:Sound rdf:type owl:Class ;
                rdfs:subClassOf saref:Property ;
                rdfs:comment "This concept defines the Noise Level properties." ;
                rdfs:label "Sound Property" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SoundSensor
+adapters:SoundSensor rdf:type owl:Class ;
+                     rdfs:subClassOf core:Sensor ;
+                     rdfs:label "Sound Sensor" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty
@@ -684,8 +696,8 @@ adapters:AngularUnit rdf:type owl:NamedIndividual ,
                      rdfs:label "Angular Unit" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#AtmosphoricPressure
-adapters:AtmosphoricPressure rdf:type owl:NamedIndividual ,
+###  https://auroral.iot.linkeddata.es/def/adapters#AtmosphericPressure
+adapters:AtmosphericPressure rdf:type owl:NamedIndividual ,
                                       adapters:Pressure ;
                              rdfs:comment "Atmosphoric Pressure" ;
                              rdfs:label "Atmospheric Pressure" .
