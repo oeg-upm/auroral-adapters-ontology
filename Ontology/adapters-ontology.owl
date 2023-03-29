@@ -564,6 +564,12 @@ adapters:Thermometer rdf:type owl:Class ;
                      rdfs:label "Thermometer Sensor" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter
+adapters:UltraFineParticlesMatter rdf:type owl:Class ;
+                                  rdfs:subClassOf adapters:AirQuality ;
+                                  rdfs:label "Ultra Fine Particles Matter" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor
 adapters:WasteBinSensor rdf:type owl:Class ;
                         rdfs:subClassOf core:Sensor ;
@@ -1048,6 +1054,11 @@ adapters:On rdf:type owl:NamedIndividual ,
 adapters:OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                             adapters:TemperatureAmbientProperty ;
                                    rdfs:label "Outdoor Ambient Temperature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration
+adapters:PM1.0Concentration rdf:type owl:NamedIndividual ,
+                                     adapters:UltraFineParticlesMatter .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration
