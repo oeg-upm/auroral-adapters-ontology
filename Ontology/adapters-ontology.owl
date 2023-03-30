@@ -52,14 +52,12 @@
 ###  https://saref.etsi.org/core#controlsProperty
 saref:controlsProperty rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty ;
-                       rdfs:domain saref:Device ;
-                       rdfs:range saref:Property .
+                       rdfs:domain saref:Device .
 
 
 ###  https://saref.etsi.org/core#measuresProperty
 saref:measuresProperty rdf:type owl:ObjectProperty ;
                        rdfs:domain saref:Device ;
-                       rdfs:range saref:Property ;
                        rdfs:comment "measures property" .
 
 
@@ -122,8 +120,7 @@ adapters:Accelerometer rdf:type owl:Class ;
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation
-adapters:AccumulatedPercipitation rdf:type owl:Class ;
-                                  rdfs:subClassOf saref:Property .
+adapters:AccumulatedPercipitation rdf:type owl:Class .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#ActReason
@@ -157,7 +154,6 @@ adapters:Alert rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty
 adapters:AmbientProperty rdf:type owl:Class ;
-                         rdfs:subClassOf saref:Property ;
                          rdfs:comment "Ambient Property" ,
                                       "This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties." ;
                          rdfs:label "Ambient Property" .
@@ -233,7 +229,6 @@ adapters:EnergyMonitor rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty
 adapters:EnergyProperty rdf:type owl:Class ;
-                        rdfs:subClassOf saref:Property ;
                         rdfs:comment "It regroups the properties related to the energy such as: the battery level, the totalreturnedEnergy, the TotalEnergy, the PowerFactor, the Gridvoltage, and so one." ;
                         rdfs:label "Energy Property" .
 
@@ -273,7 +268,6 @@ adapters:GPSEmergencyButton rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#HealthProperty
 adapters:HealthProperty rdf:type owl:Class ;
-                        rdfs:subClassOf saref:Property ;
                         rdfs:label "Health Property" .
 
 
@@ -316,7 +310,6 @@ adapters:LightBulb rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#LightProperty
 adapters:LightProperty rdf:type owl:Class ;
-                       rdfs:subClassOf saref:Property ;
                        rdfs:comment "it describes properties about illuminance." ;
                        rdfs:label "Light Property" .
 
@@ -336,7 +329,6 @@ adapters:MonitoringSensor rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#MotionProperty
 adapters:MotionProperty rdf:type owl:Class ;
-                        rdfs:subClassOf saref:Property ;
                         rdfs:comment "it is  about the motion and the vibration properties." ;
                         rdfs:label "Motion Property" .
 
@@ -483,7 +475,6 @@ adapters:SmartValve rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoisture
 adapters:SoilMoisture rdf:type owl:Class ;
-                      rdfs:subClassOf saref:Property ;
                       rdfs:comment "presents the soil moisture height and volume" ;
                       rdfs:label "Soil Moisture" .
 
@@ -497,7 +488,6 @@ adapters:SoilMoistureSEnsor rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Sound
 adapters:Sound rdf:type owl:Class ;
-               rdfs:subClassOf saref:Property ;
                rdfs:comment "This concept defines the Noise Level properties." ;
                rdfs:label "Sound Property" .
 
@@ -510,14 +500,12 @@ adapters:SoundSensor rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty
 adapters:SpaceProperty rdf:type owl:Class ;
-                       rdfs:subClassOf saref:Property ;
                        rdfs:comment "describes properties related to space such as the  GPS latitude, the GPS altitude, the GPS longitude, the XAxis Acceleration, the YAxisAcceleration, the ZAxis acceleration, the distance, etc." ;
                        rdfs:label "Space Property" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#StatusProperty
 adapters:StatusProperty rdf:type owl:Class ;
-                        rdfs:subClassOf saref:Property ;
                         rdfs:label "Status Property" .
 
 
@@ -546,8 +534,7 @@ adapters:SwitchStatus rdf:type owl:Class ;
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#TRAFXProperty
-adapters:TRAFXProperty rdf:type owl:Class ;
-                       rdfs:subClassOf saref:Property .
+adapters:TRAFXProperty rdf:type owl:Class .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty
@@ -644,12 +631,6 @@ saref:Actuator rdf:type owl:Class ;
 ###  https://saref.etsi.org/core#Device
 saref:Device rdf:type owl:Class ;
              rdfs:label "Device" .
-
-
-###  https://saref.etsi.org/core#Property
-saref:Property rdf:type owl:Class ;
-               rdfs:comment "It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below." ;
-               rdfs:label "Property" .
 
 
 ###  https://saref.etsi.org/core#Sensor
