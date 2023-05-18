@@ -12,7 +12,7 @@ This section provides details for each class and property defined by The AURORAL
       <li>
          <a href="#AccumulatedPercipitation"
             title="https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation">
-            <span>Accumulated Percipitation</span>
+            <span>accumulated percipitation</span>
          </a>
       </li>
       <li>
@@ -268,6 +268,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#Pressure">Pressure</a>
       </li>
       <li>
+         <a href="#PressureSensor"
+            title="https://auroral.iot.linkeddata.es/def/adapters#PressureSensor">Pressure Sensor</a>
+      </li>
+      <li>
          <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
       </li>
       <li>
@@ -320,6 +324,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#Sound">Sound Property</a>
       </li>
       <li>
+         <a href="#SoundSensor"
+            title="https://auroral.iot.linkeddata.es/def/adapters#SoundSensor">Sound Sensor</a>
+      </li>
+      <li>
          <a href="#SpaceProperty"
             title="https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty">Space Property</a>
       </li>
@@ -352,6 +360,10 @@ This section provides details for each class and property defined by The AURORAL
       <li>
          <a href="#Thermometer"
             title="https://auroral.iot.linkeddata.es/def/adapters#Thermometer">Thermometer Sensor</a>
+      </li>
+      <li>
+         <a href="#UltraFineParticlesMatter"
+            title="https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter">Ultra Fine Particles Matter</a>
       </li>
       <li>
          <a href="#WasteBinSensor"
@@ -397,7 +409,7 @@ This section provides details for each class and property defined by The AURORAL
       </dl>
    </div>
    <div class="entity" id="AccumulatedPercipitation">
-      <h3>Accumulated Percipitation<sup class="type-c" title="class">c</sup>
+      <h3>accumulated percipitation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -409,8 +421,6 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is also defined as</dt>
-         <dd>named individual</dd>
       </dl>
    </div>
    <div class="entity" id="ActReason">
@@ -545,6 +555,8 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/adapters#Ozone">Ozone</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SulphurDioxide"
                title="https://auroral.iot.linkeddata.es/def/adapters#SulphurDioxide">Sulphur Dioxide</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UltraFineParticlesMatter"
+               title="https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter">Ultra Fine Particles Matter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -714,8 +726,14 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#AmbientTemperature"
                title="https://auroral.iot.linkeddata.es/def/adapters#AmbientTemperature">Ambient Temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#DewpointTemperature"
+               title="https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature">Dewpoint Temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndoorAmbientTemperature"
                title="https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientTemperature">Indoor Ambient Temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaximumTemperature"
+               title="https://auroral.iot.linkeddata.es/def/adapters#MaximumTemperature">Maximum Temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MinimumTemperature"
+               title="https://auroral.iot.linkeddata.es/def/adapters#MinimumTemperature">Minimum Temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#OutdoorAmbientTemperature"
                title="https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature">Outdoor Ambient Temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>
@@ -891,6 +909,20 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#AmbientProperty"
                title="https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty">Ambient Property</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Cloudiness"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Cloudiness">Cloudiness</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#HighClouds"
+               title="https://auroral.iot.linkeddata.es/def/adapters#HighClouds">High Clouds</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#LowClouds"
+               title="https://auroral.iot.linkeddata.es/def/adapters#LowClouds">Low Clouds</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Medium_Clouds"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Medium_Clouds">Medium Clouds</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Fog"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Fog">fog</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -1671,6 +1703,14 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/adapters#Rainfall">Rainfall</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Snowfall"
                title="https://auroral.iot.linkeddata.es/def/adapters#Snowfall">Snowfall</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AmountPrecipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#AmountPrecipitation">amount precipitation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaximumPrecipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#MaximumPrecipitation">maximum precipitation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MinimumPrecipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation">minimum precipitation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ProbabilityPrecipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#ProbabilityPrecipitation">probability precipitation</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -1729,9 +1769,27 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#AtmosphoricPressure"
-               title="https://auroral.iot.linkeddata.es/def/adapters#AtmosphoricPressure">Atmospheric Pressure</a>
+            <a href="#AirPressureAtSea"
+               title="https://auroral.iot.linkeddata.es/def/adapters#AirPressureAtSea">Air Pressure at Sea Level</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AtmosphericPressure"
+               title="https://auroral.iot.linkeddata.es/def/adapters#AtmosphericPressure">Atmospheric Pressure</a>
             <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PressureSensor">
+      <h3>Pressure Sensor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#PressureSensor</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://auroral.iot.linkeddata.es/def/core#Sensor"
+               title="https://auroral.iot.linkeddata.es/def/core#Sensor">sensor</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1748,9 +1806,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#AccumulatedPercipitation"
-               title="https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation">Accumulated Percipitation</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#AmbientProperty"
+            <a href="#AmbientProperty"
                title="https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty">Ambient Property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyProperty"
                title="https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty">Energy Property</a>
@@ -1768,6 +1824,8 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty">Space Property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#StatusProperty"
                title="https://auroral.iot.linkeddata.es/def/adapters#StatusProperty">Status Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#AccumulatedPercipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation">accumulated percipitation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#TRAFXProperty"
                title="https://auroral.iot.linkeddata.es/def/adapters#TRAFXProperty">t r a f x property</a>
             <sup class="type-c" title="class">c</sup>
@@ -1918,12 +1976,16 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/adapters#PersonCounterSensor">Person Counter Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Presence_Sensor"
                title="https://auroral.iot.linkeddata.es/def/adapters#Presence_Sensor">Presence Sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="https://auroral.iot.linkeddata.es/def/adapters#PressureSensor">Pressure Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#QRGeneratorSensor"
                title="https://auroral.iot.linkeddata.es/def/adapters#QRGeneratorSensor">QR Generator Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SmartPlug"
                title="https://auroral.iot.linkeddata.es/def/adapters#SmartPlug">Smart Plug</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SoilMoistureSEnsor"
                title="https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor">Soil Moisture Sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundSensor"
+               title="https://auroral.iot.linkeddata.es/def/adapters#SoundSensor">Sound Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Thermometer"
                title="https://auroral.iot.linkeddata.es/def/adapters#Thermometer">Thermometer Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#WasteBinSensor"
@@ -2056,6 +2118,22 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#NoiseLevel"
                title="https://auroral.iot.linkeddata.es/def/adapters#NoiseLevel">Noise Level</a>
             <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SoundSensor">
+      <h3>Sound Sensor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#SoundSensor</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://auroral.iot.linkeddata.es/def/core#Sensor"
+               title="https://auroral.iot.linkeddata.es/def/core#Sensor">sensor</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2256,6 +2334,28 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
+   <div class="entity" id="UltraFineParticlesMatter">
+      <h3>Ultra Fine Particles Matter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#AirQuality"
+               title="https://auroral.iot.linkeddata.es/def/adapters#AirQuality">air quality</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#PM1.0Concentration"
+               title="https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration">p m1.0 concentration</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="WasteBinSensor">
       <h3>Waste Bin Sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -2378,8 +2478,10 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection"
                title="http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection">Wind Direction</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#WindGust"
+               title="https://auroral.iot.linkeddata.es/def/adapters#WindGust">Wind Gust</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#windSpeed"
-               title="https://auroral.iot.linkeddata.es/def/adapters#windSpeed">wind speed</a>
+               title="https://auroral.iot.linkeddata.es/def/adapters#windSpeed">Wind Speed</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -2656,6 +2758,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#ActiveEnergy">Active Energy</a>
       </li>
       <li>
+         <a href="#AirPressureAtSea"
+            title="https://auroral.iot.linkeddata.es/def/adapters#AirPressureAtSea">Air Pressure at Sea Level</a>
+      </li>
+      <li>
          <a href="#Alarm"
             title="https://auroral.iot.linkeddata.es/def/adapters#Alarm">
             <span>alarm</span>
@@ -2666,12 +2772,18 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#AmbientTemperature">Ambient Temperature</a>
       </li>
       <li>
+         <a href="#AmountPrecipitation"
+            title="https://auroral.iot.linkeddata.es/def/adapters#AmountPrecipitation">
+            <span>amount precipitation</span>
+         </a>
+      </li>
+      <li>
          <a href="#AngularUnit"
             title="https://auroral.iot.linkeddata.es/def/adapters#AngularUnit">Angular Unit</a>
       </li>
       <li>
-         <a href="#AtmosphoricPressure"
-            title="https://auroral.iot.linkeddata.es/def/adapters#AtmosphoricPressure">Atmospheric Pressure</a>
+         <a href="#AtmosphericPressure"
+            title="https://auroral.iot.linkeddata.es/def/adapters#AtmosphericPressure">Atmospheric Pressure</a>
       </li>
       <li>
          <a href="#Available"
@@ -2728,12 +2840,20 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#CaloriesBurned">Calories Burned</a>
       </li>
       <li>
+         <a href="#Cloudiness"
+            title="https://auroral.iot.linkeddata.es/def/adapters#Cloudiness">Cloudiness</a>
+      </li>
+      <li>
          <a href="#COConcentration"
             title="https://auroral.iot.linkeddata.es/def/adapters#COConcentration">CO Concentration</a>
       </li>
       <li>
          <a href="#CO2Concentration"
             title="https://auroral.iot.linkeddata.es/def/adapters#CO2Concentration">CO2 Concentration</a>
+      </li>
+      <li>
+         <a href="#DewpointTemperature"
+            title="https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature">Dewpoint Temperature</a>
       </li>
       <li>
          <a href="#DiastolicBloodPressure"
@@ -2802,6 +2922,12 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
+         <a href="#Fog"
+            title="https://auroral.iot.linkeddata.es/def/adapters#Fog">
+            <span>fog</span>
+         </a>
+      </li>
+      <li>
          <a href="#GPSAltitude"
             title="https://auroral.iot.linkeddata.es/def/adapters#GPSAltitude">GPS Altitude</a>
       </li>
@@ -2832,6 +2958,10 @@ This section provides details for each class and property defined by The AURORAL
       <li>
          <a href="#HeartRate"
             title="https://auroral.iot.linkeddata.es/def/adapters#HeartRate">Heart Rate</a>
+      </li>
+      <li>
+         <a href="#HighClouds"
+            title="https://auroral.iot.linkeddata.es/def/adapters#HighClouds">High Clouds</a>
       </li>
       <li>
          <a href="#HourlyPersonCounter"
@@ -2868,6 +2998,34 @@ This section provides details for each class and property defined by The AURORAL
       <li>
          <a href="#LightColor"
             title="https://auroral.iot.linkeddata.es/def/adapters#LightColor">Light Color</a>
+      </li>
+      <li>
+         <a href="#LowClouds"
+            title="https://auroral.iot.linkeddata.es/def/adapters#LowClouds">Low Clouds</a>
+      </li>
+      <li>
+         <a href="#MaximumPrecipitation"
+            title="https://auroral.iot.linkeddata.es/def/adapters#MaximumPrecipitation">
+            <span>maximum precipitation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MaximumTemperature"
+            title="https://auroral.iot.linkeddata.es/def/adapters#MaximumTemperature">Maximum Temperature</a>
+      </li>
+      <li>
+         <a href="#Medium_Clouds"
+            title="https://auroral.iot.linkeddata.es/def/adapters#Medium_Clouds">Medium Clouds</a>
+      </li>
+      <li>
+         <a href="#MinimumPrecipitation"
+            title="https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation">
+            <span>minimum precipitation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MinimumTemperature"
+            title="https://auroral.iot.linkeddata.es/def/adapters#MinimumTemperature">Minimum Temperature</a>
       </li>
       <li>
          <a href="#Motion"
@@ -2916,6 +3074,12 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature">Outdoor Ambient Temperature</a>
       </li>
       <li>
+         <a href="#PM1.0Concentration"
+            title="https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration">
+            <span>p m1.0 concentration</span>
+         </a>
+      </li>
+      <li>
          <a href="#Periodic"
             title="https://auroral.iot.linkeddata.es/def/adapters#Periodic">
             <span>periodic</span>
@@ -2937,6 +3101,12 @@ This section provides details for each class and property defined by The AURORAL
          <a href="#PowerOn"
             title="https://auroral.iot.linkeddata.es/def/adapters#PowerOn">
             <span>power on</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ProbabilityPrecipitation"
+            title="https://auroral.iot.linkeddata.es/def/adapters#ProbabilityPrecipitation">
+            <span>probability precipitation</span>
          </a>
       </li>
       <li>
@@ -3054,10 +3224,12 @@ This section provides details for each class and property defined by The AURORAL
             title="http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection">Wind Direction</a>
       </li>
       <li>
+         <a href="#WindGust"
+            title="https://auroral.iot.linkeddata.es/def/adapters#WindGust">Wind Gust</a>
+      </li>
+      <li>
          <a href="#windSpeed"
-            title="https://auroral.iot.linkeddata.es/def/adapters#windSpeed">
-            <span>wind speed</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/adapters#windSpeed">Wind Speed</a>
       </li>
       <li>
          <a href="#XAxisAcceleration"
@@ -3110,6 +3282,22 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
+   <div class="entity" id="AirPressureAtSea">
+      <h3>Air Pressure at Sea Level<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#AirPressureAtSea</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Pressure"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Pressure">Pressure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Alarm">
       <h3>alarm<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3142,6 +3330,22 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
+   <div class="entity" id="AmountPrecipitation">
+      <h3>amount precipitation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#AmountPrecipitation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Precipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Precipitation">Precipitation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AngularUnit">
       <h3>Angular Unit<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3158,13 +3362,13 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="AtmosphoricPressure">
+   <div class="entity" id="AtmosphericPressure">
       <h3>Atmospheric Pressure<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#AtmosphoricPressure</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#AtmosphericPressure</p>
       <div class="comment">
          <span class="markdown">Atmosphoric Pressure</span>
       </div>
@@ -3384,6 +3588,22 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Cloudiness">
+      <h3>Cloudiness<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#Cloudiness</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#CloudCover"
+               title="https://auroral.iot.linkeddata.es/def/adapters#CloudCover">cloud cover</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="COConcentration">
       <h3>CO Concentration<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3412,6 +3632,22 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#CarbonDioxide"
                title="https://auroral.iot.linkeddata.es/def/adapters#CarbonDioxide">Carbon Dioxide</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DewpointTemperature">
+      <h3>Dewpoint Temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TemperatureAmbientProperty"
+               title="https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty">Ambient Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3678,6 +3914,22 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Fog">
+      <h3>fog<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#Fog</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#CloudCover"
+               title="https://auroral.iot.linkeddata.es/def/adapters#CloudCover">cloud cover</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="GPSAltitude">
       <h3>GPS Altitude<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3805,6 +4057,22 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#HealthProperty"
                title="https://auroral.iot.linkeddata.es/def/adapters#HealthProperty">Health Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HighClouds">
+      <h3>High Clouds<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#HighClouds</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#CloudCover"
+               title="https://auroral.iot.linkeddata.es/def/adapters#CloudCover">cloud cover</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3952,6 +4220,102 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#LightProperty"
                title="https://auroral.iot.linkeddata.es/def/adapters#LightProperty">Light Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LowClouds">
+      <h3>Low Clouds<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#LowClouds</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#CloudCover"
+               title="https://auroral.iot.linkeddata.es/def/adapters#CloudCover">cloud cover</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MaximumPrecipitation">
+      <h3>maximum precipitation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#MaximumPrecipitation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Precipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Precipitation">Precipitation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MaximumTemperature">
+      <h3>Maximum Temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#MaximumTemperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TemperatureAmbientProperty"
+               title="https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty">Ambient Temperature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Medium_Clouds">
+      <h3>Medium Clouds<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#Medium_Clouds</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#CloudCover"
+               title="https://auroral.iot.linkeddata.es/def/adapters#CloudCover">cloud cover</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MinimumPrecipitation">
+      <h3>minimum precipitation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Precipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Precipitation">Precipitation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MinimumTemperature">
+      <h3>Minimum Temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#MinimumTemperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TemperatureAmbientProperty"
+               title="https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty">Ambient Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -4125,6 +4489,22 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PM1.0Concentration">
+      <h3>p m1.0 concentration<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#UltraFineParticlesMatter"
+               title="https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter">Ultra Fine Particles Matter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Periodic">
       <h3>periodic<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -4209,6 +4589,22 @@ PM10 particles are a common air pollutant.</span>
          <dd>
             <a href="#ActReason"
                title="https://auroral.iot.linkeddata.es/def/adapters#ActReason">Act reason</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ProbabilityPrecipitation">
+      <h3>probability precipitation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#ProbabilityPrecipitation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Precipitation"
+               title="https://auroral.iot.linkeddata.es/def/adapters#Precipitation">Precipitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -4653,8 +5049,24 @@ PM10 particles are a common air pollutant.</span>
          </dd>
       </dl>
    </div>
+   <div class="entity" id="WindGust">
+      <h3>Wind Gust<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#WindGust</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#WindAmbientProperty"
+               title="https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty">Wind Ambient Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="windSpeed">
-      <h3>wind speed<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Wind Speed<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>

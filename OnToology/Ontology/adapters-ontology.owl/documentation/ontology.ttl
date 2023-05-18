@@ -440,6 +440,12 @@
           rdfs:label "Pressure" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#PressureSensor
+:PressureSensor rdf:type owl:Class ;
+                rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
+                rdfs:label "Pressure Sensor" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#QRCounter
 :QRCounter rdf:type owl:Class ;
            rdfs:subClassOf :TRAFXProperty ;
@@ -490,6 +496,12 @@
        rdfs:subClassOf <https://saref.etsi.org/core#Property> ;
        rdfs:comment "This concept defines the Noise Level properties." ;
        rdfs:label "Sound Property" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SoundSensor
+:SoundSensor rdf:type owl:Class ;
+             rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
+             rdfs:label "Sound Sensor" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty
@@ -546,6 +558,12 @@
              rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
              rdfs:comment "A thermometer sensor is a device used to measure temperature." ;
              rdfs:label "Thermometer Sensor" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter
+:UltraFineParticlesMatter rdf:type owl:Class ;
+                          rdfs:subClassOf :AirQuality ;
+                          rdfs:label "Ultra Fine Particles Matter" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor
@@ -645,10 +663,6 @@
                                                                            rdfs:label "Wind Direction" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation
-:AccumulatedPercipitation rdf:type owl:NamedIndividual .
-
-
 ###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedWater
 :AccumulatedWater rdf:type owl:NamedIndividual ,
                            :FloodAmbientProperty ;
@@ -663,6 +677,12 @@
               rdfs:label "Active Energy" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#AirPressureAtSea
+:AirPressureAtSea rdf:type owl:NamedIndividual ,
+                           :Pressure ;
+                  rdfs:label "Air Pressure at Sea Level" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#Alarm
 :Alarm rdf:type owl:NamedIndividual ,
                 :ActReason .
@@ -674,14 +694,19 @@
                     rdfs:label "Ambient Temperature" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#AmountPrecipitation
+:AmountPrecipitation rdf:type owl:NamedIndividual ,
+                              :Precipitation .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#AngularUnit
 :AngularUnit rdf:type owl:NamedIndividual ,
                       :SpaceProperty ;
              rdfs:label "Angular Unit" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#AtmosphoricPressure
-:AtmosphoricPressure rdf:type owl:NamedIndividual ,
+###  https://auroral.iot.linkeddata.es/def/adapters#AtmosphericPressure
+:AtmosphericPressure rdf:type owl:NamedIndividual ,
                               :Pressure ;
                      rdfs:comment "Atmosphoric Pressure" ;
                      rdfs:label "Atmospheric Pressure" .
@@ -771,6 +796,18 @@
                          :HealthProperty ;
                 rdfs:comment "indicates how many clories were burned by wlking for example" ;
                 rdfs:label "Calories Burned" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Cloudiness
+:Cloudiness rdf:type owl:NamedIndividual ,
+                     :CloudCover ;
+            rdfs:label "Cloudiness" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature
+:DewpointTemperature rdf:type owl:NamedIndividual ,
+                              :TemperatureAmbientProperty ;
+                     rdfs:label "Dewpoint Temperature" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#DiastolicBloodPressure
@@ -870,6 +907,11 @@
                 :FloodAmbientProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Fog
+:Fog rdf:type owl:NamedIndividual ,
+              :CloudCover .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#GPSAltitude
 :GPSAltitude rdf:type owl:NamedIndividual ,
                       :SpaceProperty ;
@@ -917,6 +959,12 @@
                     :HealthProperty ;
            rdfs:comment "Heart rate level for a patient" ;
            rdfs:label "Heart Rate" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#HighClouds
+:HighClouds rdf:type owl:NamedIndividual ,
+                     :CloudCover ;
+            rdfs:label "High Clouds" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#HourlyPersonCounter
@@ -972,6 +1020,40 @@
 :LightColor rdf:type owl:NamedIndividual ,
                      :LightProperty ;
             rdfs:label "Light Color" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#LowClouds
+:LowClouds rdf:type owl:NamedIndividual ,
+                    :CloudCover ;
+           rdfs:label "Low Clouds" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MaximumPrecipitation
+:MaximumPrecipitation rdf:type owl:NamedIndividual ,
+                               :Precipitation .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MaximumTemperature
+:MaximumTemperature rdf:type owl:NamedIndividual ,
+                             :TemperatureAmbientProperty ;
+                    rdfs:label "Maximum Temperature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Medium_Clouds
+:Medium_Clouds rdf:type owl:NamedIndividual ,
+                        :CloudCover ;
+               rdfs:label "Medium Clouds" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation
+:MinimumPrecipitation rdf:type owl:NamedIndividual ,
+                               :Precipitation .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MinimumTemperature
+:MinimumTemperature rdf:type owl:NamedIndividual ,
+                             :TemperatureAmbientProperty ;
+                    rdfs:label "Minimum Temperature" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Motion
@@ -1034,6 +1116,11 @@
                            rdfs:label "Outdoor Ambient Temperature" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration
+:PM1.0Concentration rdf:type owl:NamedIndividual ,
+                             :UltraFineParticlesMatter .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration
 :PM10Concentration rdf:type owl:NamedIndividual ,
                             :CoarseParticulateMatter ;
@@ -1064,6 +1151,11 @@ PM10 particles are a common air pollutant.""" ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#PowerOn
 :PowerOn rdf:type owl:NamedIndividual ,
                   :ActReason .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#ProbabilityPrecipitation
+:ProbabilityPrecipitation rdf:type owl:NamedIndividual ,
+                                   :Precipitation .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Protein
@@ -1219,6 +1311,12 @@ PM10 particles are a common air pollutant.""" ;
         rdfs:label "Weight" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#WindGust
+:WindGust rdf:type owl:NamedIndividual ,
+                   :WindAmbientProperty ;
+          rdfs:label "Wind Gust" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#XAxisAcceleration
 :XAxisAcceleration rdf:type owl:NamedIndividual ,
                             :SpaceProperty ;
@@ -1239,14 +1337,8 @@ PM10 particles are a common air pollutant.""" ;
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#windSpeed
 :windSpeed rdf:type owl:NamedIndividual ,
-                    :WindAmbientProperty .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:AccumulatedPercipitation rdfs:label "Accumulated Percipitation" .
+                    :WindAmbientProperty ;
+           rdfs:label "Wind Speed" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
