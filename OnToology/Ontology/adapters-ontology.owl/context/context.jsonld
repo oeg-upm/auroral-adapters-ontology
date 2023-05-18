@@ -46,6 +46,9 @@
     "Ammonia" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Ammonia"
     },
+    "UltraFineParticlesMatter" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter"
+    },
     "SoilMoistureSEnsor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor"
     },
@@ -54,6 +57,9 @@
     },
     "MotionSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#MotionSensor"
+    },
+    "PressureSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PressureSensor"
     },
     "GPSEmergencyButton" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#GPSEmergencyButton"
@@ -100,6 +106,9 @@
     },
     "LuminusFlux" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#LuminusFlux"
+    },
+    "SoundSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SoundSensor"
     },
     "CarbonMonoxide" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#CarbonMonoxide"

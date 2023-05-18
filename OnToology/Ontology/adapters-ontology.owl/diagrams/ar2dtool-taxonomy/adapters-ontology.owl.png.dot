@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "adapters:AirConditionningBasic" "adapters:NitrogenDioxide" "adapters:PVBIntegrated" "saref:Actuator" "adapters:QRCounter" "adapters:LightProperty" "adapters:FloodSensor" "saref:Device" "adapters:Switch" "adapters:Sound" "adapters:CoolingSensor" "adapters:HumiditySensor" "adapters:BoilerOil" "adapters:PVGround" "adapters:Alert" "adapters:EnergyProperty" "adapters:WeatherSensor" "adapters:AirQuality" "adapters:HumidityAmbientProperty" "adapters:SulphurDioxide" "adapters:QRGeneratorSensor" "adapters:BoilerSensor" "adapters:Accelerometer" "adapters:FloodAmbientProperty" "core:Device" "core:Sensor" "adapters:HeatPumpAirtoWater" "adapters:CarbonMonoxide" "core:Actuator" "adapters:LuminusFlux" "adapters:TRAFXProperty" "adapters:CoarseParticulateMatter" "adapters:AmbientSolarRadiation" "adapters:SoilMoisture" "adapters:SpaceProperty" "adapters:AmbientProperty" "adapters:WasteBinSensor" "adapters:StorageCapacity" "saref:Property" "adapters:SmartValve" "adapters:TemperatureAmbientProperty" "adapters:ActReason" "adapters:WaterValveActuator" "adapters:Relay" "adapters:Presence_Sensor" "adapters:AccumulatedPercipitation" "adapters:HealthProperty" "adapters:MotionProperty" "adapters:NitrogenMonoxide" "adapters:Precipitation" "adapters:Weather" "adapters:Ozone" "adapters:Ammonia" "adapters:CloudCover" "adapters:HeatPumpAirtoAir" "adapters:PV" "core:BatterySensor" "adapters:PVRoofStanled" "adapters:PVRoofFlat" "adapters:EnergyMonitor" "adapters:WindAmbientProperty" "adapters:BoilerBiomass" "adapters:Thermometer" "adapters:SoilMoistureSEnsor" "adapters:SmartPlug" "adapters:HeatingSensor" "adapters:Noise" "saref:Sensor" "adapters:AirQualitySensor" "adapters:PersonCounterSensor" "adapters:MonitoringSensor" "adapters:BoilerNgas" "adapters:WaterAMRSensor" "adapters:LightBulb" "adapters:Error" "adapters:PVFaçade" "adapters:SwitchStatus" "adapters:FineParticlesMatter" "adapters:GPSEmergencyButton" "adapters:CarbonDioxide" "adapters:Pressure" "adapters:StatusProperty" "adapters:Presence" "adapters:MotionSensor" "adapters:PersonCounter" ; /*classes style*/
+node [shape = rectangle, color="black"]; "adapters:AirConditionningBasic" "adapters:NitrogenDioxide" "adapters:PVBIntegrated" "saref:Actuator" "adapters:QRCounter" "adapters:LightProperty" "adapters:FloodSensor" "saref:Device" "adapters:Switch" "adapters:Sound" "adapters:CoolingSensor" "adapters:HumiditySensor" "adapters:BoilerOil" "adapters:PVGround" "adapters:Alert" "adapters:EnergyProperty" "adapters:WeatherSensor" "adapters:AirQuality" "adapters:HumidityAmbientProperty" "adapters:SulphurDioxide" "adapters:QRGeneratorSensor" "adapters:PressureSensor" "adapters:BoilerSensor" "adapters:Accelerometer" "adapters:FloodAmbientProperty" "core:Device" "core:Sensor" "adapters:HeatPumpAirtoWater" "adapters:CarbonMonoxide" "core:Actuator" "adapters:LuminusFlux" "adapters:TRAFXProperty" "adapters:CoarseParticulateMatter" "adapters:AmbientSolarRadiation" "adapters:SoilMoisture" "adapters:SpaceProperty" "adapters:WasteBinSensor" "adapters:AmbientProperty" "adapters:SoundSensor" "adapters:StorageCapacity" "saref:Property" "adapters:UltraFineParticlesMatter" "adapters:SmartValve" "adapters:TemperatureAmbientProperty" "adapters:ActReason" "adapters:WaterValveActuator" "adapters:Relay" "adapters:Presence_Sensor" "adapters:AccumulatedPercipitation" "adapters:HealthProperty" "adapters:MotionProperty" "adapters:NitrogenMonoxide" "adapters:Precipitation" "adapters:Weather" "adapters:Ozone" "adapters:Ammonia" "adapters:CloudCover" "adapters:HeatPumpAirtoAir" "adapters:PV" "core:BatterySensor" "adapters:PVRoofStanled" "adapters:PVRoofFlat" "adapters:EnergyMonitor" "adapters:WindAmbientProperty" "adapters:BoilerBiomass" "adapters:Thermometer" "adapters:SoilMoistureSEnsor" "adapters:SmartPlug" "adapters:HeatingSensor" "adapters:Noise" "saref:Sensor" "adapters:AirQualitySensor" "adapters:PersonCounterSensor" "adapters:MonitoringSensor" "adapters:BoilerNgas" "adapters:WaterAMRSensor" "adapters:LightBulb" "adapters:Error" "adapters:PVFaçade" "adapters:SwitchStatus" "adapters:FineParticlesMatter" "adapters:GPSEmergencyButton" "adapters:CarbonDioxide" "adapters:Pressure" "adapters:StatusProperty" "adapters:Presence" "adapters:MotionSensor" "adapters:PersonCounter" ; /*classes style*/
 	"adapters:HeatPumpAirtoAir" -> "adapters:HeatingSensor" [ label = "rdfs:subClassOf" ];
 	"adapters:HeatPumpAirtoAir" -> "adapters:CoolingSensor" [ label = "rdfs:subClassOf" ];
 	"adapters:CarbonMonoxide" -> "adapters:AirQuality" [ label = "rdfs:subClassOf" ];
@@ -34,8 +34,9 @@ node [shape = rectangle, color="black"]; "adapters:AirConditionningBasic" "adapt
 	"adapters:TemperatureAmbientProperty" -> "adapters:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"adapters:ActReason" -> "adapters:StatusProperty" [ label = "rdfs:subClassOf" ];
 	"adapters:HumiditySensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
-	"adapters:SoilMoisture" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"adapters:NitrogenDioxide" -> "adapters:AirQuality" [ label = "rdfs:subClassOf" ];
+	"adapters:SoilMoisture" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"adapters:SoundSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"adapters:LightBulb" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"core:Actuator" -> "saref:Actuator" [ label = "rdfs:subClassOf" ];
 	"core:Actuator" -> "core:Device" [ label = "rdfs:subClassOf" ];
@@ -65,6 +66,7 @@ node [shape = rectangle, color="black"]; "adapters:AirConditionningBasic" "adapt
 	"adapters:SulphurDioxide" -> "adapters:AirQuality" [ label = "rdfs:subClassOf" ];
 	"adapters:FineParticlesMatter" -> "adapters:AirQuality" [ label = "rdfs:subClassOf" ];
 	"adapters:PersonCounterSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
+	"adapters:PressureSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"adapters:EnergyMonitor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"adapters:QRGeneratorSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
 	"adapters:FloodSensor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
@@ -77,6 +79,7 @@ node [shape = rectangle, color="black"]; "adapters:AirConditionningBasic" "adapt
 	"adapters:BoilerOil" -> "adapters:BoilerSensor" [ label = "rdfs:subClassOf" ];
 	"adapters:Switch" -> "core:Actuator" [ label = "rdfs:subClassOf" ];
 	"adapters:Pressure" -> "adapters:AmbientProperty" [ label = "rdfs:subClassOf" ];
+	"adapters:UltraFineParticlesMatter" -> "adapters:AirQuality" [ label = "rdfs:subClassOf" ];
 	"adapters:CloudCover" -> "adapters:AmbientProperty" [ label = "rdfs:subClassOf" ];
 	"adapters:PVGround" -> "adapters:PV" [ label = "rdfs:subClassOf" ];
 	"adapters:SoilMoistureSEnsor" -> "core:Sensor" [ label = "rdfs:subClassOf" ];
