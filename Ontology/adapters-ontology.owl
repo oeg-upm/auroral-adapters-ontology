@@ -913,8 +913,7 @@ adapters:Flood rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Fog
 adapters:Fog rdf:type owl:NamedIndividual ,
-                      adapters:CloudCover ;
-             rdfs:label "Fog" .
+                      adapters:CloudCover .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#GPSAltitude
