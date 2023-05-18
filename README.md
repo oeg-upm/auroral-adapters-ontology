@@ -5,11 +5,11 @@ This repository contains the code and related resources for the adapters AURORAL
 
 --------- ----------- The Devices of the adapters ontology ------------
 
-![adapters](https://github.com/oeg-upm/auroral-adapters-ontology/blob/main/Diagrams/Device-adapters.png.png)
+![adapters](https://github.com/oeg-upm/auroral-adapters-ontology/blob/main/Diagrams/Device-adapters.png)
 
 --------- ----------- The properties of the adapters ontology ------------
 
 ![adapters](https://github.com/oeg-upm/auroral-adapters-ontology/blob/main/Diagrams/properties.png)
 
-![adapters](https://github.com/oeg-upm/auroral-adapters-ontology/blob/main/Diagrams/AmbientProperty.png.png)
+![adapters](https://github.com/oeg-upm/auroral-adapters-ontology/blob/main/Diagrams/AmbientProperty.png)
 
