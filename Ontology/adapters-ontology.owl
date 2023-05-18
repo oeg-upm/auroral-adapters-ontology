@@ -667,10 +667,6 @@ saref:Sensor rdf:type owl:Class ;
                                                                            rdfs:label "Wind Direction" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation
-adapters:AccumulatedPercipitation rdf:type owl:NamedIndividual .
-
-
 ###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedWater
 adapters:AccumulatedWater rdf:type owl:NamedIndividual ,
                                    adapters:FloodAmbientProperty ;
@@ -685,6 +681,12 @@ adapters:ActiveEnergy rdf:type owl:NamedIndividual ,
                       rdfs:label "Active Energy" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#AirPressureAtSea
+adapters:AirPressureAtSea rdf:type owl:NamedIndividual ,
+                                   adapters:Pressure ;
+                          rdfs:label "Air Pressure at Sea Level" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#Alarm
 adapters:Alarm rdf:type owl:NamedIndividual ,
                         adapters:ActReason .
@@ -694,6 +696,11 @@ adapters:Alarm rdf:type owl:NamedIndividual ,
 adapters:AmbientTemperature rdf:type owl:NamedIndividual ,
                                      adapters:TemperatureAmbientProperty ;
                             rdfs:label "Ambient Temperature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#AmountPrecipitation
+adapters:AmountPrecipitation rdf:type owl:NamedIndividual ,
+                                      adapters:Precipitation .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#AngularUnit
@@ -795,6 +802,18 @@ adapters:CaloriesBurned rdf:type owl:NamedIndividual ,
                         rdfs:label "Calories Burned" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Cloudiness
+adapters:Cloudiness rdf:type owl:NamedIndividual ,
+                             adapters:CloudCover ;
+                    rdfs:label "Cloudiness" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature
+adapters:DewpointTemperature rdf:type owl:NamedIndividual ,
+                                      adapters:TemperatureAmbientProperty ;
+                             rdfs:label "Dewpoint Temperature" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#DiastolicBloodPressure
 adapters:DiastolicBloodPressure rdf:type owl:NamedIndividual ,
                                          adapters:HealthProperty ;
@@ -892,6 +911,12 @@ adapters:Flood rdf:type owl:NamedIndividual ,
                         adapters:FloodAmbientProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Fog
+adapters:Fog rdf:type owl:NamedIndividual ,
+                      adapters:CloudCover ;
+             rdfs:label "Fog" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#GPSAltitude
 adapters:GPSAltitude rdf:type owl:NamedIndividual ,
                               adapters:SpaceProperty ;
@@ -939,6 +964,12 @@ adapters:HeartRate rdf:type owl:NamedIndividual ,
                             adapters:HealthProperty ;
                    rdfs:comment "Heart rate level for a patient" ;
                    rdfs:label "Heart Rate" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#HighClouds
+adapters:HighClouds rdf:type owl:NamedIndividual ,
+                             adapters:CloudCover ;
+                    rdfs:label "High Clouds" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#HourlyPersonCounter
@@ -994,6 +1025,40 @@ adapters:InstantaneousReactivePower rdf:type owl:NamedIndividual ,
 adapters:LightColor rdf:type owl:NamedIndividual ,
                              adapters:LightProperty ;
                     rdfs:label "Light Color" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#LowClouds
+adapters:LowClouds rdf:type owl:NamedIndividual ,
+                            adapters:CloudCover ;
+                   rdfs:label "Low Clouds" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MaximumPrecipitation
+adapters:MaximumPrecipitation rdf:type owl:NamedIndividual ,
+                                       adapters:Precipitation .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MaximumTemperature
+adapters:MaximumTemperature rdf:type owl:NamedIndividual ,
+                                     adapters:TemperatureAmbientProperty ;
+                            rdfs:label "Maximum Temperature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Medium_Clouds
+adapters:Medium_Clouds rdf:type owl:NamedIndividual ,
+                                adapters:CloudCover ;
+                       rdfs:label "Medium Clouds" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation
+adapters:MinimumPrecipitation rdf:type owl:NamedIndividual ,
+                                       adapters:Precipitation .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MinimumTemperature
+adapters:MinimumTemperature rdf:type owl:NamedIndividual ,
+                                     adapters:TemperatureAmbientProperty ;
+                            rdfs:label "Minimum Temperature" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Motion
@@ -1091,6 +1156,11 @@ adapters:PowerFactor rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/adapters#PowerOn
 adapters:PowerOn rdf:type owl:NamedIndividual ,
                           adapters:ActReason .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#ProbabilityPrecipitation
+adapters:ProbabilityPrecipitation rdf:type owl:NamedIndividual ,
+                                           adapters:Precipitation .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Protein
@@ -1246,6 +1316,12 @@ adapters:Weight rdf:type owl:NamedIndividual ,
                 rdfs:label "Weight" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#WindGust
+adapters:WindGust rdf:type owl:NamedIndividual ,
+                           adapters:WindAmbientProperty ;
+                  rdfs:label "Wind Gust" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#XAxisAcceleration
 adapters:XAxisAcceleration rdf:type owl:NamedIndividual ,
                                     adapters:SpaceProperty ;
@@ -1266,14 +1342,8 @@ adapters:ZAxisAcceleration rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#windSpeed
 adapters:windSpeed rdf:type owl:NamedIndividual ,
-                            adapters:WindAmbientProperty .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-adapters:AccumulatedPercipitation rdfs:label "Accumulated Percipitation" .
+                            adapters:WindAmbientProperty ;
+                   rdfs:label "Wind Speed" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
