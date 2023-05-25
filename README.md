@@ -1,5 +1,6 @@
 # auroral-adapters-ontology
-This repository contains the code and related resources for the adapters AURORAL ontology
+This repository contains the code and related resources for the adapters AURORAL ontology  
+
 -- ----- ------ ----- The general structure --------------
 ![adapters](https://github.com/oeg-upm/auroral-adapters-ontology/blob/main/Diagrams/adapters-general.png)
 
