@@ -1074,6 +1074,10 @@
 <https://auroral.iot.linkeddata.es/def/adapters#TerrestrialRadiationInstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/adapters#TerrestrialRadiationInstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#AmbientSolarRadiation> .
 # 
+# https://auroral.iot.linkeddata.es/def/adapters#Thunder
+<https://auroral.iot.linkeddata.es/def/adapters#Thunder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/adapters#Thunder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#Weather> .
+# 
 # https://auroral.iot.linkeddata.es/def/adapters#TotalBodyWaterPercentage
 <https://auroral.iot.linkeddata.es/def/adapters#TotalBodyWaterPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/adapters#TotalBodyWaterPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#HealthProperty> .
