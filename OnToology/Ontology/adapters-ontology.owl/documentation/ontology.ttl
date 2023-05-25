@@ -1262,6 +1262,11 @@ PM10 particles are a common air pollutant.""" ;
                                       :AmbientSolarRadiation .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Thunder
+:Thunder rdf:type owl:NamedIndividual ,
+                  :Weather .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#TotalBodyWaterPercentage
 :TotalBodyWaterPercentage rdf:type owl:NamedIndividual ,
                                    :HealthProperty ;
