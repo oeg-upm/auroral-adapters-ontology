@@ -1266,6 +1266,11 @@ adapters:TerrestrialRadiationInstant rdf:type owl:NamedIndividual ,
                                               adapters:AmbientSolarRadiation .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Thunder
+adapters:Thunder rdf:type owl:NamedIndividual ,
+                          adapters:Weather .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#TotalBodyWaterPercentage
 adapters:TotalBodyWaterPercentage rdf:type owl:NamedIndividual ,
                                            adapters:HealthProperty ;
