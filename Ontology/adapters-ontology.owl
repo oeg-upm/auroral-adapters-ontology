@@ -808,6 +808,12 @@ adapters:Cloudiness rdf:type owl:NamedIndividual ,
                     rdfs:label "Cloudiness" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus
+adapters:DeviceStatus rdf:type owl:NamedIndividual ,
+                               adapters:StatusProperty ;
+                      rdfs:label "Device Status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature
 adapters:DewpointTemperature rdf:type owl:NamedIndividual ,
                                       adapters:TemperatureAmbientProperty ;
@@ -1120,11 +1126,6 @@ adapters:OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                    rdfs:label "Outdoor Ambient Temperature" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration
-adapters:PM1.0Concentration rdf:type owl:NamedIndividual ,
-                                     adapters:UltraFineParticlesMatter .
-
-
 ###  https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration
 adapters:PM10Concentration rdf:type owl:NamedIndividual ,
                                     adapters:CoarseParticulateMatter ;
@@ -1134,11 +1135,16 @@ PM10 particles are a common air pollutant.""" ;
                            rdfs:label "PM10 Concentration" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration
-adapters:PM2.5Concentration rdf:type owl:NamedIndividual ,
+###  https://auroral.iot.linkeddata.es/def/adapters#PM1_0Concentration
+adapters:PM1_0Concentration rdf:type owl:NamedIndividual ,
+                                     adapters:UltraFineParticlesMatter .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration
+adapters:PM2_5Concentration rdf:type owl:NamedIndividual ,
                                      adapters:FineParticlesMatter ;
                             rdfs:comment "Fine particulate matter (PM2.5) is an air pollutant that is a concern for people's health when levels in air are high." ;
-                            rdfs:label "PM2.5 Concentration" .
+                            rdfs:label "PM2_5 Concentration" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Periodic
