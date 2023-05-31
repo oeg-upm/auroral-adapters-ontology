@@ -694,6 +694,11 @@
 <https://auroral.iot.linkeddata.es/def/adapters#Cloudiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#CloudCover> .
 <https://auroral.iot.linkeddata.es/def/adapters#Cloudiness> <http://www.w3.org/2000/01/rdf-schema#label> "Cloudiness" .
 # 
+# https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus
+<https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#StatusProperty> .
+<https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Device Status" .
+# 
 # https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature
 <https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty> .
@@ -954,21 +959,21 @@
 <https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty> .
 <https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Outdoor Ambient Temperature" .
 # 
-# https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration
-<https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter> .
-# 
 # https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration
 <https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#CoarseParticulateMatter> .
 <https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration> <http://www.w3.org/2000/01/rdf-schema#comment> "PM10 are very small particles found in dust and smoke. They have a diameter of 10 micrometres (0.01 mm) or smaller.\n\nPM10 particles are a common air pollutant." .
 <https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "PM10 Concentration" .
 # 
-# https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration
-<https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#FineParticlesMatter> .
-<https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration> <http://www.w3.org/2000/01/rdf-schema#comment> "Fine particulate matter (PM2.5) is an air pollutant that is a concern for people's health when levels in air are high." .
-<https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "PM2.5 Concentration" .
+# https://auroral.iot.linkeddata.es/def/adapters#PM1_0Concentration
+<https://auroral.iot.linkeddata.es/def/adapters#PM1_0Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/adapters#PM1_0Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter> .
+# 
+# https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration
+<https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#FineParticlesMatter> .
+<https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration> <http://www.w3.org/2000/01/rdf-schema#comment> "Fine particulate matter (PM2.5) is an air pollutant that is a concern for people's health when levels in air are high." .
+<https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "PM2_5 Concentration" .
 # 
 # https://auroral.iot.linkeddata.es/def/adapters#Periodic
 <https://auroral.iot.linkeddata.es/def/adapters#Periodic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -416,6 +416,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device Status"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1122,12 +1131,6 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AirQuality"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1140,7 +1143,13 @@
     "@value" : "PM10 Concentration"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration",
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PM1_0Concentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#FineParticlesMatter"
@@ -1149,7 +1158,7 @@
     "@value" : "Fine particulate matter (PM2.5) is an air pollutant that is a concern for people's health when levels in air are high."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "PM2.5 Concentration"
+    "@value" : "PM2_5 Concentration"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PV",

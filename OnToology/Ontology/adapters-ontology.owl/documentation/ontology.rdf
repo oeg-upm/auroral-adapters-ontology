@@ -1349,6 +1349,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"/>
+        <rdfs:label>Device Status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#DewpointTemperature -->
 
 
@@ -1869,15 +1879,6 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#PM1.0Concentration">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration -->
 
 
@@ -1891,13 +1892,22 @@ PM10 particles are a common air pollutant.</rdfs:comment>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration -->
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#PM1_0Concentration -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#PM2.5Concentration">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#PM1_0Concentration">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#PM2_5Concentration">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#FineParticlesMatter"/>
         <rdfs:comment>Fine particulate matter (PM2.5) is an air pollutant that is a concern for people&apos;s health when levels in air are high.</rdfs:comment>
-        <rdfs:label>PM2.5 Concentration</rdfs:label>
+        <rdfs:label>PM2_5 Concentration</rdfs:label>
     </owl:NamedIndividual>
     
 
