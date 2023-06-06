@@ -570,6 +570,11 @@ adapters:UltraFineParticlesMatter rdf:type owl:Class ;
                                   rdfs:label "Ultra Fine Particles Matter" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#UltrasoundSensor
+adapters:UltrasoundSensor rdf:type owl:Class ;
+                          rdfs:subClassOf core:Sensor .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor
 adapters:WasteBinSensor rdf:type owl:Class ;
                         rdfs:subClassOf core:Sensor ;
