@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="10" parse.nodes="11" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="12" parse.nodes="13" parse.order="free">
       <node id="nid_https://auroral.iot.linkeddata.es/def/adapters">
          <data key="d0">
             <y:ShapeNode>
@@ -111,6 +111,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_adapters:StatusProperty">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">adapters:StatusProperty</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_adapters:title3" source="nid_adapters:StatusProperty" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">adapters:title</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_saref:Property">
          <data key="d0">
             <y:ShapeNode>
@@ -123,7 +146,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_saref:controlsProperty3" source="nid_saref:Device" target="nid_saref:Property">
+    <edge id="eid_saref:controlsProperty4" source="nid_saref:Device" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -158,7 +181,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_adapters:hasVolume4" source="nid_adapters:SoilMoisture" target="nid_xsd:float">
+    <edge id="eid_adapters:hasVolume5" source="nid_adapters:SoilMoisture" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -169,7 +192,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_core:versionNumber5" source="nid_saref:Device" target="nid_xsd:string">
+    <edge id="eid_core:versionNumber6" source="nid_saref:Device" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -180,7 +203,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_saref:measuresProperty6" source="nid_saref:Device" target="nid_saref:Property">
+    <edge id="eid_saref:measuresProperty7" source="nid_saref:Device" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -215,7 +238,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_adapters:from-timestamp7" source="nid_adapters:MonitoringSensor" target="nid_owl:Thing">
+    <edge id="eid_adapters:from-timestamp8" source="nid_adapters:MonitoringSensor" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -226,7 +249,30 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_adapters:hasHeight8" source="nid_adapters:SoilMoisture" target="nid_xsd:float">
+      <node id="nid_xsd:dateTime">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:dateTime</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_adapters:dateLastStatusUpdate9" source="nid_adapters:StatusProperty" target="nid_xsd:dateTime">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">adapters:dateLastStatusUpdate</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_adapters:hasHeight10" source="nid_adapters:SoilMoisture" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -237,7 +283,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_core:serialNumber9" source="nid_saref:Device" target="nid_xsd:string">
+    <edge id="eid_core:serialNumber11" source="nid_saref:Device" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

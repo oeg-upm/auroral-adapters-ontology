@@ -63,6 +63,13 @@
 #    Data properties
 #################################################################
 
+###  https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate
+:dateLastStatusUpdate rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :StatusProperty ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:label "date Last Status Update" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#from-timestamp
 :from-timestamp rdf:type owl:DatatypeProperty ;
                 rdfs:domain :MonitoringSensor ,
@@ -82,6 +89,13 @@
            rdfs:domain :SoilMoisture ;
            rdfs:range xsd:float ;
            rdfs:label "has volume" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :StatusProperty ;
+       rdfs:range xsd:string ;
+       rdfs:label "title" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#to-timestamp
@@ -564,6 +578,11 @@
 :UltraFineParticlesMatter rdf:type owl:Class ;
                           rdfs:subClassOf :AirQuality ;
                           rdfs:label "Ultra Fine Particles Matter" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#UltrasoundSensor
+:UltrasoundSensor rdf:type owl:Class ;
+                  rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor
@@ -1116,6 +1135,12 @@
              :StatusProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#OperationalStatus
+:OperationalStatus rdf:type owl:NamedIndividual ,
+                            :StatusProperty ;
+                   rdfs:label "Operational Status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature
 :OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                     :TemperatureAmbientProperty ;
@@ -1210,6 +1235,12 @@ PM10 particles are a common air pollutant.""" ;
 :SO2Concentration rdf:type owl:NamedIndividual ,
                            :SulphurDioxide ;
                   rdfs:label "SO2 Concentration" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SelectableStatus
+:SelectableStatus rdf:type owl:NamedIndividual ,
+                           :StatusProperty ;
+                  rdfs:label "Selectable Status" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Sensor

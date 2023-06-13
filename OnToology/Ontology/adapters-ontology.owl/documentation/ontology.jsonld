@@ -1113,6 +1113,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#OperationalStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Operational Status"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1404,6 +1413,15 @@
     "@value" : "SO2 Concentration"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SelectableStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Selectable Status"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1683,6 +1701,12 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AirQuality"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#UltrasoundSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Unavailable",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1830,6 +1854,18 @@
     "@value" : "ZAxis Acceleration"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "date Last Status Update"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#from-timestamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1863,6 +1899,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#to-timestamp",
