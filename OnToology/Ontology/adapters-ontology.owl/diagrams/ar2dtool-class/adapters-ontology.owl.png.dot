@@ -1,15 +1,17 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "saref:Device" "adapters:SoilMoisture" "saref:Property" "adapters:MonitoringSensor" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "saref:Device" "adapters:SoilMoisture" "saref:Property" "adapters:MonitoringSensor" "adapters:StatusProperty" ; /*classes style*/
 	"https://auroral.iot.linkeddata.es/def/adapters" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
 	"saref:controlsProperty" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"saref:Device" -> "xsd:string" [ label = "core:hasId" ];
+	"adapters:StatusProperty" -> "xsd:string" [ label = "adapters:title" ];
 	"saref:Device" -> "saref:Property" [ label = "saref:controlsProperty" ];
 	"adapters:SoilMoisture" -> "xsd:float" [ label = "adapters:hasVolume" ];
 	"saref:Device" -> "xsd:string" [ label = "core:versionNumber" ];
 	"saref:Device" -> "saref:Property" [ label = "saref:measuresProperty" ];
 	"adapters:MonitoringSensor" -> "owl:Thing" [ label = "adapters:from-timestamp" ];
+	"adapters:StatusProperty" -> "xsd:dateTime" [ label = "adapters:dateLastStatusUpdate" ];
 	"adapters:SoilMoisture" -> "xsd:float" [ label = "adapters:hasHeight" ];
 	"saref:Device" -> "xsd:string" [ label = "core:serialNumber" ];
 

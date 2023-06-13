@@ -6,6 +6,10 @@
     "QRGeneratorSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#QRGeneratorSensor"
     },
+    "dateLastStatusUpdate" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "Switch" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Switch"
     },
@@ -185,6 +189,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#hasHeight",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
+    "UltrasoundSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#UltrasoundSensor"
+    },
     "WasteBinSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor"
     },
@@ -192,7 +199,8 @@
       "@id" : "https://saref.etsi.org/core#Property"
     },
     "title" : {
-      "@id" : "http://purl.org/dc/elements/1.1/title"
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "PVRoofStanled" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVRoofStanled"
