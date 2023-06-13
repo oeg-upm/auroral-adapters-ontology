@@ -67,6 +67,13 @@ saref:measuresProperty rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate
+adapters:dateLastStatusUpdate rdf:type owl:DatatypeProperty ;
+                              rdfs:domain adapters:StatusProperty ;
+                              rdfs:range xsd:dateTime ;
+                              rdfs:label "date Last Status Update" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#from-timestamp
 adapters:from-timestamp rdf:type owl:DatatypeProperty ;
                         rdfs:domain adapters:MonitoringSensor ,
@@ -86,6 +93,13 @@ adapters:hasVolume rdf:type owl:DatatypeProperty ;
                    rdfs:domain adapters:SoilMoisture ;
                    rdfs:range xsd:float ;
                    rdfs:label "has volume" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#title
+adapters:title rdf:type owl:DatatypeProperty ;
+               rdfs:domain adapters:StatusProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "title" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#to-timestamp
@@ -1125,6 +1139,12 @@ adapters:On rdf:type owl:NamedIndividual ,
                      adapters:StatusProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#OperationalStatus
+adapters:OperationalStatus rdf:type owl:NamedIndividual ,
+                                    adapters:StatusProperty ;
+                           rdfs:label "Operational Status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature
 adapters:OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                             adapters:TemperatureAmbientProperty ;
@@ -1219,6 +1239,12 @@ adapters:ReturnedEnergy rdf:type owl:NamedIndividual ,
 adapters:SO2Concentration rdf:type owl:NamedIndividual ,
                                    adapters:SulphurDioxide ;
                           rdfs:label "SO2 Concentration" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#SelectableStatus
+adapters:SelectableStatus rdf:type owl:NamedIndividual ,
+                                   adapters:StatusProperty ;
+                          rdfs:label "Selectable Status" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Sensor
