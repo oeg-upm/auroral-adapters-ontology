@@ -1,0 +1,726 @@
+@prefix :      <https://auroral.iot.linkeddata.es/def/adapters#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#e45a7be96fb7a374daa1be8e1e8a368b>
+        a               sh:NodeShape ;
+        rdfs:label      "Space Property" ;
+        sh:description  "describes properties related to space such as the  GPS latitude, the GPS altitude, the GPS longitude, the XAxis Acceleration, the YAxisAcceleration, the ZAxis acceleration, the distance, etc." ;
+        sh:name         "Space Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SpaceProperty .
+
+<https://astrea.linkeddata.es/shapes#d36eb7b4a34143fe64a34f2c5ba67943>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :CoolingSensor .
+
+<https://astrea.linkeddata.es/shapes#aec30d4c96a7e3360147ec3bf66eeef2>
+        a               sh:NodeShape ;
+        rdfs:label      "Ozone" ;
+        sh:name         "Ozone" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Ozone .
+
+<https://astrea.linkeddata.es/shapes#450a2913b4fc336ac80384ea68ca7e78>
+        a               sh:NodeShape ;
+        rdfs:label      "Light Bulb" ;
+        sh:name         "Light Bulb" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :LightBulb .
+
+<https://astrea.linkeddata.es/shapes#408b86fc872b39bdfe60d64fecaa5572>
+        a            sh:PropertyShape ;
+        rdfs:label   "date Last Status Update" ;
+        sh:datatype  xsd:dateTime ;
+        sh:name      "date Last Status Update" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :dateLastStatusUpdate ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#3b14e65ceb7114e068c1bb95d7ddec29>
+        a               sh:NodeShape ;
+        rdfs:label      "Coarse Particulate Matter" ;
+        sh:name         "Coarse Particulate Matter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :CoarseParticulateMatter .
+
+<https://astrea.linkeddata.es/shapes#53a63b2b12e14f5518be6bf3a68053ec>
+        a               sh:NodeShape ;
+        rdfs:label      "Monitoring Sensor" ;
+        sh:description  "It generates data about the active power, the reactive inductive power, the active enrgy, the reactive capacitif, the voltage and so one." ;
+        sh:name         "Monitoring Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :MonitoringSensor .
+
+<https://astrea.linkeddata.es/shapes#00c35fc9cfe78324c1ccfde8feb1fa50>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PVFaçade .
+
+<https://astrea.linkeddata.es/shapes#8a03c06b2ca97417247ee7753887fbb4>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy Property" ;
+        sh:description  "It regroups the properties related to the energy such as: the battery level, the totalreturnedEnergy, the TotalEnergy, the PowerFactor, the Gridvoltage, and so one." ;
+        sh:name         "Energy Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :EnergyProperty .
+
+<https://astrea.linkeddata.es/shapes#b4d4d4c2328d83a24d76a69829b5a0e1>
+        a               sh:NodeShape ;
+        rdfs:label      "QR Counter" ;
+        sh:name         "QR Counter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :QRCounter .
+
+<https://astrea.linkeddata.es/shapes#0202863d413fdba03911d2f61a23409f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Weather .
+
+<https://astrea.linkeddata.es/report/01391829209>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://auroral.iot.linkeddata.es/def/adapters/ontology.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#10b76d945759c3a36c80ccccff99cd5c>
+        a               sh:NodeShape ;
+        rdfs:label      "Status Property" ;
+        sh:name         "Status Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#408b86fc872b39bdfe60d64fecaa5572> , <https://astrea.linkeddata.es/shapes#75768c7fa0c24c88301f79e3df12173a> ;
+        sh:targetClass  :StatusProperty .
+
+<https://astrea.linkeddata.es/shapes#cf2e42ac1a52ce04027efeb5b894550d>
+        a            sh:PropertyShape ;
+        rdfs:label   "has height" ;
+        sh:datatype  xsd:float ;
+        sh:name      "has height" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :hasHeight ;
+        sh:pattern   "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#fbbf13d8f51433c460130c340a6d835e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :AirConditionningBasic .
+
+<https://astrea.linkeddata.es/shapes#97b7764c2ad8b47833b14b14816f2135>
+        a               sh:NodeShape ;
+        rdfs:label      "Waste Bin Sensor" ;
+        sh:description  "It ensures a real time monitoring of the waste bins' status. It generates data about the distance and the deviation position" ;
+        sh:name         "Waste Bin Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :WasteBinSensor .
+
+<https://astrea.linkeddata.es/shapes#4c0e7d4c4a4c30faf5bc79a891ff0907>
+        a               sh:NodeShape ;
+        rdfs:label      "Sensor" ;
+        sh:name         "Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://saref.etsi.org/core#Sensor> .
+
+<https://astrea.linkeddata.es/shapes#f4ab434743e8d85eef6f88ae5b0c9aba>
+        a               sh:NodeShape ;
+        rdfs:label      "Smart Plug" ;
+        sh:name         "Smart Plug" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SmartPlug .
+
+<https://astrea.linkeddata.es/shapes#46830785d07135504630cb5603221733>
+        a               sh:NodeShape ;
+        rdfs:label      "Water AMR Sensor" ;
+        sh:description  "Water AMR sensor sends data about the accumulated value of water in the current timestamp." ;
+        sh:name         "Water AMR Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :WaterAMRSensor .
+
+<https://astrea.linkeddata.es/shapes#93eb256aafe31362c89c1d7bcd69a49c>
+        a               sh:NodeShape ;
+        rdfs:label      "Air Quality Sensor" ;
+        sh:name         "Air Quality Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :AirQualitySensor .
+
+<https://astrea.linkeddata.es/shapes#4f35d26e33c1783fa4ed1abcb81795cd>
+        a               sh:NodeShape ;
+        rdfs:label      "Light Property" ;
+        sh:description  "it describes properties about illuminance." ;
+        sh:name         "Light Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :LightProperty .
+
+<https://astrea.linkeddata.es/shapes#0985182046a5878a83734032ad4a0657>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :HeatPumpAirtoWater .
+
+<https://astrea.linkeddata.es/shapes#9b44398dc0460203b890ffb9aff30717>
+        a               sh:NodeShape ;
+        rdfs:label      "Sound Sensor" ;
+        sh:name         "Sound Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SoundSensor .
+
+<https://astrea.linkeddata.es/shapes#427b5e5ac8b6f5d247cdf98953cf9004>
+        a               sh:NodeShape ;
+        rdfs:label      "Ambient Humidity Property" ;
+        sh:description  "It is a value expressed as a percentage (0-100%). It is the amount of water vapor present in a specific volume." ;
+        sh:name         "Ambient Humidity Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :HumidityAmbientProperty .
+
+<https://astrea.linkeddata.es/shapes#48ebeff0b8f431edf3d9e8132626a8f7>
+        a               sh:NodeShape ;
+        rdfs:label      "Noise" ;
+        sh:description  "mesure the noise in a place" ;
+        sh:name         "Noise" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Noise .
+
+<https://astrea.linkeddata.es/shapes#36245374f10c92af9a0fb4f241aa6d69>
+        a               sh:NodeShape ;
+        rdfs:label      "Device" ;
+        sh:description  "It is designed to realize a specific task. This task can be a detection of an occurred event or the initiation of an action. It has two sub-classes (sensor and actuator)." ;
+        sh:name         "Device" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Device> .
+
+<https://astrea.linkeddata.es/shapes#474d55fae32aa952d0afa0378db9189b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :BoilerSensor .
+
+<https://astrea.linkeddata.es/shapes#468ea9fab0699f1f3583e698b0001b65>
+        a               sh:PropertyShape ;
+        rdfs:label      "UTC time in ISO 8601 formatted timestamp for when to get data TO" ;
+        sh:description  "UTC time in ISO 8601 formatted timestamp for when to get data TO" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :to-timestamp .
+
+<https://astrea.linkeddata.es/shapes#6f6bbc440576e7916fc88c622a7c68a6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PVRoofFlat .
+
+<https://astrea.linkeddata.es/shapes#5961665af9a2d2148c22c870b732d415>
+        a               sh:NodeShape ;
+        rdfs:label      "GPS Emergency Button" ;
+        sh:description  "It is a device used to detect the exact location of a specific thing or object. The detected data is the longitude, latitude, altitude, and the acceleration." ;
+        sh:name         "GPS Emergency Button" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :GPSEmergencyButton .
+
+<https://astrea.linkeddata.es/shapes#08c9db1e350075dbaa19c5c8e604ef63>
+        a               sh:NodeShape ;
+        rdfs:label      "Act reason" ;
+        sh:name         "Act reason" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :ActReason .
+
+<https://astrea.linkeddata.es/shapes#3abe2675738ae8f1ff5672a518eaf692>
+        a               sh:NodeShape ;
+        rdfs:label      "Wind Ambient Property" ;
+        sh:name         "Wind Ambient Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :WindAmbientProperty .
+
+<https://astrea.linkeddata.es/shapes#42e2ff11616a788cca690808083477ae>
+        a               sh:NodeShape ;
+        rdfs:label      "Nitrogen Dioxide" ;
+        sh:name         "Nitrogen Dioxide" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :NitrogenDioxide .
+
+<https://astrea.linkeddata.es/shapes#69d54111b7b722f075f7b4af137e4472>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :UltrasoundSensor .
+
+<https://astrea.linkeddata.es/shapes#777c500b6bd83924d45d6e2fe99acf89>
+        a               sh:NodeShape ;
+        rdfs:label      "Pressure" ;
+        sh:description  "provides information about the pressure properties (for example the atmospheric pressure)." ;
+        sh:name         "Pressure" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Pressure .
+
+<https://astrea.linkeddata.es/shapes#d502109c8bbb28e979d928c1009440a8>
+        a               sh:NodeShape ;
+        rdfs:label      "Smart Valve" ;
+        sh:name         "Smart Valve" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SmartValve .
+
+<https://astrea.linkeddata.es/shapes#70ed1f3dc43701074d11ba91f6723e56>
+        a               sh:NodeShape ;
+        rdfs:label      "Soil Moisture" ;
+        sh:description  "presents the soil moisture height and volume" ;
+        sh:name         "Soil Moisture" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#6f5d341d8f01077f8c2c4456b95e6f8d> , <https://astrea.linkeddata.es/shapes#cf2e42ac1a52ce04027efeb5b894550d> ;
+        sh:targetClass  :SoilMoisture .
+
+<https://astrea.linkeddata.es/shapes#bc2239039e0d7fab4907223b2245a63d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :BoilerBiomass .
+
+<https://astrea.linkeddata.es/shapes#e06432fb7d141eb6b444fe22dd70386d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :AccumulatedPercipitation .
+
+<https://astrea.linkeddata.es/shapes#e2c86d5702cb1015d25ea2d6e92413c3>
+        a               sh:PropertyShape ;
+        rdfs:label      "measures property" ;
+        sh:class        <https://saref.etsi.org/core#Property> ;
+        sh:description  "measures property" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <https://saref.etsi.org/core#measuresProperty> .
+
+<https://astrea.linkeddata.es/shapes#a9333735711f810516dc97fe64b9568f>
+        a               sh:NodeShape ;
+        rdfs:label      "Storage Capacity" ;
+        sh:name         "Storage Capacity" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :StorageCapacity .
+
+<https://astrea.linkeddata.es/shapes#ab9140b380ff9df2a84ede216aea59d9>
+        a               sh:NodeShape ;
+        rdfs:label      "Battery Sensor" ;
+        sh:name         "Battery Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#BatterySensor> .
+
+<https://astrea.linkeddata.es/shapes#d774a8851810aed7f5f64b358358d9ea>
+        a               sh:NodeShape ;
+        rdfs:label      "QR Generator Sensor" ;
+        sh:description  "The QR Generator sensor is designed to count the numebr of person that scan the QR code when they visit a specific city" ;
+        sh:name         "QR Generator Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :QRGeneratorSensor .
+
+<https://astrea.linkeddata.es/shapes#f2de4a802aa5137e755af550a35d07ed>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :BoilerOil .
+
+<https://astrea.linkeddata.es/shapes#a8f2374dcfb224469fc9e5e4503f831e>
+        a               sh:NodeShape ;
+        rdfs:label      "Pressure Sensor" ;
+        sh:name         "Pressure Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PressureSensor .
+
+<https://astrea.linkeddata.es/shapes#0fb865dace17a841bc8940639d22a9ca>
+        a               sh:NodeShape ;
+        rdfs:label      "Presence" ;
+        sh:name         "Presence" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Presence .
+
+<https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Accelerometer .
+
+<https://astrea.linkeddata.es/shapes#d064e69d52d007c1302651cbfdb29d96>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy Monitor Sensor" ;
+        sh:description  "It is used to track and control real time energy use. It has different properties such as the returned energy, the total returned energy, etc..." ;
+        sh:name         "Energy Monitor Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :EnergyMonitor .
+
+<https://astrea.linkeddata.es/shapes#75768c7fa0c24c88301f79e3df12173a>
+        a            sh:PropertyShape ;
+        rdfs:label   "title" ;
+        sh:datatype  xsd:string ;
+        sh:name      "title" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :title ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#7e158a4aeec013301318a9fdf9315987>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PVRoofStanled .
+
+<https://astrea.linkeddata.es/shapes#994dd5dd53d94f4f2d454c15f35636b2>
+        a               sh:NodeShape ;
+        rdfs:label      "Ambient Temperature" ;
+        sh:description  "Ambient Temperature is a measure of the temperature around a given asset or piece of equipement or other object" ;
+        sh:name         "Ambient Temperature" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :TemperatureAmbientProperty .
+
+<https://astrea.linkeddata.es/shapes#eb2e2bd1e0c979f492a254ad9e76e44f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :CloudCover .
+
+<https://astrea.linkeddata.es/shapes#14ebcf6585edacd9acf8483f2ba3cd29>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :BoilerNgas .
+
+<https://astrea.linkeddata.es/shapes#853868dc385f93c51bf6b12a0d89a39f>
+        a               sh:NodeShape ;
+        rdfs:label      "Motion Sensor" ;
+        sh:description  "A motion sensor (or motion detector) is a device that is designed to detect and measure movement." ;
+        sh:name         "Motion Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :MotionSensor .
+
+<https://astrea.linkeddata.es/shapes#52bae48495130a4bbeebeedeae5c5a7f>
+        a               sh:NodeShape ;
+        rdfs:label      "Ammonia" ;
+        sh:name         "Ammonia" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Ammonia .
+
+<https://astrea.linkeddata.es/shapes#f4877e4837d4557a792827133a7aa3f3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :HeatPumpAirtoAir .
+
+<https://astrea.linkeddata.es/shapes#5090ed279013a27f4d9c38cc53ee6448>
+        a               sh:NodeShape ;
+        rdfs:label      "Health Property" ;
+        sh:name         "Health Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :HealthProperty .
+
+<https://astrea.linkeddata.es/shapes#ad876ca951b7b5c4768b244bb13b5eb6>
+        a               sh:NodeShape ;
+        rdfs:label      "Motion Property" ;
+        sh:description  "it is  about the motion and the vibration properties." ;
+        sh:name         "Motion Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :MotionProperty .
+
+<https://astrea.linkeddata.es/shapes#6f5d341d8f01077f8c2c4456b95e6f8d>
+        a            sh:PropertyShape ;
+        rdfs:label   "has volume" ;
+        sh:datatype  xsd:float ;
+        sh:name      "has volume" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :hasVolume ;
+        sh:pattern   "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#660a9a010976f7e075526606f4091577>
+        a               sh:NodeShape ;
+        rdfs:label      "Person Counter Sensor" ;
+        sh:description  "The person sounter sensor is designed to count the number of person that visit a specific city" ;
+        sh:name         "Person Counter Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PersonCounterSensor .
+
+<https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+
+<https://astrea.linkeddata.es/shapes#09f8ab8b066aa3d9e0c1e0dd784be952>
+        a               sh:NodeShape ;
+        rdfs:label      "Water Valve Actuator" ;
+        sh:description  "it is used to control the water valve. It generates an acknowledgement message indicating that the command has been accepted. The generated command can be: ON, OFF, active, close." ;
+        sh:name         "Water Valve Actuator" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :WaterValveActuator .
+
+<https://astrea.linkeddata.es/shapes#184c8b0128a1baec7b01c98d770576b1>
+        a               sh:NodeShape ;
+        rdfs:label      "Carbon Monoxide" ;
+        sh:name         "Carbon Monoxide" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :CarbonMonoxide .
+
+<https://astrea.linkeddata.es/shapes#1df80e441119944c743ed23e101e6066>
+        a               sh:NodeShape ;
+        rdfs:label      "Device" ;
+        sh:name         "Device" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#52478d405184a7b3e892e5872b97ff1a> , <https://astrea.linkeddata.es/shapes#dd75adf7bc064e8de54d1cfbfe27538e> , <https://astrea.linkeddata.es/shapes#efb319058c8300dc40eb7aa378476d57> , <https://astrea.linkeddata.es/shapes#e2c86d5702cb1015d25ea2d6e92413c3> , <https://astrea.linkeddata.es/shapes#92bd71490137d5d83ea128a50c684a5e> ;
+        sh:targetClass  <https://saref.etsi.org/core#Device> .
+
+<https://astrea.linkeddata.es/shapes#7dd428a4751f489bb1a02d52ef7db7b7>
+        a               sh:NodeShape ;
+        rdfs:label      "Presence Sensor" ;
+        sh:description  "it detects the presence of an object in a place" ;
+        sh:name         "Presence Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Presence_Sensor .
+
+<https://astrea.linkeddata.es/shapes#c8c7a436ec6d9eb8a5111c147db8fe4b>
+        a               sh:NodeShape ;
+        rdfs:label      "Precipitation" ;
+        sh:name         "Precipitation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Precipitation .
+
+<https://astrea.linkeddata.es/shapes#3d1dfa23ebd6f436985128cdef22a43c>
+        a               sh:NodeShape ;
+        rdfs:label      "Soil Moisture Sensor" ;
+        sh:description  "soil moisture sensors measure the volumetric water content in soil. it provides data about the height and volume of water in soil." ;
+        sh:name         "Soil Moisture Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SoilMoistureSEnsor .
+
+<https://astrea.linkeddata.es/shapes#63533fa526e8f9953a0ff625738b3607>
+        a               sh:NodeShape ;
+        rdfs:label      "Error" ;
+        sh:name         "Error" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Error .
+
+<https://astrea.linkeddata.es/shapes#8b3c303021878421596c2c26f6cba2b7>
+        a               sh:NodeShape ;
+        rdfs:label      "Actuator" ;
+        sh:description  "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world" ;
+        sh:name         "Actuator" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Actuator> .
+
+<https://astrea.linkeddata.es/shapes#f5d87c6e5fe2865c0343927bee9577bf>
+        a               sh:NodeShape ;
+        rdfs:label      "Luminus Flux" ;
+        sh:name         "Luminus Flux" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :LuminusFlux .
+
+<https://astrea.linkeddata.es/shapes#90d70130f4fe5c4adc97a3c583a33ea0>
+        a               sh:NodeShape ;
+        rdfs:label      "Sulphur Dioxide" ;
+        sh:name         "Sulphur Dioxide" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SulphurDioxide .
+
+<https://astrea.linkeddata.es/shapes#de595cebfc815c915e9b1e93b06973db>
+        a               sh:NodeShape ;
+        rdfs:label      "Ambient Property" ;
+        sh:description  "This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties." , "Ambient Property" ;
+        sh:name         "Ambient Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :AmbientProperty .
+
+<https://astrea.linkeddata.es/shapes#9ad0963c05b5c630026372898fb43617>
+        a               sh:NodeShape ;
+        rdfs:label      "Thermometer Sensor" ;
+        sh:description  "A thermometer sensor is a device used to measure temperature." ;
+        sh:name         "Thermometer Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Thermometer .
+
+<https://astrea.linkeddata.es/shapes#8d82e655472963139188d55f69f2625f>
+        a               sh:NodeShape ;
+        rdfs:label      "Switch" ;
+        sh:name         "Switch" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Switch .
+
+<https://astrea.linkeddata.es/shapes#8b98d665172c23f0100f4d134af03135>
+        a               sh:NodeShape ;
+        rdfs:label      "Carbon Dioxide" ;
+        sh:name         "Carbon Dioxide" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :CarbonDioxide .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#f4ab434743e8d85eef6f88ae5b0c9aba> , <https://astrea.linkeddata.es/shapes#aec30d4c96a7e3360147ec3bf66eeef2> , <https://astrea.linkeddata.es/shapes#08c9db1e350075dbaa19c5c8e604ef63> , <https://astrea.linkeddata.es/shapes#994dd5dd53d94f4f2d454c15f35636b2> , <https://astrea.linkeddata.es/shapes#d36eb7b4a34143fe64a34f2c5ba67943> , <https://astrea.linkeddata.es/shapes#65036a45f8986ab7a235c5c73225c1a9> , <https://astrea.linkeddata.es/shapes#6f6bbc440576e7916fc88c622a7c68a6> , <https://astrea.linkeddata.es/shapes#408b86fc872b39bdfe60d64fecaa5572> , <https://astrea.linkeddata.es/shapes#8d82e655472963139188d55f69f2625f> , <https://astrea.linkeddata.es/shapes#bc2239039e0d7fab4907223b2245a63d> , <https://astrea.linkeddata.es/shapes#4f35d26e33c1783fa4ed1abcb81795cd> , <https://astrea.linkeddata.es/shapes#10b76d945759c3a36c80ccccff99cd5c> , <https://astrea.linkeddata.es/shapes#8b3c303021878421596c2c26f6cba2b7> , <https://astrea.linkeddata.es/shapes#e0189f7263d66638cab9cb461a8bd251> , <https://astrea.linkeddata.es/shapes#184c8b0128a1baec7b01c98d770576b1> , <https://astrea.linkeddata.es/shapes#75768c7fa0c24c88301f79e3df12173a> , <https://astrea.linkeddata.es/shapes#c8c7a436ec6d9eb8a5111c147db8fe4b> , <https://astrea.linkeddata.es/shapes#09f8ab8b066aa3d9e0c1e0dd784be952> , <https://astrea.linkeddata.es/shapes#4c0e7d4c4a4c30faf5bc79a891ff0907> , <https://astrea.linkeddata.es/shapes#427b5e5ac8b6f5d247cdf98953cf9004> , <https://astrea.linkeddata.es/shapes#53a63b2b12e14f5518be6bf3a68053ec> , <https://astrea.linkeddata.es/shapes#474d55fae32aa952d0afa0378db9189b> , <https://astrea.linkeddata.es/shapes#22df8dd0366b9da2d121179a084b89d1> , <https://astrea.linkeddata.es/shapes#a9333735711f810516dc97fe64b9568f> , <https://astrea.linkeddata.es/shapes#14ebcf6585edacd9acf8483f2ba3cd29> , <https://astrea.linkeddata.es/shapes#97b7764c2ad8b47833b14b14816f2135> , <https://astrea.linkeddata.es/shapes#450a2913b4fc336ac80384ea68ca7e78> , <https://astrea.linkeddata.es/shapes#f4877e4837d4557a792827133a7aa3f3> , <https://astrea.linkeddata.es/shapes#92bd71490137d5d83ea128a50c684a5e> , <https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca> , <https://astrea.linkeddata.es/shapes#b4d4d4c2328d83a24d76a69829b5a0e1> , <https://astrea.linkeddata.es/shapes#3abe2675738ae8f1ff5672a518eaf692> , <https://astrea.linkeddata.es/shapes#777c500b6bd83924d45d6e2fe99acf89> , <https://astrea.linkeddata.es/shapes#0a10943654271ac10f4d56b6dc8128b7> , <https://astrea.linkeddata.es/shapes#eb2e2bd1e0c979f492a254ad9e76e44f> , <https://astrea.linkeddata.es/shapes#a88797653d7f98d35c0383c5fb552217> , <https://astrea.linkeddata.es/shapes#9ad0963c05b5c630026372898fb43617> , <https://astrea.linkeddata.es/shapes#48ebeff0b8f431edf3d9e8132626a8f7> , <https://astrea.linkeddata.es/shapes#2965c8dfa4007a0c658960934eec0968> , <https://astrea.linkeddata.es/shapes#8a03c06b2ca97417247ee7753887fbb4> , <https://astrea.linkeddata.es/shapes#98ed789ba9136b7d9b68ea56b7c411b2> , <https://astrea.linkeddata.es/shapes#9b44398dc0460203b890ffb9aff30717> , <https://astrea.linkeddata.es/shapes#1df80e441119944c743ed23e101e6066> , <https://astrea.linkeddata.es/shapes#52bae48495130a4bbeebeedeae5c5a7f> , <https://astrea.linkeddata.es/shapes#9eb0099c3e11104435293173972f58fb> , <https://astrea.linkeddata.es/shapes#ad876ca951b7b5c4768b244bb13b5eb6> , <https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1> , <https://astrea.linkeddata.es/shapes#7e158a4aeec013301318a9fdf9315987> , <https://astrea.linkeddata.es/shapes#7dd428a4751f489bb1a02d52ef7db7b7> , <https://astrea.linkeddata.es/shapes#5090ed279013a27f4d9c38cc53ee6448> , <https://astrea.linkeddata.es/shapes#0985182046a5878a83734032ad4a0657> , <https://astrea.linkeddata.es/shapes#485601e593f350615e32d78e5d425526> , <https://astrea.linkeddata.es/shapes#d064e69d52d007c1302651cbfdb29d96> , <https://astrea.linkeddata.es/shapes#69d54111b7b722f075f7b4af137e4472> , <https://astrea.linkeddata.es/shapes#42e2ff11616a788cca690808083477ae> , <https://astrea.linkeddata.es/shapes#468ea9fab0699f1f3583e698b0001b65> , <https://astrea.linkeddata.es/shapes#bba7f7cdc4bc59a8467a88106c3c1809> , <https://astrea.linkeddata.es/shapes#0fb865dace17a841bc8940639d22a9ca> , <https://astrea.linkeddata.es/shapes#fbbf13d8f51433c460130c340a6d835e> , <https://astrea.linkeddata.es/shapes#93eb256aafe31362c89c1d7bcd69a49c> , <https://astrea.linkeddata.es/shapes#73b6c2cdf77fd0d6bd48e65e5c43a539> , <https://astrea.linkeddata.es/shapes#67a7371b828f994e1860d561d0bb2db1> , <https://astrea.linkeddata.es/shapes#e2c86d5702cb1015d25ea2d6e92413c3> , <https://astrea.linkeddata.es/shapes#63533fa526e8f9953a0ff625738b3607> , <https://astrea.linkeddata.es/shapes#8ae80f696f7dd232406f1c7813cf48de> , <https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598> , <https://astrea.linkeddata.es/shapes#dd75adf7bc064e8de54d1cfbfe27538e> , <https://astrea.linkeddata.es/shapes#a8f2374dcfb224469fc9e5e4503f831e> , <https://astrea.linkeddata.es/shapes#a9a3a5171e0652515ad5251c3e3d217c> , <https://astrea.linkeddata.es/shapes#0202863d413fdba03911d2f61a23409f> , <https://astrea.linkeddata.es/shapes#29707270e40cde4f310dfb465dd56486> , <https://astrea.linkeddata.es/shapes#f5d87c6e5fe2865c0343927bee9577bf> , <https://astrea.linkeddata.es/shapes#853868dc385f93c51bf6b12a0d89a39f> , <https://astrea.linkeddata.es/shapes#660a9a010976f7e075526606f4091577> , <https://astrea.linkeddata.es/shapes#5961665af9a2d2148c22c870b732d415> , <https://astrea.linkeddata.es/shapes#6f5d341d8f01077f8c2c4456b95e6f8d> , <https://astrea.linkeddata.es/shapes#e45a7be96fb7a374daa1be8e1e8a368b> , <https://astrea.linkeddata.es/shapes#bf79a2ef716b6ff4b40fdd2f86262a55> , <https://astrea.linkeddata.es/shapes#d26171884520610406f0868c72ec6aef> , <https://astrea.linkeddata.es/shapes#4898e29ac4ecd65b38066d79536f80fd> , <https://astrea.linkeddata.es/shapes#efb319058c8300dc40eb7aa378476d57> , <https://astrea.linkeddata.es/shapes#d502109c8bbb28e979d928c1009440a8> , <https://astrea.linkeddata.es/shapes#de595cebfc815c915e9b1e93b06973db> , <https://astrea.linkeddata.es/shapes#018ae8c6985e05990fd4c83ada5fb65e> , <https://astrea.linkeddata.es/shapes#3d1dfa23ebd6f436985128cdef22a43c> , <https://astrea.linkeddata.es/shapes#3b14e65ceb7114e068c1bb95d7ddec29> , <https://astrea.linkeddata.es/shapes#8b98d665172c23f0100f4d134af03135> , <https://astrea.linkeddata.es/shapes#cf2e42ac1a52ce04027efeb5b894550d> , <https://astrea.linkeddata.es/shapes#d774a8851810aed7f5f64b358358d9ea> , <https://astrea.linkeddata.es/shapes#00c35fc9cfe78324c1ccfde8feb1fa50> , <https://astrea.linkeddata.es/shapes#e06432fb7d141eb6b444fe22dd70386d> , <https://astrea.linkeddata.es/shapes#70ed1f3dc43701074d11ba91f6723e56> , <https://astrea.linkeddata.es/shapes#46830785d07135504630cb5603221733> , <https://astrea.linkeddata.es/shapes#52478d405184a7b3e892e5872b97ff1a> , <https://astrea.linkeddata.es/shapes#90d70130f4fe5c4adc97a3c583a33ea0> , <https://astrea.linkeddata.es/shapes#36245374f10c92af9a0fb4f241aa6d69> , <https://astrea.linkeddata.es/shapes#f2de4a802aa5137e755af550a35d07ed> , <https://astrea.linkeddata.es/shapes#ee5849b5a34d68992ab786083c1e34ed> , <https://astrea.linkeddata.es/shapes#ab9140b380ff9df2a84ede216aea59d9> , <https://astrea.linkeddata.es/shapes#95b200b4717b40a8469dd6ea2cfff516> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/01391829209> .
+
+<https://astrea.linkeddata.es/shapes#9eb0099c3e11104435293173972f58fb>
+        a               sh:NodeShape ;
+        rdfs:label      "PV" ;
+        sh:name         "PV" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PV .
+
+<https://astrea.linkeddata.es/shapes#ee5849b5a34d68992ab786083c1e34ed>
+        a               sh:NodeShape ;
+        rdfs:label      "Humidity Sensor" ;
+        sh:description  "It is a device that detects and measures water vapor in its environment and converts its findings into a corresponding electrical signal." ;
+        sh:name         "Humidity Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :HumiditySensor .
+
+<https://astrea.linkeddata.es/shapes#2965c8dfa4007a0c658960934eec0968>
+        a               sh:NodeShape ;
+        rdfs:label      "Sound Property" ;
+        sh:description  "This concept defines the Noise Level properties." ;
+        sh:name         "Sound Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Sound .
+
+<https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598>
+        a               sh:NodeShape ;
+        rdfs:label      "Property" ;
+        sh:description  "It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below." ;
+        sh:name         "Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://saref.etsi.org/core#Property> .
+
+<https://astrea.linkeddata.es/shapes#52478d405184a7b3e892e5872b97ff1a>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <https://auroral.iot.linkeddata.es/def/core#versionNumber> ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#d26171884520610406f0868c72ec6aef>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :HeatingSensor .
+
+<https://astrea.linkeddata.es/shapes#485601e593f350615e32d78e5d425526>
+        a               sh:NodeShape ;
+        rdfs:label      "Actuator" ;
+        sh:name         "Actuator" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://saref.etsi.org/core#Actuator> .
+
+<https://astrea.linkeddata.es/shapes#dd75adf7bc064e8de54d1cfbfe27538e>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <https://auroral.iot.linkeddata.es/def/core#serialNumber> ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#29707270e40cde4f310dfb465dd56486>
+        a               sh:NodeShape ;
+        rdfs:label      "Switch Status" ;
+        sh:name         "Switch Status" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SwitchStatus .
+
+<https://astrea.linkeddata.es/shapes#bf79a2ef716b6ff4b40fdd2f86262a55>
+        a               sh:NodeShape ;
+        rdfs:label      "Weather Sensor" ;
+        sh:description  "It is a component of an automatic weather station that detects the presence of hydrometeors and determines their type (rain, snow, drizzle, etc.) and intensity. it detects data about the temperature, the humidity, the solar irradiation, the pressure and the rain." ;
+        sh:name         "Weather Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :WeatherSensor .
+
+<https://astrea.linkeddata.es/shapes#0a10943654271ac10f4d56b6dc8128b7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :TRAFXProperty .
+
+<https://astrea.linkeddata.es/shapes#22df8dd0366b9da2d121179a084b89d1>
+        a               sh:NodeShape ;
+        rdfs:label      "PV Bintegrated" ;
+        sh:name         "PV Bintegrated" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PVBIntegrated .
+
+<https://astrea.linkeddata.es/shapes#95b200b4717b40a8469dd6ea2cfff516>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PVGround .
+
+<https://astrea.linkeddata.es/shapes#92bd71490137d5d83ea128a50c684a5e>
+        a            sh:PropertyShape ;
+        rdfs:label   "has id" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has id" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <https://auroral.iot.linkeddata.es/def/core#hasId> ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#e0189f7263d66638cab9cb461a8bd251>
+        a               sh:NodeShape ;
+        rdfs:label      "Nitrogen Monoxide" ;
+        sh:name         "Nitrogen Monoxide" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :NitrogenMonoxide .
+
+<https://astrea.linkeddata.es/shapes#4898e29ac4ecd65b38066d79536f80fd>
+        a               sh:NodeShape ;
+        rdfs:label      "Ambient Solar Radiation" ;
+        sh:description  "Often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun." ;
+        sh:name         "Ambient Solar Radiation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :AmbientSolarRadiation .
+
+<https://astrea.linkeddata.es/shapes#018ae8c6985e05990fd4c83ada5fb65e>
+        a               sh:NodeShape ;
+        rdfs:label      "Relay" ;
+        sh:name         "Relay" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Relay .
+
+<https://astrea.linkeddata.es/shapes#bba7f7cdc4bc59a8467a88106c3c1809>
+        a               sh:NodeShape ;
+        rdfs:label      "Alert" ;
+        sh:name         "Alert" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Alert .
+
+<https://astrea.linkeddata.es/shapes#73b6c2cdf77fd0d6bd48e65e5c43a539>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :AirQuality .
+
+<https://astrea.linkeddata.es/shapes#a88797653d7f98d35c0383c5fb552217>
+        a               sh:NodeShape ;
+        rdfs:label      "Flood Ambient Property" ;
+        sh:description  "a rising and overflowing of a body os water especially onto normally dry land" ;
+        sh:name         "Flood Ambient Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :FloodAmbientProperty .
+
+<https://astrea.linkeddata.es/shapes#67a7371b828f994e1860d561d0bb2db1>
+        a               sh:PropertyShape ;
+        rdfs:label      "UTC time in ISO 8601 formatted timestamp for when to get data From" ;
+        sh:description  "UTC time in ISO 8601 formatted timestamp for when to get data From" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :from-timestamp .
+
+<https://astrea.linkeddata.es/shapes#98ed789ba9136b7d9b68ea56b7c411b2>
+        a               sh:NodeShape ;
+        rdfs:label      "Flood Sensor" ;
+        sh:description  "It is designed for detection of water leaks or detecting excessively high-water level." ;
+        sh:name         "Flood Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :FloodSensor .
+
+<https://astrea.linkeddata.es/shapes#efb319058c8300dc40eb7aa378476d57>
+        a            sh:PropertyShape ;
+        sh:class     <https://saref.etsi.org/core#Property> ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://saref.etsi.org/core#controlsProperty> .
+
+<https://astrea.linkeddata.es/shapes#8ae80f696f7dd232406f1c7813cf48de>
+        a               sh:NodeShape ;
+        rdfs:label      "Person Counter" ;
+        sh:name         "Person Counter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PersonCounter .
+
+<https://astrea.linkeddata.es/shapes#65036a45f8986ab7a235c5c73225c1a9>
+        a               sh:NodeShape ;
+        rdfs:label      "Ultra Fine Particles Matter" ;
+        sh:name         "Ultra Fine Particles Matter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :UltraFineParticlesMatter .
+
+<https://astrea.linkeddata.es/shapes#a9a3a5171e0652515ad5251c3e3d217c>
+        a               sh:NodeShape ;
+        rdfs:label      "Fine Particles Matter" ;
+        sh:name         "Fine Particles Matter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :FineParticlesMatter .
