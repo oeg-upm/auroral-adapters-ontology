@@ -381,6 +381,12 @@ adapters:Noise rdf:type owl:Class ;
                rdfs:label "Noise" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#OperatingProperty
+adapters:OperatingProperty rdf:type owl:Class ;
+                           rdfs:subClassOf saref:Property ;
+                           rdfs:comment "Operating Property" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#Ozone
 adapters:Ozone rdf:type owl:Class ;
                rdfs:subClassOf adapters:AirQuality ;
@@ -502,8 +508,8 @@ adapters:SoilMoisture rdf:type owl:Class ;
                       rdfs:label "Soil Moisture" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor
-adapters:SoilMoistureSEnsor rdf:type owl:Class ;
+###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSensor
+adapters:SoilMoistureSensor rdf:type owl:Class ;
                             rdfs:subClassOf core:Sensor ;
                             rdfs:comment "soil moisture sensors measure the volumetric water content in soil. it provides data about the height and volume of water in soil." ;
                             rdfs:label "Soil Moisture Sensor" .
@@ -693,6 +699,12 @@ adapters:AccumulatedWater rdf:type owl:NamedIndividual ,
                           rdfs:label "Accumulated Water" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Active
+adapters:Active rdf:type owl:NamedIndividual ,
+                         adapters:StatusProperty ;
+                rdfs:comment "Active" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#ActiveEnergy
 adapters:ActiveEnergy rdf:type owl:NamedIndividual ,
                                adapters:EnergyProperty ;
@@ -827,6 +839,18 @@ adapters:Cloudiness rdf:type owl:NamedIndividual ,
                     rdfs:label "Cloudiness" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Depth
+adapters:Depth rdf:type owl:NamedIndividual ,
+                        adapters:OperatingProperty ;
+               rdfs:comment "Depth" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DevPosition
+adapters:DevPosition rdf:type owl:NamedIndividual ,
+                              adapters:SpaceProperty ;
+                     rdfs:label "Dev Position" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus
 adapters:DeviceStatus rdf:type owl:NamedIndividual ,
                                adapters:StatusProperty ;
@@ -892,12 +916,6 @@ adapters:Distance rdf:type owl:NamedIndividual ,
 adapters:DistanceWalked rdf:type owl:NamedIndividual ,
                                  adapters:MotionProperty ;
                         rdfs:label "Distance Walked" .
-
-
-###  https://auroral.iot.linkeddata.es/def/adapters#DivPosition
-adapters:DivPosition rdf:type owl:NamedIndividual ,
-                              adapters:SpaceProperty ;
-                     rdfs:label "Div Position" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#ElectricCurrent
@@ -1229,6 +1247,12 @@ adapters:RelativeHumidity rdf:type owl:NamedIndividual ,
                                    adapters:HumidityAmbientProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#RelayStatus
+adapters:RelayStatus rdf:type owl:NamedIndividual ,
+                              adapters:StatusProperty ;
+                     rdfs:comment "Relay Status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#ReturnedEnergy
 adapters:ReturnedEnergy rdf:type owl:NamedIndividual ,
                                  adapters:EnergyProperty ;
@@ -1366,7 +1390,7 @@ adapters:WindGust rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/adapters#XAxisAcceleration
 adapters:XAxisAcceleration rdf:type owl:NamedIndividual ,
                                     adapters:SpaceProperty ;
-                           rdfs:label "XAxix Acceleration" .
+                           rdfs:label "XAxis Acceleration" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#YAxisAcceleration
