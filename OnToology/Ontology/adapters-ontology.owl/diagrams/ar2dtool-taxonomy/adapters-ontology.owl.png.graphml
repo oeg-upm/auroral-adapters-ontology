@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="90" parse.nodes="89" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="91" parse.nodes="90" parse.order="free">
       <node id="nid_adapters:HeatPumpAirtoAir">
          <data key="d0">
             <y:ShapeNode>
@@ -1227,7 +1227,30 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf51" source="nid_adapters:PV" target="nid_core:Sensor">
+      <node id="nid_adapters:OperatingProperty">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">adapters:OperatingProperty</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf51" source="nid_adapters:OperatingProperty" target="nid_saref:Property">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf52" source="nid_adapters:PV" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1250,7 +1273,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf52" source="nid_adapters:WaterAMRSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf53" source="nid_adapters:WaterAMRSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1273,7 +1296,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf53" source="nid_adapters:StorageCapacity" target="nid_adapters:StatusProperty">
+    <edge id="eid_rdfs:subClassOf54" source="nid_adapters:StorageCapacity" target="nid_adapters:StatusProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1296,7 +1319,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf54" source="nid_adapters:Noise" target="nid_adapters:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf55" source="nid_adapters:Noise" target="nid_adapters:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1319,7 +1342,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf55" source="nid_adapters:MotionSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf56" source="nid_adapters:MotionSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1342,7 +1365,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf56" source="nid_adapters:AirQualitySensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf57" source="nid_adapters:AirQualitySensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1365,7 +1388,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf57" source="nid_adapters:Weather" target="nid_adapters:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf58" source="nid_adapters:Weather" target="nid_adapters:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1388,7 +1411,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf58" source="nid_adapters:BoilerBiomass" target="nid_adapters:BoilerSensor">
+    <edge id="eid_rdfs:subClassOf59" source="nid_adapters:BoilerBiomass" target="nid_adapters:BoilerSensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1411,7 +1434,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf59" source="nid_adapters:PVRoofStanled" target="nid_adapters:PV">
+    <edge id="eid_rdfs:subClassOf60" source="nid_adapters:PVRoofStanled" target="nid_adapters:PV">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1434,7 +1457,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf60" source="nid_adapters:Ammonia" target="nid_adapters:AirQuality">
+    <edge id="eid_rdfs:subClassOf61" source="nid_adapters:Ammonia" target="nid_adapters:AirQuality">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1457,7 +1480,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf61" source="nid_adapters:SulphurDioxide" target="nid_adapters:AirQuality">
+    <edge id="eid_rdfs:subClassOf62" source="nid_adapters:SulphurDioxide" target="nid_adapters:AirQuality">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1480,7 +1503,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf62" source="nid_adapters:FineParticlesMatter" target="nid_adapters:AirQuality">
+    <edge id="eid_rdfs:subClassOf63" source="nid_adapters:FineParticlesMatter" target="nid_adapters:AirQuality">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1503,7 +1526,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf63" source="nid_adapters:PersonCounterSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf64" source="nid_adapters:PersonCounterSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1526,7 +1549,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf64" source="nid_adapters:PressureSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf65" source="nid_adapters:PressureSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1549,7 +1572,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf65" source="nid_adapters:EnergyMonitor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf66" source="nid_adapters:EnergyMonitor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1572,7 +1595,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf66" source="nid_adapters:QRGeneratorSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf67" source="nid_adapters:QRGeneratorSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1595,7 +1618,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf67" source="nid_adapters:FloodSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf68" source="nid_adapters:FloodSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1606,7 +1629,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf68" source="nid_adapters:CoolingSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf69" source="nid_adapters:CoolingSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1629,7 +1652,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf69" source="nid_adapters:HealthProperty" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf70" source="nid_adapters:HealthProperty" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1652,7 +1675,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf70" source="nid_adapters:AirConditionningBasic" target="nid_adapters:HeatingSensor">
+    <edge id="eid_rdfs:subClassOf71" source="nid_adapters:AirConditionningBasic" target="nid_adapters:HeatingSensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1663,7 +1686,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf71" source="nid_adapters:AirConditionningBasic" target="nid_adapters:CoolingSensor">
+    <edge id="eid_rdfs:subClassOf72" source="nid_adapters:AirConditionningBasic" target="nid_adapters:CoolingSensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1686,7 +1709,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf72" source="nid_adapters:BoilerNgas" target="nid_adapters:BoilerSensor">
+    <edge id="eid_rdfs:subClassOf73" source="nid_adapters:BoilerNgas" target="nid_adapters:BoilerSensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1709,7 +1732,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf73" source="nid_adapters:FloodAmbientProperty" target="nid_adapters:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf74" source="nid_adapters:FloodAmbientProperty" target="nid_adapters:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1732,7 +1755,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf74" source="nid_adapters:BoilerOil" target="nid_adapters:BoilerSensor">
+    <edge id="eid_rdfs:subClassOf75" source="nid_adapters:BoilerOil" target="nid_adapters:BoilerSensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1755,7 +1778,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf75" source="nid_adapters:Switch" target="nid_core:Actuator">
+    <edge id="eid_rdfs:subClassOf76" source="nid_adapters:Switch" target="nid_core:Actuator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1778,7 +1801,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf76" source="nid_adapters:Pressure" target="nid_adapters:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf77" source="nid_adapters:Pressure" target="nid_adapters:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1801,7 +1824,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf77" source="nid_adapters:UltraFineParticlesMatter" target="nid_adapters:AirQuality">
+    <edge id="eid_rdfs:subClassOf78" source="nid_adapters:UltraFineParticlesMatter" target="nid_adapters:AirQuality">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1824,7 +1847,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf78" source="nid_adapters:CloudCover" target="nid_adapters:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf79" source="nid_adapters:CloudCover" target="nid_adapters:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1847,30 +1870,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf79" source="nid_adapters:PVGround" target="nid_adapters:PV">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_adapters:SoilMoistureSEnsor">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">adapters:SoilMoistureSEnsor</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf80" source="nid_adapters:SoilMoistureSEnsor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf80" source="nid_adapters:PVGround" target="nid_adapters:PV">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1927,7 +1927,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf83" source="nid_adapters:AmbientProperty" target="nid_saref:Property">
+      <node id="nid_adapters:SoilMoistureSensor">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">adapters:SoilMoistureSensor</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf83" source="nid_adapters:SoilMoistureSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1938,7 +1950,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf84" source="nid_adapters:TRAFXProperty" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf84" source="nid_adapters:AmbientProperty" target="nid_saref:Property">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf85" source="nid_adapters:TRAFXProperty" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1961,7 +1984,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf85" source="nid_adapters:UltrasoundSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf86" source="nid_adapters:UltrasoundSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1984,7 +2007,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf86" source="nid_adapters:MonitoringSensor" target="nid_core:Sensor">
+    <edge id="eid_rdfs:subClassOf87" source="nid_adapters:MonitoringSensor" target="nid_core:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2007,7 +2030,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf87" source="nid_adapters:HumidityAmbientProperty" target="nid_adapters:AmbientProperty">
+    <edge id="eid_rdfs:subClassOf88" source="nid_adapters:HumidityAmbientProperty" target="nid_adapters:AmbientProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2030,7 +2053,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf88" source="nid_adapters:AccumulatedPercipitation" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf89" source="nid_adapters:AccumulatedPercipitation" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2053,7 +2076,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf89" source="nid_adapters:PVBIntegrated" target="nid_adapters:PV">
+    <edge id="eid_rdfs:subClassOf90" source="nid_adapters:PVBIntegrated" target="nid_adapters:PV">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
