@@ -377,6 +377,12 @@
        rdfs:label "Noise" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#OperatingProperty
+:OperatingProperty rdf:type owl:Class ;
+                   rdfs:subClassOf <https://saref.etsi.org/core#Property> ;
+                   rdfs:comment "Operating Property" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#Ozone
 :Ozone rdf:type owl:Class ;
        rdfs:subClassOf :AirQuality ;
@@ -498,8 +504,8 @@
               rdfs:label "Soil Moisture" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor
-:SoilMoistureSEnsor rdf:type owl:Class ;
+###  https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSensor
+:SoilMoistureSensor rdf:type owl:Class ;
                     rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
                     rdfs:comment "soil moisture sensors measure the volumetric water content in soil. it provides data about the height and volume of water in soil." ;
                     rdfs:label "Soil Moisture Sensor" .
@@ -689,6 +695,12 @@
                   rdfs:label "Accumulated Water" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Active
+:Active rdf:type owl:NamedIndividual ,
+                 :StatusProperty ;
+        rdfs:comment "Active" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#ActiveEnergy
 :ActiveEnergy rdf:type owl:NamedIndividual ,
                        :EnergyProperty ;
@@ -823,6 +835,18 @@
             rdfs:label "Cloudiness" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Depth
+:Depth rdf:type owl:NamedIndividual ,
+                :OperatingProperty ;
+       rdfs:comment "Depth" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#DevPosition
+:DevPosition rdf:type owl:NamedIndividual ,
+                      :SpaceProperty ;
+             rdfs:label "Dev Position" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus
 :DeviceStatus rdf:type owl:NamedIndividual ,
                        :StatusProperty ;
@@ -888,12 +912,6 @@
 :DistanceWalked rdf:type owl:NamedIndividual ,
                          :MotionProperty ;
                 rdfs:label "Distance Walked" .
-
-
-###  https://auroral.iot.linkeddata.es/def/adapters#DivPosition
-:DivPosition rdf:type owl:NamedIndividual ,
-                      :SpaceProperty ;
-             rdfs:label "Div Position" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#ElectricCurrent
@@ -1225,6 +1243,12 @@ PM10 particles are a common air pollutant.""" ;
                            :HumidityAmbientProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#RelayStatus
+:RelayStatus rdf:type owl:NamedIndividual ,
+                      :StatusProperty ;
+             rdfs:comment "Relay Status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#ReturnedEnergy
 :ReturnedEnergy rdf:type owl:NamedIndividual ,
                          :EnergyProperty ;
@@ -1362,7 +1386,7 @@ PM10 particles are a common air pollutant.""" ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#XAxisAcceleration
 :XAxisAcceleration rdf:type owl:NamedIndividual ,
                             :SpaceProperty ;
-                   rdfs:label "XAxix Acceleration" .
+                   rdfs:label "XAxis Acceleration" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#YAxisAcceleration

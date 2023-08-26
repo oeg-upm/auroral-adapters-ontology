@@ -82,6 +82,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Active"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#ActiveEnergy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -416,6 +425,24 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Depth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#OperatingProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Depth"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#DevPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dev Position"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#DeviceStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -516,15 +543,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Distance Walked"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#DivPosition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Div Position"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#ElectricCurrent",
@@ -1113,6 +1131,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#OperatingProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Operating Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core#Property"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#OperationalStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1395,6 +1422,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#RelayStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relay Status"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#ReturnedEnergy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1494,7 +1530,7 @@
     "@id" : "https://saref.etsi.org/core#Property"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor",
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "soil moisture sensors measure the volumetric water content in soil. it provides data about the height and volume of water in soil."
@@ -1833,7 +1869,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "XAxix Acceleration"
+    "@value" : "XAxis Acceleration"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#YAxisAcceleration",

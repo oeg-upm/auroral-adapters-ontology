@@ -53,9 +53,6 @@
     "UltraFineParticlesMatter" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter"
     },
-    "SoilMoistureSEnsor" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor"
-    },
     "Relay" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Relay"
     },
@@ -119,6 +116,9 @@
     },
     "PVFaçade" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVFaçade"
+    },
+    "OperatingProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#OperatingProperty"
     },
     "BoilerSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BoilerSensor"
@@ -201,6 +201,9 @@
     "title" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#title",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SoilMoistureSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSensor"
     },
     "PVRoofStanled" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#PVRoofStanled"

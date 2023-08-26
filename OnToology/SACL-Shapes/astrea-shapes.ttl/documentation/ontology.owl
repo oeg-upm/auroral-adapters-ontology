@@ -1,0 +1,1611 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shacl="http://www.w3.org/ns/shacl#"
+     xmlns:astrea="https://w3id.org/def/astrea#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#class -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#class"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#datatype -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#datatype"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#description -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#description"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#name -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#name"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#nodeKind -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#nodeKind"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#path -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#path"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#pattern -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#pattern"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#property -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#property"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#targetClass -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#targetClass"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#contains -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#contains"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#generatedShapesFrom -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#generatedShapesFrom"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#message -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#message"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#source -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#source"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#statusCode -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#statusCode"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#NodeShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#NodeShape"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#PropertyShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#PropertyShape"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#ReportEntry -->
+
+
+    <Class rdf:about="https://w3id.org/def/astrea#ReportEntry"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#ShapeReport -->
+
+
+    <Class rdf:about="https://w3id.org/def/astrea#ShapeReport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://astrea.linkeddata.es/report -->
+
+
+    <NamedIndividual rdf:about="http://astrea.linkeddata.es/report">
+        <rdf:type rdf:resource="https://w3id.org/def/astrea#ShapeReport"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a88797653d7f98d35c0383c5fb552217"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a8f2374dcfb224469fc9e5e4503f831e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a9333735711f810516dc97fe64b9568f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a9a3a5171e0652515ad5251c3e3d217c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ab9140b380ff9df2a84ede216aea59d9"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ad876ca951b7b5c4768b244bb13b5eb6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#aec30d4c96a7e3360147ec3bf66eeef2"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b4d4d4c2328d83a24d76a69829b5a0e1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#bba7f7cdc4bc59a8467a88106c3c1809"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#bc2239039e0d7fab4907223b2245a63d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#bf79a2ef716b6ff4b40fdd2f86262a55"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c8c7a436ec6d9eb8a5111c147db8fe4b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cf2e42ac1a52ce04027efeb5b894550d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d064e69d52d007c1302651cbfdb29d96"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d26171884520610406f0868c72ec6aef"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d36eb7b4a34143fe64a34f2c5ba67943"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d502109c8bbb28e979d928c1009440a8"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d774a8851810aed7f5f64b358358d9ea"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#dd75adf7bc064e8de54d1cfbfe27538e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#de595cebfc815c915e9b1e93b06973db"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e0189f7263d66638cab9cb461a8bd251"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e06432fb7d141eb6b444fe22dd70386d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e2c86d5702cb1015d25ea2d6e92413c3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e45a7be96fb7a374daa1be8e1e8a368b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#eb2e2bd1e0c979f492a254ad9e76e44f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ee5849b5a34d68992ab786083c1e34ed"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#efb319058c8300dc40eb7aa378476d57"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f2de4a802aa5137e755af550a35d07ed"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f4877e4837d4557a792827133a7aa3f3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f4ab434743e8d85eef6f88ae5b0c9aba"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f5d87c6e5fe2865c0343927bee9577bf"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#fbbf13d8f51433c460130c340a6d835e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#0a10943654271ac10f4d56b6dc8128b7"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#0fb865dace17a841bc8940639d22a9ca"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#00c35fc9cfe78324c1ccfde8feb1fa50"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#018ae8c6985e05990fd4c83ada5fb65e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#0202863d413fdba03911d2f61a23409f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#08c9db1e350075dbaa19c5c8e604ef63"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#09f8ab8b066aa3d9e0c1e0dd784be952"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#0985182046a5878a83734032ad4a0657"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1df80e441119944c743ed23e101e6066"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#10b76d945759c3a36c80ccccff99cd5c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#14ebcf6585edacd9acf8483f2ba3cd29"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#184c8b0128a1baec7b01c98d770576b1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#22df8dd0366b9da2d121179a084b89d1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#2965c8dfa4007a0c658960934eec0968"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#29707270e40cde4f310dfb465dd56486"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3abe2675738ae8f1ff5672a518eaf692"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3b14e65ceb7114e068c1bb95d7ddec29"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3d1dfa23ebd6f436985128cdef22a43c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#36245374f10c92af9a0fb4f241aa6d69"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4c0e7d4c4a4c30faf5bc79a891ff0907"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4f35d26e33c1783fa4ed1abcb81795cd"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#408b86fc872b39bdfe60d64fecaa5572"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#42e2ff11616a788cca690808083477ae"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#427b5e5ac8b6f5d247cdf98953cf9004"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#450a2913b4fc336ac80384ea68ca7e78"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#468ea9fab0699f1f3583e698b0001b65"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#46830785d07135504630cb5603221733"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#474d55fae32aa952d0afa0378db9189b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#48ebeff0b8f431edf3d9e8132626a8f7"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#485601e593f350615e32d78e5d425526"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4898e29ac4ecd65b38066d79536f80fd"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5090ed279013a27f4d9c38cc53ee6448"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#52bae48495130a4bbeebeedeae5c5a7f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#52478d405184a7b3e892e5872b97ff1a"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#53a63b2b12e14f5518be6bf3a68053ec"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5961665af9a2d2148c22c870b732d415"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#6f5d341d8f01077f8c2c4456b95e6f8d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#6f6bbc440576e7916fc88c622a7c68a6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#63533fa526e8f9953a0ff625738b3607"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#65036a45f8986ab7a235c5c73225c1a9"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#660a9a010976f7e075526606f4091577"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#67a7371b828f994e1860d561d0bb2db1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#69d54111b7b722f075f7b4af137e4472"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7dd428a4751f489bb1a02d52ef7db7b7"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7e158a4aeec013301318a9fdf9315987"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#70ed1f3dc43701074d11ba91f6723e56"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#73b6c2cdf77fd0d6bd48e65e5c43a539"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#75768c7fa0c24c88301f79e3df12173a"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#777c500b6bd83924d45d6e2fe99acf89"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8a03c06b2ca97417247ee7753887fbb4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8ae80f696f7dd232406f1c7813cf48de"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8b3c303021878421596c2c26f6cba2b7"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8b98d665172c23f0100f4d134af03135"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8d82e655472963139188d55f69f2625f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#853868dc385f93c51bf6b12a0d89a39f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9ad0963c05b5c630026372898fb43617"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9b44398dc0460203b890ffb9aff30717"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9eb0099c3e11104435293173972f58fb"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#90d70130f4fe5c4adc97a3c583a33ea0"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#92bd71490137d5d83ea128a50c684a5e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#93eb256aafe31362c89c1d7bcd69a49c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#95b200b4717b40a8469dd6ea2cfff516"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#97b7764c2ad8b47833b14b14816f2135"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#98ed789ba9136b7d9b68ea56b7c411b2"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#994dd5dd53d94f4f2d454c15f35636b2"/>
+        <astrea:generatedShapesFrom rdf:resource="https://astrea.linkeddata.es/report/01391829209"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/report/01391829209 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/report/01391829209">
+        <rdf:type rdf:resource="https://w3id.org/def/astrea#ReportEntry"/>
+        <astrea:message>Shapes generated with no errors</astrea:message>
+        <astrea:source>https://auroral.iot.linkeddata.es/def/adapters/ontology.ttl</astrea:source>
+        <astrea:statusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#int">200</astrea:statusCode>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a88797653d7f98d35c0383c5fb552217 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a88797653d7f98d35c0383c5fb552217">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Flood Ambient Property</rdfs:label>
+        <shacl:description>a rising and overflowing of a body os water especially onto normally dry land</shacl:description>
+        <shacl:name>Flood Ambient Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#FloodAmbientProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a8f2374dcfb224469fc9e5e4503f831e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a8f2374dcfb224469fc9e5e4503f831e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Pressure Sensor</rdfs:label>
+        <shacl:name>Pressure Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PressureSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a9333735711f810516dc97fe64b9568f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a9333735711f810516dc97fe64b9568f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Storage Capacity</rdfs:label>
+        <shacl:name>Storage Capacity</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#StorageCapacity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a9a3a5171e0652515ad5251c3e3d217c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a9a3a5171e0652515ad5251c3e3d217c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Fine Particles Matter</rdfs:label>
+        <shacl:name>Fine Particles Matter</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#FineParticlesMatter"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ab9140b380ff9df2a84ede216aea59d9 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ab9140b380ff9df2a84ede216aea59d9">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Battery Sensor</rdfs:label>
+        <shacl:name>Battery Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/core#BatterySensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ad876ca951b7b5c4768b244bb13b5eb6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ad876ca951b7b5c4768b244bb13b5eb6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Motion Property</rdfs:label>
+        <shacl:description>it is  about the motion and the vibration properties.</shacl:description>
+        <shacl:name>Motion Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#MotionProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#aec30d4c96a7e3360147ec3bf66eeef2 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#aec30d4c96a7e3360147ec3bf66eeef2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ozone</rdfs:label>
+        <shacl:name>Ozone</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Ozone"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b4d4d4c2328d83a24d76a69829b5a0e1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b4d4d4c2328d83a24d76a69829b5a0e1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>QR Counter</rdfs:label>
+        <shacl:name>QR Counter</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#QRCounter"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#bba7f7cdc4bc59a8467a88106c3c1809 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#bba7f7cdc4bc59a8467a88106c3c1809">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Alert</rdfs:label>
+        <shacl:name>Alert</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Alert"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#bc2239039e0d7fab4907223b2245a63d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#bc2239039e0d7fab4907223b2245a63d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#BoilerBiomass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#bf79a2ef716b6ff4b40fdd2f86262a55 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#bf79a2ef716b6ff4b40fdd2f86262a55">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Weather Sensor</rdfs:label>
+        <shacl:description>It is a component of an automatic weather station that detects the presence of hydrometeors and determines their type (rain, snow, drizzle, etc.) and intensity. it detects data about the temperature, the humidity, the solar irradiation, the pressure and the rain.</shacl:description>
+        <shacl:name>Weather Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c8c7a436ec6d9eb8a5111c147db8fe4b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c8c7a436ec6d9eb8a5111c147db8fe4b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Precipitation</rdfs:label>
+        <shacl:name>Precipitation</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Precipitation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#cf2e42ac1a52ce04027efeb5b894550d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#cf2e42ac1a52ce04027efeb5b894550d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has height</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:name>has height</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#hasHeight"/>
+        <shacl:pattern>(\+|-)?([0-9]+(\.[0-9]*)?|\.[0-9]+)([Ee](\+|-)?[0-9]+)?|(\+|-)?INF|NaN</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d064e69d52d007c1302651cbfdb29d96 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d064e69d52d007c1302651cbfdb29d96">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Energy Monitor Sensor</rdfs:label>
+        <shacl:description>It is used to track and control real time energy use. It has different properties such as the returned energy, the total returned energy, etc...</shacl:description>
+        <shacl:name>Energy Monitor Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#EnergyMonitor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d26171884520610406f0868c72ec6aef -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d26171884520610406f0868c72ec6aef">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HeatingSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d36eb7b4a34143fe64a34f2c5ba67943 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d36eb7b4a34143fe64a34f2c5ba67943">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#CoolingSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d502109c8bbb28e979d928c1009440a8 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d502109c8bbb28e979d928c1009440a8">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Smart Valve</rdfs:label>
+        <shacl:name>Smart Valve</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SmartValve"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d774a8851810aed7f5f64b358358d9ea -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d774a8851810aed7f5f64b358358d9ea">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>QR Generator Sensor</rdfs:label>
+        <shacl:description>The QR Generator sensor is designed to count the numebr of person that scan the QR code when they visit a specific city</shacl:description>
+        <shacl:name>QR Generator Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#QRGeneratorSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#dd75adf7bc064e8de54d1cfbfe27538e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#dd75adf7bc064e8de54d1cfbfe27538e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/core#serialNumber"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#de595cebfc815c915e9b1e93b06973db -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#de595cebfc815c915e9b1e93b06973db">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ambient Property</rdfs:label>
+        <shacl:description>Ambient Property</shacl:description>
+        <shacl:description>This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties.</shacl:description>
+        <shacl:name>Ambient Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e0189f7263d66638cab9cb461a8bd251 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e0189f7263d66638cab9cb461a8bd251">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Nitrogen Monoxide</rdfs:label>
+        <shacl:name>Nitrogen Monoxide</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#NitrogenMonoxide"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e06432fb7d141eb6b444fe22dd70386d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e06432fb7d141eb6b444fe22dd70386d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e2c86d5702cb1015d25ea2d6e92413c3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e2c86d5702cb1015d25ea2d6e92413c3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>measures property</rdfs:label>
+        <shacl:class rdf:resource="https://saref.etsi.org/core#Property"/>
+        <shacl:description>measures property</shacl:description>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://saref.etsi.org/core#measuresProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e45a7be96fb7a374daa1be8e1e8a368b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e45a7be96fb7a374daa1be8e1e8a368b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Space Property</rdfs:label>
+        <shacl:description>describes properties related to space such as the  GPS latitude, the GPS altitude, the GPS longitude, the XAxis Acceleration, the YAxisAcceleration, the ZAxis acceleration, the distance, etc.</shacl:description>
+        <shacl:name>Space Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#eb2e2bd1e0c979f492a254ad9e76e44f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#eb2e2bd1e0c979f492a254ad9e76e44f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#CloudCover"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ee5849b5a34d68992ab786083c1e34ed -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ee5849b5a34d68992ab786083c1e34ed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Humidity Sensor</rdfs:label>
+        <shacl:description>It is a device that detects and measures water vapor in its environment and converts its findings into a corresponding electrical signal.</shacl:description>
+        <shacl:name>Humidity Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HumiditySensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#efb319058c8300dc40eb7aa378476d57 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#efb319058c8300dc40eb7aa378476d57">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://saref.etsi.org/core#Property"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://saref.etsi.org/core#controlsProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f2de4a802aa5137e755af550a35d07ed -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f2de4a802aa5137e755af550a35d07ed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#BoilerOil"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f4877e4837d4557a792827133a7aa3f3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f4877e4837d4557a792827133a7aa3f3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HeatPumpAirtoAir"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f4ab434743e8d85eef6f88ae5b0c9aba -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f4ab434743e8d85eef6f88ae5b0c9aba">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Smart Plug</rdfs:label>
+        <shacl:name>Smart Plug</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SmartPlug"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f5d87c6e5fe2865c0343927bee9577bf -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f5d87c6e5fe2865c0343927bee9577bf">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Luminus Flux</rdfs:label>
+        <shacl:name>Luminus Flux</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#LuminusFlux"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Accelerometer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#fbbf13d8f51433c460130c340a6d835e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#fbbf13d8f51433c460130c340a6d835e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#AirConditionningBasic"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Property</rdfs:label>
+        <shacl:description>It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below.</shacl:description>
+        <shacl:name>Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://saref.etsi.org/core#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#0a10943654271ac10f4d56b6dc8128b7 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#0a10943654271ac10f4d56b6dc8128b7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#TRAFXProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#0fb865dace17a841bc8940639d22a9ca -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#0fb865dace17a841bc8940639d22a9ca">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Presence</rdfs:label>
+        <shacl:name>Presence</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Presence"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#00c35fc9cfe78324c1ccfde8feb1fa50 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#00c35fc9cfe78324c1ccfde8feb1fa50">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PVFaçade"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#018ae8c6985e05990fd4c83ada5fb65e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#018ae8c6985e05990fd4c83ada5fb65e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Relay</rdfs:label>
+        <shacl:name>Relay</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Relay"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#0202863d413fdba03911d2f61a23409f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#0202863d413fdba03911d2f61a23409f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Weather"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#08c9db1e350075dbaa19c5c8e604ef63 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#08c9db1e350075dbaa19c5c8e604ef63">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Act reason</rdfs:label>
+        <shacl:name>Act reason</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#ActReason"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#09f8ab8b066aa3d9e0c1e0dd784be952 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#09f8ab8b066aa3d9e0c1e0dd784be952">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Water Valve Actuator</rdfs:label>
+        <shacl:description>it is used to control the water valve. It generates an acknowledgement message indicating that the command has been accepted. The generated command can be: ON, OFF, active, close.</shacl:description>
+        <shacl:name>Water Valve Actuator</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#WaterValveActuator"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#0985182046a5878a83734032ad4a0657 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#0985182046a5878a83734032ad4a0657">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HeatPumpAirtoWater"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#1df80e441119944c743ed23e101e6066 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#1df80e441119944c743ed23e101e6066">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Device</rdfs:label>
+        <shacl:name>Device</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#dd75adf7bc064e8de54d1cfbfe27538e"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#e2c86d5702cb1015d25ea2d6e92413c3"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#efb319058c8300dc40eb7aa378476d57"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#52478d405184a7b3e892e5872b97ff1a"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#92bd71490137d5d83ea128a50c684a5e"/>
+        <shacl:targetClass rdf:resource="https://saref.etsi.org/core#Device"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#10b76d945759c3a36c80ccccff99cd5c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#10b76d945759c3a36c80ccccff99cd5c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Status Property</rdfs:label>
+        <shacl:name>Status Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#408b86fc872b39bdfe60d64fecaa5572"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#75768c7fa0c24c88301f79e3df12173a"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#StatusProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#14ebcf6585edacd9acf8483f2ba3cd29 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#14ebcf6585edacd9acf8483f2ba3cd29">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#BoilerNgas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#184c8b0128a1baec7b01c98d770576b1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#184c8b0128a1baec7b01c98d770576b1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Carbon Monoxide</rdfs:label>
+        <shacl:name>Carbon Monoxide</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#CarbonMonoxide"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#22df8dd0366b9da2d121179a084b89d1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#22df8dd0366b9da2d121179a084b89d1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>PV Bintegrated</rdfs:label>
+        <shacl:name>PV Bintegrated</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PVBIntegrated"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#2965c8dfa4007a0c658960934eec0968 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#2965c8dfa4007a0c658960934eec0968">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Sound Property</rdfs:label>
+        <shacl:description>This concept defines the Noise Level properties.</shacl:description>
+        <shacl:name>Sound Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Sound"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#29707270e40cde4f310dfb465dd56486 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#29707270e40cde4f310dfb465dd56486">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Switch Status</rdfs:label>
+        <shacl:name>Switch Status</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SwitchStatus"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3abe2675738ae8f1ff5672a518eaf692 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3abe2675738ae8f1ff5672a518eaf692">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Wind Ambient Property</rdfs:label>
+        <shacl:name>Wind Ambient Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3b14e65ceb7114e068c1bb95d7ddec29 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3b14e65ceb7114e068c1bb95d7ddec29">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Coarse Particulate Matter</rdfs:label>
+        <shacl:name>Coarse Particulate Matter</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#CoarseParticulateMatter"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3d1dfa23ebd6f436985128cdef22a43c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3d1dfa23ebd6f436985128cdef22a43c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Soil Moisture Sensor</rdfs:label>
+        <shacl:description>soil moisture sensors measure the volumetric water content in soil. it provides data about the height and volume of water in soil.</shacl:description>
+        <shacl:name>Soil Moisture Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#36245374f10c92af9a0fb4f241aa6d69 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#36245374f10c92af9a0fb4f241aa6d69">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Device</rdfs:label>
+        <shacl:description>It is designed to realize a specific task. This task can be a detection of an occurred event or the initiation of an action. It has two sub-classes (sensor and actuator).</shacl:description>
+        <shacl:name>Device</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/core#Device"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4c0e7d4c4a4c30faf5bc79a891ff0907 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4c0e7d4c4a4c30faf5bc79a891ff0907">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Sensor</rdfs:label>
+        <shacl:name>Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://saref.etsi.org/core#Sensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4f35d26e33c1783fa4ed1abcb81795cd -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4f35d26e33c1783fa4ed1abcb81795cd">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Light Property</rdfs:label>
+        <shacl:description>it describes properties about illuminance.</shacl:description>
+        <shacl:name>Light Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#LightProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#408b86fc872b39bdfe60d64fecaa5572 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#408b86fc872b39bdfe60d64fecaa5572">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>date Last Status Update</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <shacl:name>date Last Status Update</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate"/>
+        <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#42e2ff11616a788cca690808083477ae -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#42e2ff11616a788cca690808083477ae">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Nitrogen Dioxide</rdfs:label>
+        <shacl:name>Nitrogen Dioxide</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#NitrogenDioxide"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#427b5e5ac8b6f5d247cdf98953cf9004 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#427b5e5ac8b6f5d247cdf98953cf9004">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ambient Humidity Property</rdfs:label>
+        <shacl:description>It is a value expressed as a percentage (0-100%). It is the amount of water vapor present in a specific volume.</shacl:description>
+        <shacl:name>Ambient Humidity Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HumidityAmbientProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#450a2913b4fc336ac80384ea68ca7e78 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#450a2913b4fc336ac80384ea68ca7e78">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Light Bulb</rdfs:label>
+        <shacl:name>Light Bulb</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#LightBulb"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#468ea9fab0699f1f3583e698b0001b65 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#468ea9fab0699f1f3583e698b0001b65">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>UTC time in ISO 8601 formatted timestamp for when to get data TO</rdfs:label>
+        <shacl:description>UTC time in ISO 8601 formatted timestamp for when to get data TO</shacl:description>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#to-timestamp"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#46830785d07135504630cb5603221733 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#46830785d07135504630cb5603221733">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Water AMR Sensor</rdfs:label>
+        <shacl:description>Water AMR sensor sends data about the accumulated value of water in the current timestamp.</shacl:description>
+        <shacl:name>Water AMR Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#WaterAMRSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#474d55fae32aa952d0afa0378db9189b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#474d55fae32aa952d0afa0378db9189b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#BoilerSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#48ebeff0b8f431edf3d9e8132626a8f7 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#48ebeff0b8f431edf3d9e8132626a8f7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Noise</rdfs:label>
+        <shacl:description>mesure the noise in a place</shacl:description>
+        <shacl:name>Noise</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Noise"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#485601e593f350615e32d78e5d425526 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#485601e593f350615e32d78e5d425526">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Actuator</rdfs:label>
+        <shacl:name>Actuator</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://saref.etsi.org/core#Actuator"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4898e29ac4ecd65b38066d79536f80fd -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4898e29ac4ecd65b38066d79536f80fd">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ambient Solar Radiation</rdfs:label>
+        <shacl:description>Often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun.</shacl:description>
+        <shacl:name>Ambient Solar Radiation</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#AmbientSolarRadiation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5090ed279013a27f4d9c38cc53ee6448 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5090ed279013a27f4d9c38cc53ee6448">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Health Property</rdfs:label>
+        <shacl:name>Health Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#52bae48495130a4bbeebeedeae5c5a7f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#52bae48495130a4bbeebeedeae5c5a7f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ammonia</rdfs:label>
+        <shacl:name>Ammonia</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Ammonia"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#52478d405184a7b3e892e5872b97ff1a -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#52478d405184a7b3e892e5872b97ff1a">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/core#versionNumber"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#53a63b2b12e14f5518be6bf3a68053ec -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#53a63b2b12e14f5518be6bf3a68053ec">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Monitoring Sensor</rdfs:label>
+        <shacl:description>It generates data about the active power, the reactive inductive power, the active enrgy, the reactive capacitif, the voltage and so one.</shacl:description>
+        <shacl:name>Monitoring Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5961665af9a2d2148c22c870b732d415 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5961665af9a2d2148c22c870b732d415">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>GPS Emergency Button</rdfs:label>
+        <shacl:description>It is a device used to detect the exact location of a specific thing or object. The detected data is the longitude, latitude, altitude, and the acceleration.</shacl:description>
+        <shacl:name>GPS Emergency Button</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#GPSEmergencyButton"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#6f5d341d8f01077f8c2c4456b95e6f8d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#6f5d341d8f01077f8c2c4456b95e6f8d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has volume</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:name>has volume</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#hasVolume"/>
+        <shacl:pattern>(\+|-)?([0-9]+(\.[0-9]*)?|\.[0-9]+)([Ee](\+|-)?[0-9]+)?|(\+|-)?INF|NaN</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#6f6bbc440576e7916fc88c622a7c68a6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#6f6bbc440576e7916fc88c622a7c68a6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PVRoofFlat"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#63533fa526e8f9953a0ff625738b3607 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#63533fa526e8f9953a0ff625738b3607">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Error</rdfs:label>
+        <shacl:name>Error</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Error"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#65036a45f8986ab7a235c5c73225c1a9 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#65036a45f8986ab7a235c5c73225c1a9">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ultra Fine Particles Matter</rdfs:label>
+        <shacl:name>Ultra Fine Particles Matter</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#660a9a010976f7e075526606f4091577 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#660a9a010976f7e075526606f4091577">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Person Counter Sensor</rdfs:label>
+        <shacl:description>The person sounter sensor is designed to count the number of person that visit a specific city</shacl:description>
+        <shacl:name>Person Counter Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PersonCounterSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#67a7371b828f994e1860d561d0bb2db1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#67a7371b828f994e1860d561d0bb2db1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>UTC time in ISO 8601 formatted timestamp for when to get data From</rdfs:label>
+        <shacl:description>UTC time in ISO 8601 formatted timestamp for when to get data From</shacl:description>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#from-timestamp"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#69d54111b7b722f075f7b4af137e4472 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#69d54111b7b722f075f7b4af137e4472">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#UltrasoundSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#7dd428a4751f489bb1a02d52ef7db7b7 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#7dd428a4751f489bb1a02d52ef7db7b7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Presence Sensor</rdfs:label>
+        <shacl:description>it detects the presence of an object in a place</shacl:description>
+        <shacl:name>Presence Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Presence_Sensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#7e158a4aeec013301318a9fdf9315987 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#7e158a4aeec013301318a9fdf9315987">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PVRoofStanled"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#70ed1f3dc43701074d11ba91f6723e56 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#70ed1f3dc43701074d11ba91f6723e56">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Soil Moisture</rdfs:label>
+        <shacl:description>presents the soil moisture height and volume</shacl:description>
+        <shacl:name>Soil Moisture</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#cf2e42ac1a52ce04027efeb5b894550d"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#6f5d341d8f01077f8c2c4456b95e6f8d"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SoilMoisture"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#73b6c2cdf77fd0d6bd48e65e5c43a539 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#73b6c2cdf77fd0d6bd48e65e5c43a539">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#AirQuality"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#75768c7fa0c24c88301f79e3df12173a -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#75768c7fa0c24c88301f79e3df12173a">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>title</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>title</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#title"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#777c500b6bd83924d45d6e2fe99acf89 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#777c500b6bd83924d45d6e2fe99acf89">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Pressure</rdfs:label>
+        <shacl:description>provides information about the pressure properties (for example the atmospheric pressure).</shacl:description>
+        <shacl:name>Pressure</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Pressure"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8a03c06b2ca97417247ee7753887fbb4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8a03c06b2ca97417247ee7753887fbb4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Energy Property</rdfs:label>
+        <shacl:description>It regroups the properties related to the energy such as: the battery level, the totalreturnedEnergy, the TotalEnergy, the PowerFactor, the Gridvoltage, and so one.</shacl:description>
+        <shacl:name>Energy Property</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8ae80f696f7dd232406f1c7813cf48de -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8ae80f696f7dd232406f1c7813cf48de">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Person Counter</rdfs:label>
+        <shacl:name>Person Counter</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PersonCounter"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8b3c303021878421596c2c26f6cba2b7 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8b3c303021878421596c2c26f6cba2b7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Actuator</rdfs:label>
+        <shacl:description>A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world</shacl:description>
+        <shacl:name>Actuator</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/core#Actuator"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8b98d665172c23f0100f4d134af03135 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8b98d665172c23f0100f4d134af03135">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Carbon Dioxide</rdfs:label>
+        <shacl:name>Carbon Dioxide</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#CarbonDioxide"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8d82e655472963139188d55f69f2625f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8d82e655472963139188d55f69f2625f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Switch</rdfs:label>
+        <shacl:name>Switch</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Switch"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#853868dc385f93c51bf6b12a0d89a39f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#853868dc385f93c51bf6b12a0d89a39f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Motion Sensor</rdfs:label>
+        <shacl:description>A motion sensor (or motion detector) is a device that is designed to detect and measure movement.</shacl:description>
+        <shacl:name>Motion Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#MotionSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9ad0963c05b5c630026372898fb43617 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9ad0963c05b5c630026372898fb43617">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Thermometer Sensor</rdfs:label>
+        <shacl:description>A thermometer sensor is a device used to measure temperature.</shacl:description>
+        <shacl:name>Thermometer Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Thermometer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9b44398dc0460203b890ffb9aff30717 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9b44398dc0460203b890ffb9aff30717">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Sound Sensor</rdfs:label>
+        <shacl:name>Sound Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SoundSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9eb0099c3e11104435293173972f58fb -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9eb0099c3e11104435293173972f58fb">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>PV</rdfs:label>
+        <shacl:name>PV</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PV"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#90d70130f4fe5c4adc97a3c583a33ea0 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#90d70130f4fe5c4adc97a3c583a33ea0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Sulphur Dioxide</rdfs:label>
+        <shacl:name>Sulphur Dioxide</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#SulphurDioxide"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#92bd71490137d5d83ea128a50c684a5e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#92bd71490137d5d83ea128a50c684a5e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has id</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>has id</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasId"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#93eb256aafe31362c89c1d7bcd69a49c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#93eb256aafe31362c89c1d7bcd69a49c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Air Quality Sensor</rdfs:label>
+        <shacl:name>Air Quality Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#AirQualitySensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#95b200b4717b40a8469dd6ea2cfff516 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#95b200b4717b40a8469dd6ea2cfff516">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#PVGround"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#97b7764c2ad8b47833b14b14816f2135 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#97b7764c2ad8b47833b14b14816f2135">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Waste Bin Sensor</rdfs:label>
+        <shacl:description>It ensures a real time monitoring of the waste bins&apos; status. It generates data about the distance and the deviation position</shacl:description>
+        <shacl:name>Waste Bin Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#98ed789ba9136b7d9b68ea56b7c411b2 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#98ed789ba9136b7d9b68ea56b7c411b2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Flood Sensor</rdfs:label>
+        <shacl:description>It is designed for detection of water leaks or detecting excessively high-water level.</shacl:description>
+        <shacl:name>Flood Sensor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#FloodSensor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#994dd5dd53d94f4f2d454c15f35636b2 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#994dd5dd53d94f4f2d454c15f35636b2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ambient Temperature</rdfs:label>
+        <shacl:description>Ambient Temperature is a measure of the temperature around a given asset or piece of equipement or other object</shacl:description>
+        <shacl:name>Ambient Temperature</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
