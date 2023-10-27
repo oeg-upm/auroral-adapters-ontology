@@ -1,31 +1,25 @@
-@prefix ns1: < https://saref.etsi.org/core# > .
-@prefix ns2: < https://auroral.iot.linkeddata.es/def/adapters# > .
-@prefix ns3: < https://auroral.iot.linkeddata.es/def/core# > .
-@prefix ns4: < http://www.wurvoc.org/vocabularies/om-2/> .
-@prefix ns5: < https://www.w3.org/2006/time> . 
-@prefix xsd: < http://www.w3.org/2001/XMLSchema# > .
+@prefix ns1: <https://saref.etsi.org/core#> .
+@prefix ns2: <https://auroral.iot.linkeddata.es/def/adapters#> .
+@prefix ns3: <https://auroral.iot.linkeddata.es/def/core#> .
+@prefix ns4: <http://www.wurvoc.org/vocabularies/om-2/> .
+@prefix ns5: <https://www.w3.org/2006/time> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema# > .
 
-ns2:Thermometer1 a ns:Thermometer, 
-                 ns1:measuresProperty ns2:IndoorAmbientProperty, 
-                 ns1:makesMeasurement ns2:Measurement1, 
-                 ns1:makesMeasurement ns2:Measurement2,
+ns2:Thermometer1 a ns2:Thermometer; 
+                 ns1:measuresProperty ns2:IndoorAmbientProperty; 
+                 ns1:makesMeasurement ns2:Measurement1; 
+                 ns1:makesMeasurement ns2:Measurement2 .
 
 
-ns2:Measurement1 ns1:relatesToProperty ns2:IndoorAmbientProperty, 
-                 ns1:hasTimeStamp "12-12-12T10:05:55"^^xsd:dateTime,
-                 ns1:hasValue 23,
-                 ns1:isMeasuredIn ns4:degree,
-                 ns3:hasGranularity ns5:unitMinute
+ns2:Measurement1 ns1:relatesToProperty ns2:IndoorAmbientProperty; 
+                 ns1:hasTimeStamp "12-12-12T10:05:55"^^xsd:dateTime;
+                 ns1:hasValue 23;
+                 ns1:isMeasuredIn ns4:degree;
+                 ns3:hasGranularity ns5:unitMinute .
 
-ns2:Measurement2 ns1:relatesToProperty ns2:IndoorAmbientProperty,
-                 ns1:hasTimeStamp "10-12-12T16:05:55"^^xsd:dateTime,
-                 hasValue 17,
-                 hasUnit ns4:degree, 
-                 ns1:isMeasuredIn ns4:degree,
-                 ns3:hasGranularity ns5:unitMinute
+ns2:Measurement2 ns1:relatesToProperty ns2:IndoorAmbientProperty;
+                 ns1:hasTimeStamp "10-12-12T16:05:55"^^xsd:dateTime;
+                 ns1:hasValue 17;
+                 ns1:isMeasuredIn ns4:degree;
+                 ns3:hasGranularity ns5:unitMinute .
                  
-
-
-
-
-
