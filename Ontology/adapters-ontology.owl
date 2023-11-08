@@ -74,13 +74,6 @@ adapters:dateLastStatusUpdate rdf:type owl:DatatypeProperty ;
                               rdfs:label "date Last Status Update" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#from-timestamp
-adapters:from-timestamp rdf:type owl:DatatypeProperty ;
-                        rdfs:domain adapters:MonitoringSensor ,
-                                    adapters:WeatherSensor ;
-                        rdfs:comment "UTC time in ISO 8601 formatted timestamp for when to get data From" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/adapters#hasHeight
 adapters:hasHeight rdf:type owl:DatatypeProperty ;
                    rdfs:domain adapters:SoilMoisture ;
@@ -102,14 +95,8 @@ adapters:title rdf:type owl:DatatypeProperty ;
                rdfs:label "title" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#to-timestamp
-adapters:to-timestamp rdf:type owl:DatatypeProperty ;
-                      rdfs:comment "UTC time in ISO 8601 formatted timestamp for when to get data TO" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#hasId
 core:hasId rdf:type owl:DatatypeProperty ;
-           rdfs:domain saref:Device ;
            rdfs:range xsd:string ;
            rdfs:label "has id" .
 
@@ -124,6 +111,18 @@ core:serialNumber rdf:type owl:DatatypeProperty ;
 core:versionNumber rdf:type owl:DatatypeProperty ;
                    rdfs:domain saref:Device ;
                    rdfs:range xsd:string .
+
+
+###  https://saref.etsi.org/core#hasTimeStamp
+saref:hasTimeStamp rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:label "has time stamp" .
+
+
+###  https://saref.etsi.org/core#hasValue
+saref:hasValue rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:float ;
+               rdfs:label "has value" .
 
 
 #################################################################
