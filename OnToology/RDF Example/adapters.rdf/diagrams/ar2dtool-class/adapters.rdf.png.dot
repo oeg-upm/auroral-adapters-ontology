@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns2:Measurement1" -> "https://www.w3.org/2006/timeunitMinute" [ label = "ns3:hasGranularity" ];
+	"ns2:Measurement1" -> "ns4:degree" [ label = "ns1:isMeasuredIn" ];
+	"ns2:Measurement1" -> "ns2:IndoorAmbientProperty" [ label = "ns1:relatesToProperty" ];
+	"ns2:Thermometer1" -> "ns2:Measurement2" [ label = "ns1:makesMeasurement" ];
+	"ns2:Thermometer1" -> "ns2:Measurement1" [ label = "ns1:makesMeasurement" ];
+	"ns2:Thermometer1" -> "ns2:IndoorAmbientProperty" [ label = "ns1:measuresProperty" ];
+	"ns2:Measurement2" -> "https://www.w3.org/2006/timeunitMinute" [ label = "ns3:hasGranularity" ];
+	"ns2:Measurement2" -> "ns4:degree" [ label = "ns1:isMeasuredIn" ];
+	"ns2:Measurement2" -> "ns2:IndoorAmbientProperty" [ label = "ns1:relatesToProperty" ];
+
+}

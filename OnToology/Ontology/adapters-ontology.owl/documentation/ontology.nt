@@ -68,12 +68,6 @@
 <https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate> <http://www.w3.org/2000/01/rdf-schema#label> "date Last Status Update" .
 # 
-# https://auroral.iot.linkeddata.es/def/adapters#from-timestamp
-<https://auroral.iot.linkeddata.es/def/adapters#from-timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/adapters#from-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor> .
-<https://auroral.iot.linkeddata.es/def/adapters#from-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor> .
-<https://auroral.iot.linkeddata.es/def/adapters#from-timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "UTC time in ISO 8601 formatted timestamp for when to get data From" .
-# 
 # https://auroral.iot.linkeddata.es/def/adapters#hasHeight
 <https://auroral.iot.linkeddata.es/def/adapters#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/adapters#hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/adapters#SoilMoisture> .
@@ -92,13 +86,8 @@
 <https://auroral.iot.linkeddata.es/def/adapters#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://auroral.iot.linkeddata.es/def/adapters#title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
 # 
-# https://auroral.iot.linkeddata.es/def/adapters#to-timestamp
-<https://auroral.iot.linkeddata.es/def/adapters#to-timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/adapters#to-timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "UTC time in ISO 8601 formatted timestamp for when to get data TO" .
-# 
 # https://auroral.iot.linkeddata.es/def/core#hasId
 <https://auroral.iot.linkeddata.es/def/core#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/core#hasId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
 <https://auroral.iot.linkeddata.es/def/core#hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://auroral.iot.linkeddata.es/def/core#hasId> <http://www.w3.org/2000/01/rdf-schema#label> "has id" .
 # 
@@ -111,6 +100,16 @@
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://saref.etsi.org/core#hasTimeStamp
+<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "has time stamp" .
+# 
+# https://saref.etsi.org/core#hasValue
+<https://saref.etsi.org/core#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
 # 
 # 
 # 

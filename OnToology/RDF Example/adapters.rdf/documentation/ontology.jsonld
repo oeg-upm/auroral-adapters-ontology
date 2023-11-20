@@ -1,0 +1,83 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema# dateTime",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Measurement1",
+  "https://auroral.iot.linkeddata.es/def/core#hasGranularity" : [ {
+    "@id" : "https://www.w3.org/2006/timeunitMinute"
+  } ],
+  "https://saref.etsi.org/core#hasTimeStamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema# dateTime",
+    "@value" : "12-12-12T10:05:55"
+  } ],
+  "https://saref.etsi.org/core#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "23"
+  } ],
+  "https://saref.etsi.org/core#isMeasuredIn" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/degree"
+  } ],
+  "https://saref.etsi.org/core#relatesToProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Measurement2",
+  "https://auroral.iot.linkeddata.es/def/core#hasGranularity" : [ {
+    "@id" : "https://www.w3.org/2006/timeunitMinute"
+  } ],
+  "https://saref.etsi.org/core#hasTimeStamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema# dateTime",
+    "@value" : "10-12-12T16:05:55"
+  } ],
+  "https://saref.etsi.org/core#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "17"
+  } ],
+  "https://saref.etsi.org/core#isMeasuredIn" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/degree"
+  } ],
+  "https://saref.etsi.org/core#relatesToProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Thermometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Thermometer1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Thermometer"
+  } ],
+  "https://saref.etsi.org/core#makesMeasurement" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Measurement1"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Measurement2"
+  } ],
+  "https://saref.etsi.org/core#measuresProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasGranularity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasTimeStamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#makesMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#measuresProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#relatesToProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

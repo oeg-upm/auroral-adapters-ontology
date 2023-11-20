@@ -1,0 +1,93 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/core#hasGranularity
+<https://auroral.iot.linkeddata.es/def/core#hasGranularity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://saref.etsi.org/core#hasTimeStamp
+<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://saref.etsi.org/core#hasValue
+<https://saref.etsi.org/core#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://saref.etsi.org/core#isMeasuredIn
+<https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://saref.etsi.org/core#makesMeasurement
+<https://saref.etsi.org/core#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://saref.etsi.org/core#measuresProperty
+<https://saref.etsi.org/core#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://saref.etsi.org/core#relatesToProperty
+<https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema# dateTime
+<http://www.w3.org/2001/XMLSchema#%20dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/adapters#Thermometer
+<https://auroral.iot.linkeddata.es/def/adapters#Thermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/adapters#Thermometer1
+<https://auroral.iot.linkeddata.es/def/adapters#Thermometer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/adapters#Thermometer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#Thermometer> .
+<https://auroral.iot.linkeddata.es/def/adapters#Thermometer1> <https://saref.etsi.org/core#makesMeasurement> <https://auroral.iot.linkeddata.es/def/adapters#Measurement1> .
+<https://auroral.iot.linkeddata.es/def/adapters#Thermometer1> <https://saref.etsi.org/core#makesMeasurement> <https://auroral.iot.linkeddata.es/def/adapters#Measurement2> .
+<https://auroral.iot.linkeddata.es/def/adapters#Thermometer1> <https://saref.etsi.org/core#measuresProperty> <https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement1> <https://auroral.iot.linkeddata.es/def/core#hasGranularity> <https://www.w3.org/2006/timeunitMinute> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement1> <https://saref.etsi.org/core#hasTimeStamp> "12-12-12T10:05:55"^^<http://www.w3.org/2001/XMLSchema#%20dateTime> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement1> <https://saref.etsi.org/core#hasValue> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement1> <https://saref.etsi.org/core#isMeasuredIn> <http://www.wurvoc.org/vocabularies/om-2/degree> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement1> <https://saref.etsi.org/core#relatesToProperty> <https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty> .
+# 
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement2> <https://auroral.iot.linkeddata.es/def/core#hasGranularity> <https://www.w3.org/2006/timeunitMinute> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement2> <https://saref.etsi.org/core#hasTimeStamp> "10-12-12T16:05:55"^^<http://www.w3.org/2001/XMLSchema#%20dateTime> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement2> <https://saref.etsi.org/core#hasValue> "17"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement2> <https://saref.etsi.org/core#isMeasuredIn> <http://www.wurvoc.org/vocabularies/om-2/degree> .
+<https://auroral.iot.linkeddata.es/def/adapters#Measurement2> <https://saref.etsi.org/core#relatesToProperty> <https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

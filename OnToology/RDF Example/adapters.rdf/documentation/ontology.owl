@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://saref.etsi.org/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:core1="https://auroral.iot.linkeddata.es/def/core#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasGranularity -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasGranularity"/>
+    
+
+
+    <!-- https://saref.etsi.org/core#hasTimeStamp -->
+
+
+    <AnnotationProperty rdf:about="https://saref.etsi.org/core#hasTimeStamp"/>
+    
+
+
+    <!-- https://saref.etsi.org/core#hasValue -->
+
+
+    <AnnotationProperty rdf:about="https://saref.etsi.org/core#hasValue"/>
+    
+
+
+    <!-- https://saref.etsi.org/core#isMeasuredIn -->
+
+
+    <AnnotationProperty rdf:about="https://saref.etsi.org/core#isMeasuredIn"/>
+    
+
+
+    <!-- https://saref.etsi.org/core#makesMeasurement -->
+
+
+    <AnnotationProperty rdf:about="https://saref.etsi.org/core#makesMeasurement"/>
+    
+
+
+    <!-- https://saref.etsi.org/core#measuresProperty -->
+
+
+    <AnnotationProperty rdf:about="https://saref.etsi.org/core#measuresProperty"/>
+    
+
+
+    <!-- https://saref.etsi.org/core#relatesToProperty -->
+
+
+    <AnnotationProperty rdf:about="https://saref.etsi.org/core#relatesToProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema# dateTime -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema# dateTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#Thermometer -->
+
+
+    <Class rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Thermometer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#Thermometer1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Thermometer1">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Thermometer"/>
+        <core:makesMeasurement rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Measurement1"/>
+        <core:makesMeasurement rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Measurement2"/>
+        <core:measuresProperty rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Measurement1">
+        <core1:hasGranularity rdf:resource="https://www.w3.org/2006/timeunitMinute"/>
+        <core:hasTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema# dateTime">12-12-12T10:05:55</core:hasTimeStamp>
+        <core:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</core:hasValue>
+        <core:isMeasuredIn rdf:resource="http://www.wurvoc.org/vocabularies/om-2/degree"/>
+        <core:relatesToProperty rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Measurement2">
+        <core1:hasGranularity rdf:resource="https://www.w3.org/2006/timeunitMinute"/>
+        <core:hasTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema# dateTime">10-12-12T16:05:55</core:hasTimeStamp>
+        <core:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</core:hasValue>
+        <core:isMeasuredIn rdf:resource="http://www.wurvoc.org/vocabularies/om-2/degree"/>
+        <core:relatesToProperty rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#IndoorAmbientProperty"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
