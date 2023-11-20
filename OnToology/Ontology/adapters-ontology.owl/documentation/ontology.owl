@@ -127,17 +127,6 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/adapters#from-timestamp -->
-
-
-    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/adapters#from-timestamp">
-        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor"/>
-        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor"/>
-        <rdfs:comment>UTC time in ISO 8601 formatted timestamp for when to get data From</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/adapters#hasHeight -->
 
 
@@ -171,20 +160,10 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/adapters#to-timestamp -->
-
-
-    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/adapters#to-timestamp">
-        <rdfs:comment>UTC time in ISO 8601 formatted timestamp for when to get data TO</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#hasId -->
 
 
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasId">
-        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has id</rdfs:label>
     </owl:DatatypeProperty>
@@ -207,6 +186,26 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#versionNumber">
         <rdfs:domain rdf:resource="https://saref.etsi.org/core#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#hasTimeStamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core#hasTimeStamp">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has time stamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core#hasValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has value</rdfs:label>
     </owl:DatatypeProperty>
     
 

@@ -70,13 +70,6 @@
                       rdfs:label "date Last Status Update" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#from-timestamp
-:from-timestamp rdf:type owl:DatatypeProperty ;
-                rdfs:domain :MonitoringSensor ,
-                            :WeatherSensor ;
-                rdfs:comment "UTC time in ISO 8601 formatted timestamp for when to get data From" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/adapters#hasHeight
 :hasHeight rdf:type owl:DatatypeProperty ;
            rdfs:domain :SoilMoisture ;
@@ -98,14 +91,8 @@
        rdfs:label "title" .
 
 
-###  https://auroral.iot.linkeddata.es/def/adapters#to-timestamp
-:to-timestamp rdf:type owl:DatatypeProperty ;
-              rdfs:comment "UTC time in ISO 8601 formatted timestamp for when to get data TO" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#hasId
 <https://auroral.iot.linkeddata.es/def/core#hasId> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <https://saref.etsi.org/core#Device> ;
                                                    rdfs:range xsd:string ;
                                                    rdfs:label "has id" .
 
@@ -120,6 +107,18 @@
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> rdf:type owl:DatatypeProperty ;
                                                            rdfs:domain <https://saref.etsi.org/core#Device> ;
                                                            rdfs:range xsd:string .
+
+
+###  https://saref.etsi.org/core#hasTimeStamp
+<https://saref.etsi.org/core#hasTimeStamp> rdf:type owl:DatatypeProperty ;
+                                           rdfs:range xsd:dateTime ;
+                                           rdfs:label "has time stamp" .
+
+
+###  https://saref.etsi.org/core#hasValue
+<https://saref.etsi.org/core#hasValue> rdf:type owl:DatatypeProperty ;
+                                       rdfs:range xsd:float ;
+                                       rdfs:label "has value" .
 
 
 #################################################################

@@ -75,6 +75,10 @@
       "@id" : "https://saref.etsi.org/core#measuresProperty",
       "@type" : "@id"
     },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core#hasValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
     "WindAmbientProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty"
     },
@@ -89,9 +93,6 @@
     },
     "Sound" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Sound"
-    },
-    "to-timestamp" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#to-timestamp"
     },
     "CoolingSensor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#CoolingSensor"
@@ -178,6 +179,10 @@
     },
     "Pressure" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Pressure"
+    },
+    "hasTimeStamp" : {
+      "@id" : "https://saref.etsi.org/core#hasTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "AirQuality" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#AirQuality"
@@ -284,9 +289,6 @@
     },
     "HeatPumpAirtoAir" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HeatPumpAirtoAir"
-    },
-    "from-timestamp" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#from-timestamp"
     },
     "serialNumber" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#serialNumber",

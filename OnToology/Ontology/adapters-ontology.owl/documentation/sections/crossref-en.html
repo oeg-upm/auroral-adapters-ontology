@@ -1031,8 +1031,7 @@ This section provides details for each class and property defined by The AURORAL
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://saref.etsi.org/core#controlsProperty" title="https://saref.etsi.org/core#controlsProperty">controls property</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#hasId" title="https://auroral.iot.linkeddata.es/def/core#hasId">has id</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">measures property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">measures property</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#serialNumber"
                title="https://auroral.iot.linkeddata.es/def/core#serialNumber">serial number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#versionNumber"
@@ -1445,12 +1444,6 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#https://auroral.iot.linkeddata.es/def/core#Sensor"
                title="https://auroral.iot.linkeddata.es/def/core#Sensor">sensor</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#from-timestamp"
-               title="https://auroral.iot.linkeddata.es/def/adapters#from-timestamp">from timestamp</a>
-            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -2530,12 +2523,6 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/core#Sensor">sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#from-timestamp"
-               title="https://auroral.iot.linkeddata.es/def/adapters#from-timestamp">from timestamp</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="WindAmbientProperty">
@@ -2643,17 +2630,17 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/adapters#dateLastStatusUpdate">date Last Status Update</a>
       </li>
       <li>
-         <a href="#from-timestamp"
-            title="https://auroral.iot.linkeddata.es/def/adapters#from-timestamp">
-            <span>from timestamp</span>
-         </a>
-      </li>
-      <li>
          <a href="#hasHeight"
             title="https://auroral.iot.linkeddata.es/def/adapters#hasHeight">has height</a>
       </li>
       <li>
          <a href="#https://auroral.iot.linkeddata.es/def/core#hasId" title="https://auroral.iot.linkeddata.es/def/core#hasId">has id</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core#hasTimeStamp" title="https://saref.etsi.org/core#hasTimeStamp">has time stamp</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core#hasValue" title="https://saref.etsi.org/core#hasValue">has value</a>
       </li>
       <li>
          <a href="#hasVolume"
@@ -2668,12 +2655,6 @@ This section provides details for each class and property defined by The AURORAL
       <li>
          <a href="#title"
             title="https://auroral.iot.linkeddata.es/def/adapters#title">title</a>
-      </li>
-      <li>
-         <a href="#to-timestamp"
-            title="https://auroral.iot.linkeddata.es/def/adapters#to-timestamp">
-            <span>to timestamp</span>
-         </a>
       </li>
       <li>
          <a href="#https://auroral.iot.linkeddata.es/def/core#versionNumber"
@@ -2702,32 +2683,6 @@ This section provides details for each class and property defined by The AURORAL
                <a href="http://www.w3.org/2001/XMLSchema#dateTime"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="from-timestamp">
-      <h3>from timestamp<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#from-timestamp</p>
-      <div class="comment">
-         <span class="markdown">UTC time in ISO 8601 formatted timestamp for when to get data From</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MonitoringSensor"
-                  title="https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor">Monitoring Sensor</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#WeatherSensor"
-                  title="https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor">Weather Sensor</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2765,16 +2720,47 @@ This section provides details for each class and property defined by The AURORAL
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#hasId</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://saref.etsi.org/core#Device" title="https://saref.etsi.org/core#Device">Device</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#hasTimeStamp">
+      <h3>has time stamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#hasTimeStamp</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#hasValue">
+      <h3>has value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#hasValue</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -2848,17 +2834,6 @@ This section provides details for each class and property defined by The AURORAL
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
-      </div>
-   </div>
-   <div class="entity" id="to-timestamp">
-      <h3>to timestamp<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#to-timestamp</p>
-      <div class="comment">
-         <span class="markdown">UTC time in ISO 8601 formatted timestamp for when to get data TO</span>
       </div>
    </div>
    <div class="entity" id="https://auroral.iot.linkeddata.es/def/core#versionNumber">

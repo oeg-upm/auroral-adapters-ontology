@@ -1,0 +1,22 @@
+{
+  "@context" : {
+    "xsd" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix xsd"
+    },
+    "ns3" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#ns3"
+    },
+    "ns4" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix ns4"
+    },
+    "ns1" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#ns1"
+    },
+    "ns2" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#ns2"
+    },
+    "ns5" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix ns5"
+    }
+  }
+}
