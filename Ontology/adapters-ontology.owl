@@ -49,18 +49,20 @@
 #    Object Properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/core#hasGranularity
-core:hasGranularity rdf:type owl:ObjectProperty ;
-                    rdfs:domain saref:Measurement ;
-                    rdfs:range <https://www.w3.org/2006/time#TemporalUnit> ;
-                    rdfs:label "has granularity" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#hasReadability
 core:hasReadability rdf:type owl:ObjectProperty ;
                     rdfs:domain saref:Measurement ;
                     rdfs:range core:Readability ;
+                    rdfs:comment "A relationship between the measurement of its readability status" ;
                     rdfs:label "has readability" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit
+core:hasTemporalUnit rdf:type owl:ObjectProperty ;
+                     rdfs:domain saref:Measurement ;
+                     rdfs:range <https://www.w3.org/2006/time#TemporalUnit> ;
+                     rdfs:comment "The granularity of a detected measurement" ;
+                     rdfs:label "has temporal unit" .
 
 
 ###  https://saref.etsi.org/core#controlsProperty
@@ -68,6 +70,7 @@ saref:controlsProperty rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty ;
                        rdfs:domain saref:Device ;
                        rdfs:range saref:Property ;
+                       rdfs:comment "A relationship specifying the property that can be controlled by a certain device" ;
                        rdfs:label "controls property" .
 
 
@@ -75,6 +78,7 @@ saref:controlsProperty rdf:type owl:ObjectProperty ;
 saref:isMeasuredIn rdf:type owl:ObjectProperty ;
                    rdfs:domain saref:Measurement ;
                    rdfs:range saref:UnitOfMeasure ;
+                   rdfs:comment "A relationship between the measurement and its unit of measure" ;
                    rdfs:label "is measured in" .
 
 
@@ -82,6 +86,7 @@ saref:isMeasuredIn rdf:type owl:ObjectProperty ;
 saref:makesMeasurement rdf:type owl:ObjectProperty ;
                        rdfs:domain saref:Device ;
                        rdfs:range saref:Measurement ;
+                       rdfs:comment "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates." ;
                        rdfs:label "makes measurement" .
 
 
@@ -89,7 +94,7 @@ saref:makesMeasurement rdf:type owl:ObjectProperty ;
 saref:measuresProperty rdf:type owl:ObjectProperty ;
                        rdfs:domain saref:Device ;
                        rdfs:range saref:Property ;
-                       rdfs:comment "measures property" ;
+                       rdfs:comment "A relationship specifying the property that can be measured by a certain device" ;
                        rdfs:label "measures property" .
 
 
@@ -97,11 +102,13 @@ saref:measuresProperty rdf:type owl:ObjectProperty ;
 saref:relatesToMeasurement rdf:type owl:ObjectProperty ;
                            rdfs:domain saref:Property ;
                            rdfs:range saref:Measurement ;
+                           rdfs:comment "A relationship between a property and the measurements it relates to" ;
                            rdfs:label "relates to measurement" .
 
 
 ###  https://saref.etsi.org/core#relatesToProperty
 saref:relatesToProperty rdf:type owl:ObjectProperty ;
+                        rdfs:comment "A relationship between a measurement and the property it relates to" ;
                         rdfs:label "relates to property" .
 
 
@@ -113,6 +120,7 @@ saref:relatesToProperty rdf:type owl:ObjectProperty ;
 adapters:dateLastStatusUpdate rdf:type owl:DatatypeProperty ;
                               rdfs:domain adapters:StatusProperty ;
                               rdfs:range xsd:dateTime ;
+                              rdfs:comment "The last date of updation the status of the device" ;
                               rdfs:label "date last status update" .
 
 
@@ -120,6 +128,7 @@ adapters:dateLastStatusUpdate rdf:type owl:DatatypeProperty ;
 adapters:hasHeight rdf:type owl:DatatypeProperty ;
                    rdfs:domain adapters:SoilMoisture ;
                    rdfs:range xsd:float ;
+                   rdfs:comment "The height level of the soil moisture" ;
                    rdfs:label "has height" .
 
 
@@ -127,6 +136,7 @@ adapters:hasHeight rdf:type owl:DatatypeProperty ;
 adapters:hasVolume rdf:type owl:DatatypeProperty ;
                    rdfs:domain adapters:SoilMoisture ;
                    rdfs:range xsd:float ;
+                   rdfs:comment "The volume of the soil moisture" ;
                    rdfs:label "has volume" .
 
 
@@ -134,12 +144,14 @@ adapters:hasVolume rdf:type owl:DatatypeProperty ;
 adapters:title rdf:type owl:DatatypeProperty ;
                rdfs:domain adapters:StatusProperty ;
                rdfs:range xsd:string ;
+               rdfs:comment "The title of the status property" ;
                rdfs:label "title" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasId
 core:hasId rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:string ;
+           rdfs:comment "The identifier of a given entity" ;
            rdfs:label "has id" .
 
 
@@ -147,6 +159,7 @@ core:hasId rdf:type owl:DatatypeProperty ;
 core:serialNumber rdf:type owl:DatatypeProperty ;
                   rdfs:domain saref:Device ;
                   rdfs:range xsd:string ;
+                  rdfs:comment "The serial number of a device" ;
                   rdfs:label "serial number" .
 
 
@@ -154,6 +167,7 @@ core:serialNumber rdf:type owl:DatatypeProperty ;
 core:value rdf:type owl:DatatypeProperty ;
            rdfs:domain core:Readability ;
            rdfs:range xsd:integer ;
+           rdfs:comment "The readability value of the detected measurement" ;
            rdfs:label "value" .
 
 
@@ -161,18 +175,21 @@ core:value rdf:type owl:DatatypeProperty ;
 core:versionNumber rdf:type owl:DatatypeProperty ;
                    rdfs:domain saref:Device ;
                    rdfs:range xsd:string ;
+                   rdfs:comment "The version number of the employed device" ;
                    rdfs:label "version number" .
 
 
 ###  https://saref.etsi.org/core#hasTimeStamp
 saref:hasTimeStamp rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:dateTime ;
+                   rdfs:comment "The timestapm of a given entity" ;
                    rdfs:label "has time stamp" .
 
 
 ###  https://saref.etsi.org/core#hasValue
 saref:hasValue rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:float ;
+               rdfs:comment "The value of the detected measurement" ;
                rdfs:label "has value" .
 
 
@@ -183,18 +200,21 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#Accelerometer
 adapters:Accelerometer rdf:type owl:Class ;
                        rdfs:subClassOf core:Sensor ;
+                       rdfs:comment "An instrument for measuring acceleration or for detecting and measuring vibrations" ;
                        rdfs:label "Accelerometer" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation
 adapters:AccumulatedPercipitation rdf:type owl:Class ;
                                   rdfs:subClassOf saref:Property ;
+                                  rdfs:comment "Accumulated precipitation is the sum of precipitation over a certain period of time in a certain place." ;
                                   rdfs:label "Accumulated Percipitation" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#ActReason
 adapters:ActReason rdf:type owl:Class ;
                    rdfs:subClassOf adapters:StatusProperty ;
+                   rdfs:comment "Refers to the act reason of the devices, that change the status of the device from active to passive  or vice versa" ;
                    rdfs:label "Act reason" .
 
 
@@ -202,32 +222,35 @@ adapters:ActReason rdf:type owl:Class ;
 adapters:AirConditionningBasic rdf:type owl:Class ;
                                rdfs:subClassOf adapters:CoolingSensor ,
                                                adapters:HeatingSensor ;
+                               rdfs:comment "Air conditioning is the controlling of air temperature, its humidity, its purity, noise- free and its flow rate at a certain place to produce a comfort zone." ;
                                rdfs:label "Air Conditionning Basic" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#AirQuality
 adapters:AirQuality rdf:type owl:Class ;
                     rdfs:subClassOf adapters:AmbientProperty ;
+                    rdfs:comment "Air quality refers to the degree to which the air is suitable or clean enough for humans or the environment." ;
                     rdfs:label "Air Quality" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#AirQualitySensor
 adapters:AirQualitySensor rdf:type owl:Class ;
                           rdfs:subClassOf core:Sensor ;
+                          rdfs:comment "An air quality sensor is a device used to detect the concentration of pollutants in the air. It can usually measure two or more air quality indicators such as temperature, humidity, carbon dioxide, carbon monoxide, ozone, formaldehyde, benzene, PM2.5, PM10, etc." ;
                           rdfs:label "Air Quality Sensor" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Alert
 adapters:Alert rdf:type owl:Class ;
                rdfs:subClassOf adapters:StatusProperty ;
+               rdfs:comment "A mechanism that gives an audible, visual or other kind of alarm signal to alert someone to a problem or condition that requires urgent attention." ;
                rdfs:label "Alert" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty
 adapters:AmbientProperty rdf:type owl:Class ;
                          rdfs:subClassOf saref:Property ;
-                         rdfs:comment "Ambient Property" ,
-                                      "This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties." ;
+                         rdfs:comment "This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties." ;
                          rdfs:label "Ambient Property" .
 
 
@@ -241,60 +264,70 @@ adapters:AmbientSolarRadiation rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#Ammonia
 adapters:Ammonia rdf:type owl:Class ;
                  rdfs:subClassOf adapters:AirQuality ;
+                 rdfs:comment "Ammonia is an inorganic chemical compound of nitrogen and hydrogen with the formula NH3. A stable binary hydride and the simplest pnictogen hydride, ammonia is a colourless gas with a distinct pungent smell." ;
                  rdfs:label "Ammonia" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#BoilerBiomass
 adapters:BoilerBiomass rdf:type owl:Class ;
                        rdfs:subClassOf adapters:BoilerSensor ;
+                       rdfs:comment "biomass boilers are boilers that run on biomass fuels." ;
                        rdfs:label "Boiler Biomass" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#BoilerNgas
 adapters:BoilerNgas rdf:type owl:Class ;
                     rdfs:subClassOf adapters:BoilerSensor ;
+                    rdfs:comment "A sensor boilers that is run on natural gas" ;
                     rdfs:label "Boiler Ngas" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#BoilerOil
 adapters:BoilerOil rdf:type owl:Class ;
                    rdfs:subClassOf adapters:BoilerSensor ;
+                   rdfs:comment "An oil boiler works in a very similar way to a gas boiler. The fuel, in this case oil." ;
                    rdfs:label "Boiler Oil" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#BoilerSensor
 adapters:BoilerSensor rdf:type owl:Class ;
                       rdfs:subClassOf adapters:HeatingSensor ;
+                      rdfs:comment "A boiler is a device which burns gas, oil, electricity, or coal in order to provide hot water, especially for the central heating in a building" ;
                       rdfs:label "Boiler Sensor" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#CarbonDioxide
 adapters:CarbonDioxide rdf:type owl:Class ;
                        rdfs:subClassOf adapters:AirQuality ;
+                       rdfs:comment "Carbon dioxide is a chemical compound with the chemical formula CO2. It is made up of molecules that each have one carbon atom covalently double bonded to two oxygen atoms." ;
                        rdfs:label "Carbon Dioxide" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#CarbonMonoxide
 adapters:CarbonMonoxide rdf:type owl:Class ;
                         rdfs:subClassOf adapters:AirQuality ;
+                        rdfs:comment "Carbon monoxide (CO) is a colorless, practically odorless, and tasteless gas or liquid. It results from incomplete oxidation of carbon in combustion. Burns with a violet flame." ;
                         rdfs:label "Carbon Monoxide" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#CloudCover
 adapters:CloudCover rdf:type owl:Class ;
                     rdfs:subClassOf adapters:AmbientProperty ;
+                    rdfs:comment "Cloud cover (also known as cloudiness, cloudage, or cloud amount) refers to the fraction of the sky obscured by clouds on average when observed from a particular location." ;
                     rdfs:label "Cloud Cover" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#CoarseParticulateMatter
 adapters:CoarseParticulateMatter rdf:type owl:Class ;
                                  rdfs:subClassOf adapters:AirQuality ;
+                                 rdfs:comment "Coarse particles (also known as PM10-2.5): particles with diameters generally larger than 2.5 µm and smaller than, or equal to, 10 µm in diameter." ;
                                  rdfs:label "Coarse Particulate Matter" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#CoolingSensor
 adapters:CoolingSensor rdf:type owl:Class ;
                        rdfs:subClassOf core:Sensor ;
+                       rdfs:comment "The Cooling Sensor is used to measure the temperature of the engine coolant." ;
                        rdfs:label "Cooling Sensor" .
 
 
@@ -315,12 +348,14 @@ adapters:EnergyProperty rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#Error
 adapters:Error rdf:type owl:Class ;
                rdfs:subClassOf adapters:StatusProperty ;
+               rdfs:comment "Refers to the rror status of a given device" ;
                rdfs:label "Error" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#FineParticlesMatter
 adapters:FineParticlesMatter rdf:type owl:Class ;
                              rdfs:subClassOf adapters:AirQuality ;
+                             rdfs:comment "The fine particles, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are 2 ½ microns or less in width." ;
                              rdfs:label "Fine Particles Matter" .
 
 
@@ -348,6 +383,7 @@ adapters:GPSEmergencyButton rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#HealthProperty
 adapters:HealthProperty rdf:type owl:Class ;
                         rdfs:subClassOf saref:Property ;
+                        rdfs:comment "Refers to the health status of a patient, by considering differents properties such as blood glucose, heart rate, blood pressure, etc." ;
                         rdfs:label "Health Property" .
 
 
@@ -355,6 +391,7 @@ adapters:HealthProperty rdf:type owl:Class ;
 adapters:HeatPumpAirToAir rdf:type owl:Class ;
                           rdfs:subClassOf adapters:CoolingSensor ,
                                           adapters:HeatingSensor ;
+                          rdfs:comment "An heat pump is a specific type of air source heat pump that absorbs heat from the outside air to distribute in a home, usually via a ventilation fan system" ;
                           rdfs:label "Heat Pump Air To Air" .
 
 
@@ -362,12 +399,14 @@ adapters:HeatPumpAirToAir rdf:type owl:Class ;
 adapters:HeatPumpAirToWater rdf:type owl:Class ;
                             rdfs:subClassOf adapters:CoolingSensor ,
                                             adapters:HeatingSensor ;
+                            rdfs:comment "An air to water heat pump is a piece of mechanical equipment that extracts heat from the air and uses it to heat hot water" ;
                             rdfs:label "Heat Pump Air To Water" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#HeatingSensor
 adapters:HeatingSensor rdf:type owl:Class ;
                        rdfs:subClassOf core:Sensor ;
+                       rdfs:comment "A heat sensor is a type of circuit that senses heat changes by teaming up with a thermistor." ;
                        rdfs:label "Heating Sensor" .
 
 
@@ -388,6 +427,7 @@ adapters:HumiditySensor rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#LightBulb
 adapters:LightBulb rdf:type owl:Class ;
                    rdfs:subClassOf core:Sensor ;
+                   rdfs:comment "A device used to convert electricity into light, consisting of a source of illumination (e.g. an electric filament or one or more LEDs) enclosed within a transparent or translucent shell, typically having a rounded shape and designed to be fitted into a socket in a lamp." ;
                    rdfs:label "Light Bulb" .
 
 
@@ -401,6 +441,7 @@ adapters:LightProperty rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#LuminusFlux
 adapters:LuminusFlux rdf:type owl:Class ;
                      rdfs:subClassOf adapters:LightProperty ;
+                     rdfs:comment "it describes properties about illuminance." ;
                      rdfs:label "Luminus Flux" .
 
 
@@ -428,12 +469,14 @@ adapters:MotionSensor rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#NitrogenDioxide
 adapters:NitrogenDioxide rdf:type owl:Class ;
                          rdfs:subClassOf adapters:AirQuality ;
+                         rdfs:comment "Nitrogen dioxide, or NO2, is a gaseous air pollutant composed of nitrogen and oxygen and is one of a group of related gases called nitrogen oxides, or NOx. Nitrogen dioxide forms when fossil fuels such as coal, oil, methane gas (natural gas) or diesel are burned at high temperatures." ;
                          rdfs:label "Nitrogen Dioxide" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#NitrogenMonoxide
 adapters:NitrogenMonoxide rdf:type owl:Class ;
                           rdfs:subClassOf adapters:AirQuality ;
+                          rdfs:comment "Nitric oxide (nitrogen oxide or nitrogen monoxide[1]) is a colorless gas with the formula NO. It is one of the principal oxides of nitrogen. Nitric oxide is a free radical: it has an unpaired electron, which is sometimes denoted by a dot in its chemical formula (•N=O or •NO). Nitric oxide is also a heteronuclear diatomic molecule, a class of molecules whose study spawned early modern theories of chemical bonding" ;
                           rdfs:label "Nitrogen Monoxide" .
 
 
@@ -447,55 +490,63 @@ adapters:Noise rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#OperatingProperty
 adapters:OperatingProperty rdf:type owl:Class ;
                            rdfs:subClassOf saref:Property ;
-                           rdfs:comment "Operating Property" ;
+                           rdfs:comment "Includes propertis about the operating of a device" ;
                            rdfs:label "Operating Property" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Ozone
 adapters:Ozone rdf:type owl:Class ;
                rdfs:subClassOf adapters:AirQuality ;
+               rdfs:comment "Ozone is a colourless gas which is a form of oxygen. There is a layer of ozone high above the earth's surface." ;
                rdfs:label "Ozone" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PV
 adapters:PV rdf:type owl:Class ;
             rdfs:subClassOf core:Sensor ;
+            rdfs:comment "The photovolatic sensor" ;
             rdfs:label "PV" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PVBIntegrated
 adapters:PVBIntegrated rdf:type owl:Class ;
                        rdfs:subClassOf adapters:PV ;
+                       rdfs:comment "The PVB integrated sensor" ;
                        rdfs:label "PVB Integrated" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PVFaçade
 adapters:PVFaçade rdf:type owl:Class ;
                   rdfs:subClassOf adapters:PV ;
+                  rdfs:comment "PV facade is a facade mounted photovoltaic system that adapts to solar conditions by using a solar tracking mechanism." ;
                   rdfs:label "PV Façade" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PVGround
 adapters:PVGround rdf:type owl:Class ;
                   rdfs:subClassOf adapters:PV ;
+                  rdfs:comment "Photovoltaic ground sensor" ;
                   rdfs:label "PV Ground" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PVRoofFlat
 adapters:PVRoofFlat rdf:type owl:Class ;
                     rdfs:subClassOf adapters:PV ;
+                    rdfs:comment "Photovoltaic Root Flat sensor" ;
                     rdfs:label "PV Roof Flat" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PVRoofStanled
 adapters:PVRoofStanled rdf:type owl:Class ;
                        rdfs:subClassOf adapters:PV ;
+                       rdfs:comment "The Photovoltaic Roof Stanled sensor" ;
                        rdfs:label "PV Roof Stanled" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PersonCounter
 adapters:PersonCounter rdf:type owl:Class ;
                        rdfs:subClassOf adapters:TRAFXProperty ;
+                       rdfs:comment "The number of people traversing a certain passage or entrance." ;
                        rdfs:label "Person Counter" .
 
 
@@ -509,12 +560,14 @@ adapters:PersonCounterSensor rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#Precipitation
 adapters:Precipitation rdf:type owl:Class ;
                        rdfs:subClassOf adapters:AmbientProperty ;
+                       rdfs:comment "A form of water, such as rain, snow, or sleet, that condenses from the atmosphere, becomes too heavy to remain suspended, and falls to the Earth's surface." ;
                        rdfs:label "Precipitation" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Presence
 adapters:Presence rdf:type owl:Class ;
                   rdfs:subClassOf adapters:StatusProperty ;
+                  rdfs:comment "Refers to th epresence property of a given device (present or not )" ;
                   rdfs:label "Presence" .
 
 
@@ -535,12 +588,14 @@ adapters:Pressure rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#PressureSensor
 adapters:PressureSensor rdf:type owl:Class ;
                         rdfs:subClassOf core:Sensor ;
+                        rdfs:comment "A pressure sensor is a device that senses and measures pressure. In this case, pressure is defined as the amount of force exerted over an area." ;
                         rdfs:label "Pressure Sensor" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#QRCounter
 adapters:QRCounter rdf:type owl:Class ;
                    rdfs:subClassOf adapters:TRAFXProperty ;
+                   rdfs:comment "QR Code tracking delivers all scan statistics" ;
                    rdfs:label "QR Counter" .
 
 
@@ -554,18 +609,21 @@ adapters:QRGeneratorSensor rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#Relay
 adapters:Relay rdf:type owl:Class ;
                rdfs:subClassOf core:Actuator ;
+               rdfs:comment "A relay is an electrically operated switch. It consists of a set of input terminals for a single or multiple control signals, and a set of operating contact terminals." ;
                rdfs:label "Relay" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SmartPlug
 adapters:SmartPlug rdf:type owl:Class ;
                    rdfs:subClassOf core:Sensor ;
+                   rdfs:comment "SmartPlug is to control electrical devices thanks to their electric supplies, it can also measure the power consumption of the electric device plugged into it, and measure and evaluate the quality of the electrical mains to which it is plugged." ;
                    rdfs:label "Smart Plug" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SmartValve
 adapters:SmartValve rdf:type owl:Class ;
                     rdfs:subClassOf core:Actuator ;
+                    rdfs:comment "SmartValve is a digital power flow control technology that quickly solves bottlenecks and grid issues to create extra capacity." ;
                     rdfs:label "Smart Valve" .
 
 
@@ -593,6 +651,7 @@ adapters:Sound rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#SoundSensor
 adapters:SoundSensor rdf:type owl:Class ;
                      rdfs:subClassOf core:Sensor ;
+                     rdfs:comment "A sound sensor is a sensor that detects sound waves via the sound's intensity and then converts it to electric signals." ;
                      rdfs:label "Sound Sensor" .
 
 
@@ -606,30 +665,35 @@ adapters:SpaceProperty rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#StatusProperty
 adapters:StatusProperty rdf:type owl:Class ;
                         rdfs:subClassOf saref:Property ;
+                        rdfs:comment "Determines the operational status of a device" ;
                         rdfs:label "Status Property" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#StorageCapacity
 adapters:StorageCapacity rdf:type owl:Class ;
                          rdfs:subClassOf adapters:StatusProperty ;
+                         rdfs:comment "Refers to the storage capacity of a given device" ;
                          rdfs:label "Storage Capacity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SulphurDioxide
 adapters:SulphurDioxide rdf:type owl:Class ;
                         rdfs:subClassOf adapters:AirQuality ;
+                        rdfs:comment "Sulfur dioxide (SO2) is a gaseous air pollutant composed of sulfur and oxygen. SO2 forms when sulfur-containing fuel such as coal, petroleum oil, or diesel is burned." ;
                         rdfs:label "Sulphur Dioxide" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Switch
 adapters:Switch rdf:type owl:Class ;
                 rdfs:subClassOf core:Actuator ;
+                rdfs:comment "A switch, in the context of networking, is a high-speed device that receives incoming data packets and redirects them to their destination on a local area network (LAN)." ;
                 rdfs:label "Switch" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#SwitchStatus
 adapters:SwitchStatus rdf:type owl:Class ;
                       rdfs:subClassOf adapters:StatusProperty ;
+                      rdfs:comment "Refers to the switch status of a Device" ;
                       rdfs:label "Switch Status" .
 
 
@@ -656,12 +720,14 @@ adapters:Thermometer rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#UltraFineParticlesMatter
 adapters:UltraFineParticlesMatter rdf:type owl:Class ;
                                   rdfs:subClassOf adapters:AirQuality ;
+                                  rdfs:comment "Ultrafine particles (UFPs) are aerosols with an aerodynamic diameter of 0.1 µm (100 nm) or less." ;
                                   rdfs:label "Ultra Fine Particles Matter" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#UltrasoundSensor
 adapters:UltrasoundSensor rdf:type owl:Class ;
                           rdfs:subClassOf core:Sensor ;
+                          rdfs:comment "An UltraSound sensor is an electronic device that measures the distance of a target object by emitting ultrasonic sound waves, and converts the reflected sound into an electrical signal." ;
                           rdfs:label "Ultrasound Sensor" .
 
 
@@ -689,6 +755,7 @@ adapters:WaterValveActuator rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#Weather
 adapters:Weather rdf:type owl:Class ;
                  rdfs:subClassOf adapters:AmbientProperty ;
+                 rdfs:comment "The general condition of the atmosphere at a particular time and place, with regard to the temperature, moisture, cloudiness" ;
                  rdfs:label "Weather" .
 
 
@@ -702,6 +769,7 @@ adapters:WeatherSensor rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty
 adapters:WindAmbientProperty rdf:type owl:Class ;
                              rdfs:subClassOf adapters:AmbientProperty ;
+                             rdfs:comment "It refers to moving air, as in a breeze, or what fills the sails of a boat." ;
                              rdfs:label "Wind Ambient Property" .
 
 
@@ -716,6 +784,7 @@ core:Actuator rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/core#BatterySensor
 core:BatterySensor rdf:type owl:Class ;
                    rdfs:subClassOf core:Sensor ;
+                   rdfs:comment "Battery sensor is used to precisely monitor/measure the current, voltage, and temperature of rechargeable batteries." ;
                    rdfs:label "Battery Sensor" .
 
 
@@ -728,6 +797,7 @@ core:Device rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Readability
 core:Readability rdf:type owl:Class ;
+                 rdfs:comment "represents the status of the detected measurement, that could be redable or not." ;
                  rdfs:label "Readability" .
 
 
@@ -735,16 +805,19 @@ core:Readability rdf:type owl:Class ;
 core:Sensor rdf:type owl:Class ;
             rdfs:subClassOf core:Device ,
                             saref:Sensor ;
+            rdfs:comment "A sensor is a device that detects and responds to some type of input from the physical environment." ;
             rdfs:label "Sensor" .
 
 
 ###  https://saref.etsi.org/core#Actuator
 saref:Actuator rdf:type owl:Class ;
+               rdfs:comment "A device that causes a machine or other device to operate." ;
                rdfs:label "Actuator" .
 
 
 ###  https://saref.etsi.org/core#Device
 saref:Device rdf:type owl:Class ;
+             rdfs:comment "Physical object used in a use case (sensor, actuator, etc)" ;
              rdfs:label "Device" .
 
 
@@ -762,16 +835,19 @@ saref:Property rdf:type owl:Class ;
 
 ###  https://saref.etsi.org/core#Sensor
 saref:Sensor rdf:type owl:Class ;
+             rdfs:comment "A sensor is a device that detects and responds to some type of input from the physical environment." ;
              rdfs:label "Sensor" .
 
 
 ###  https://saref.etsi.org/core#UnitOfMeasure
 saref:UnitOfMeasure rdf:type owl:Class ;
+                    rdfs:comment "Defines the unit of each mesurement dtected by a sensor" ;
                     rdfs:label "Unit Of Measure" .
 
 
 ###  https://www.w3.org/2006/time#TemporalUnit
 <https://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
+                                            rdfs:comment "Presents the temporal aspect of the detected measurement." ;
                                             rdfs:label "Temporal Unit" .
 
 
