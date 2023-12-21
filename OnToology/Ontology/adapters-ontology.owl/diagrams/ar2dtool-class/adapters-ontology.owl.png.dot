@@ -1,19 +1,25 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "saref:Device" "adapters:SoilMoisture" "saref:Property" "adapters:StatusProperty" ; /*classes style*/
-	"https://auroral.iot.linkeddata.es/def/adapters" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
+node [shape = rectangle, color="orange"]; "saref:Device" "saref:UnitOfMeasure" "saref:Measurement" "adapters:SoilMoisture" "core:Readability" "saref:Property" "https://www.w3.org/2006/time#TemporalUnit" "adapters:StatusProperty" ; /*classes style*/
+	"adapters:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
 	"saref:controlsProperty" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
-	"owl:Thing" -> "xsd:string" [ label = "core:hasId" ];
 	"adapters:StatusProperty" -> "xsd:string" [ label = "adapters:title" ];
-	"saref:Device" -> "saref:Property" [ label = "saref:controlsProperty" ];
 	"adapters:SoilMoisture" -> "xsd:float" [ label = "adapters:hasVolume" ];
-	"owl:Thing" -> "xsd:dateTime" [ label = "saref:hasTimeStamp" ];
 	"saref:Device" -> "xsd:string" [ label = "core:versionNumber" ];
+	"saref:Measurement" -> "core:Readability" [ label = "core:hasReadability" ];
 	"saref:Device" -> "saref:Property" [ label = "saref:measuresProperty" ];
+	"core:Readability" -> "xsd:integer" [ label = "core:value" ];
+	"saref:Measurement" -> "saref:UnitOfMeasure" [ label = "saref:isMeasuredIn" ];
+	"saref:Measurement" -> "https://www.w3.org/2006/time#TemporalUnit" [ label = "core:hasTemporalUnit" ];
+	"saref:Device" -> "xsd:string" [ label = "core:serialNumber" ];
+	"saref:Device" -> "saref:Measurement" [ label = "saref:makesMeasurement" ];
+	"owl:Thing" -> "xsd:string" [ label = "core:hasId" ];
+	"saref:Device" -> "saref:Property" [ label = "saref:controlsProperty" ];
+	"owl:Thing" -> "xsd:dateTime" [ label = "saref:hasTimeStamp" ];
 	"owl:Thing" -> "xsd:float" [ label = "saref:hasValue" ];
+	"saref:Property" -> "saref:Measurement" [ label = "saref:relatesToMeasurement" ];
 	"adapters:StatusProperty" -> "xsd:dateTime" [ label = "adapters:dateLastStatusUpdate" ];
 	"adapters:SoilMoisture" -> "xsd:float" [ label = "adapters:hasHeight" ];
-	"saref:Device" -> "xsd:string" [ label = "core:serialNumber" ];
 
 }

@@ -1,0 +1,1529 @@
+[ {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/adapters#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Actuator subClassOf Device"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CoolingSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AverageMovementTime type MotionProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BasalMetabolicRate type HealthProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Battery type ActReason"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BatteryLevel type EnergyProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BeaconMac type SpaceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BodyFatPercentage type HealthProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BodyMassIndex type HealthProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BoneMineralContent type HealthProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Button type ActReason"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test109",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CaloriesBurned type HealthProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AirConditionningBasic subClassOf CoolingSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Cloudiness type CloudCover"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CO2Concentration type CarbonDioxide"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "COConcentration type CarbonMonoxide"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Depth type OperatingProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DeviceStatus type StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DevPosition type SpaceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DewpointTemperature type TemperatureAmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DiastolicBloodPressure type HealthProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DiffuseRadiation type AmbientSolarRadiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DiffuseRadiationInstant type AmbientSolarRadiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HeatPumpAirToAir subClassOf CoolingSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DirectNormalIrradiance type AmbientSolarRadiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DirectNormalIrradianceInstant type AmbientSolarRadiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DirectRadiation type AmbientSolarRadiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DirectRadiationInstant type AmbientSolarRadiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Distance type SpaceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DistanceWlaked type MotionProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ElectricCurrent type EnergyProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HeatPumpAirToWater subClassOf CoolingSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "EnergySensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "FloodSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "GPSEmergencyButton subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HeatingSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AirConditionningBasic subClassOf HeatingSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BoilerSensor subClassOf HeatingSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Sensor subClassOf Device"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HeatPumpAirToAir subClassOf HeatingSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HeatPumpAirToWater subClassOf HeatingSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BoilerBiomass subClassOf BoilerSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BoilerNgas subClassOf BoilerSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BoilerOil subClassOf BoilerSensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HumiditySensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "LightBulb subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "MonitoringSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "MotionSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PersonCounterSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Relay subClassOf Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PresenceSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PressureSensor subClassOf  Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PV subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PVFaçade subClassOf PV"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PVGround subClassOf PV"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PVRoofFlat subClassOf PV"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PVRoofStanled subClassOf PV"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PVBIntegrated subClassOf PV"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "QRGeneratorSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SmartPlug subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SmartValve subClassOf Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SoilMoistureSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SoundSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ThermometerSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "UltraSoundSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WasteBinSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WaterAMRSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WeatherSensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AccumulatedPercipitation subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AmbientProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AirQuality subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Switch subClassOf Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HumidityAmbientProperty subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AmbientSolarRadiation subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "TemperatureAmbientProperty subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CloudCover subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "FloodAmbientProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Noise subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Percipitation subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Pressure subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Weather subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WindAmbientProperty subClassOf AmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WaterValveActuator subClassOf Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Ammonia subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CarbonDioxide subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CarbonMonoxide subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CoarseParticulateMatter subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "FineParticlesMatter subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "NitrogenDioxide subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "NitrogenMonoxide subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Ozone subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SulphurDioxide subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "UltraFineParticlesMatter subClassOf AirQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Accelerometer subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "EnergyProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "HealthProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "LightProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "LuminusFlux subClassOf LightProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "MotionProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "OperatingProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SoilMoisture subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SoundProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SpaceProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "StatusProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AirQualitySensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ActReason subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Alert subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Error subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Presence subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "StorageCapacity subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SwitchStatus subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "TRAFX subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PersonCounter subClassOf TRAFXProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "QRCounter subClassOf StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AccumulatedWater type FloodAmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "BatterySensor subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Active type StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  }, {
+    "@value" : "ActiveEnergy type EnergyProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  }, {
+    "@value" : "AirPressureAtSea type Pressure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Alarm type ActReason"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AmbientTemperature type TemperatureAmbientProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AmountPercipitation type Percipitation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AngularUnit type SpaceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AtmosphericPressure type Pressure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Available type StatusProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AverageMovementShare type MotionProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestCaseDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestSuite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestSuiteAdapters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuite"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#desiredBehaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

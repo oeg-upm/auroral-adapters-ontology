@@ -1,0 +1,800 @@
+<https://auroral.iot.linkeddata.es/tests/adapters#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/vtc#belongsTo
+<https://w3id.org/def/vtc#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/vtc#desiredBehaviour
+<https://w3id.org/def/vtc#desiredBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/vtc#TestCaseDesign
+<https://w3id.org/def/vtc#TestCaseDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vtc#TestSuite
+<https://w3id.org/def/vtc#TestSuite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/vtc#Test1
+<https://w3id.org/def/vtc#Test1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test1> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test1> <https://w3id.org/def/vtc#desiredBehaviour> "Actuator subClassOf Device" .
+# 
+# https://w3id.org/def/vtc#Test10
+<https://w3id.org/def/vtc#Test10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test10> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test10> <https://w3id.org/def/vtc#desiredBehaviour> "CoolingSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test100
+<https://w3id.org/def/vtc#Test100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test100> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test100> <https://w3id.org/def/vtc#desiredBehaviour> "AverageMovementTime type MotionProperty" .
+# 
+# https://w3id.org/def/vtc#Test101
+<https://w3id.org/def/vtc#Test101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test101> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test101> <https://w3id.org/def/vtc#desiredBehaviour> "BasalMetabolicRate type HealthProperty" .
+# 
+# https://w3id.org/def/vtc#Test102
+<https://w3id.org/def/vtc#Test102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test102> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test102> <https://w3id.org/def/vtc#desiredBehaviour> "Battery type ActReason" .
+# 
+# https://w3id.org/def/vtc#Test103
+<https://w3id.org/def/vtc#Test103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test103> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test103> <https://w3id.org/def/vtc#desiredBehaviour> "BatteryLevel type EnergyProperty" .
+# 
+# https://w3id.org/def/vtc#Test104
+<https://w3id.org/def/vtc#Test104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test104> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test104> <https://w3id.org/def/vtc#desiredBehaviour> "BeaconMac type SpaceProperty" .
+# 
+# https://w3id.org/def/vtc#Test105
+<https://w3id.org/def/vtc#Test105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test105> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test105> <https://w3id.org/def/vtc#desiredBehaviour> "BodyFatPercentage type HealthProperty" .
+# 
+# https://w3id.org/def/vtc#Test106
+<https://w3id.org/def/vtc#Test106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test106> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test106> <https://w3id.org/def/vtc#desiredBehaviour> "BodyMassIndex type HealthProperty" .
+# 
+# https://w3id.org/def/vtc#Test107
+<https://w3id.org/def/vtc#Test107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test107> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test107> <https://w3id.org/def/vtc#desiredBehaviour> "BoneMineralContent type HealthProperty" .
+# 
+# https://w3id.org/def/vtc#Test108
+<https://w3id.org/def/vtc#Test108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test108> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test108> <https://w3id.org/def/vtc#desiredBehaviour> "Button type ActReason" .
+# 
+# https://w3id.org/def/vtc#Test109
+<https://w3id.org/def/vtc#Test109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test109> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test109> <https://w3id.org/def/vtc#desiredBehaviour> "CaloriesBurned type HealthProperty" .
+# 
+# https://w3id.org/def/vtc#Test11
+<https://w3id.org/def/vtc#Test11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test11> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test11> <https://w3id.org/def/vtc#desiredBehaviour> "AirConditionningBasic subClassOf CoolingSensor" .
+# 
+# https://w3id.org/def/vtc#Test110
+<https://w3id.org/def/vtc#Test110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test110> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test110> <https://w3id.org/def/vtc#desiredBehaviour> "Cloudiness type CloudCover" .
+# 
+# https://w3id.org/def/vtc#Test111
+<https://w3id.org/def/vtc#Test111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test111> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test111> <https://w3id.org/def/vtc#desiredBehaviour> "CO2Concentration type CarbonDioxide" .
+# 
+# https://w3id.org/def/vtc#Test112
+<https://w3id.org/def/vtc#Test112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test112> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test112> <https://w3id.org/def/vtc#desiredBehaviour> "COConcentration type CarbonMonoxide" .
+# 
+# https://w3id.org/def/vtc#Test113
+<https://w3id.org/def/vtc#Test113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test113> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test113> <https://w3id.org/def/vtc#desiredBehaviour> "Depth type OperatingProperty" .
+# 
+# https://w3id.org/def/vtc#Test114
+<https://w3id.org/def/vtc#Test114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test114> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test114> <https://w3id.org/def/vtc#desiredBehaviour> "DeviceStatus type StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test115
+<https://w3id.org/def/vtc#Test115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test115> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test115> <https://w3id.org/def/vtc#desiredBehaviour> "DevPosition type SpaceProperty" .
+# 
+# https://w3id.org/def/vtc#Test116
+<https://w3id.org/def/vtc#Test116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test116> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test116> <https://w3id.org/def/vtc#desiredBehaviour> "DewpointTemperature type TemperatureAmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test117
+<https://w3id.org/def/vtc#Test117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test117> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test117> <https://w3id.org/def/vtc#desiredBehaviour> "DiastolicBloodPressure type HealthProperty" .
+# 
+# https://w3id.org/def/vtc#Test118
+<https://w3id.org/def/vtc#Test118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test118> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test118> <https://w3id.org/def/vtc#desiredBehaviour> "DiffuseRadiation type AmbientSolarRadiation" .
+# 
+# https://w3id.org/def/vtc#Test119
+<https://w3id.org/def/vtc#Test119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test119> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test119> <https://w3id.org/def/vtc#desiredBehaviour> "DiffuseRadiationInstant type AmbientSolarRadiation" .
+# 
+# https://w3id.org/def/vtc#Test12
+<https://w3id.org/def/vtc#Test12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test12> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test12> <https://w3id.org/def/vtc#desiredBehaviour> "HeatPumpAirToAir subClassOf CoolingSensor" .
+# 
+# https://w3id.org/def/vtc#Test120
+<https://w3id.org/def/vtc#Test120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test120> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test120> <https://w3id.org/def/vtc#desiredBehaviour> "DirectNormalIrradiance type AmbientSolarRadiation" .
+# 
+# https://w3id.org/def/vtc#Test121
+<https://w3id.org/def/vtc#Test121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test121> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test121> <https://w3id.org/def/vtc#desiredBehaviour> "DirectNormalIrradianceInstant type AmbientSolarRadiation" .
+# 
+# https://w3id.org/def/vtc#Test122
+<https://w3id.org/def/vtc#Test122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test122> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test122> <https://w3id.org/def/vtc#desiredBehaviour> "DirectRadiation type AmbientSolarRadiation" .
+# 
+# https://w3id.org/def/vtc#Test123
+<https://w3id.org/def/vtc#Test123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test123> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test123> <https://w3id.org/def/vtc#desiredBehaviour> "DirectRadiationInstant type AmbientSolarRadiation" .
+# 
+# https://w3id.org/def/vtc#Test124
+<https://w3id.org/def/vtc#Test124> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test124> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test124> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test124> <https://w3id.org/def/vtc#desiredBehaviour> "Distance type SpaceProperty" .
+# 
+# https://w3id.org/def/vtc#Test125
+<https://w3id.org/def/vtc#Test125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test125> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test125> <https://w3id.org/def/vtc#desiredBehaviour> "DistanceWlaked type MotionProperty" .
+# 
+# https://w3id.org/def/vtc#Test126
+<https://w3id.org/def/vtc#Test126> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test126> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test126> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test126> <https://w3id.org/def/vtc#desiredBehaviour> "ElectricCurrent type EnergyProperty" .
+# 
+# https://w3id.org/def/vtc#Test13
+<https://w3id.org/def/vtc#Test13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test13> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test13> <https://w3id.org/def/vtc#desiredBehaviour> "HeatPumpAirToWater subClassOf CoolingSensor" .
+# 
+# https://w3id.org/def/vtc#Test14
+<https://w3id.org/def/vtc#Test14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test14> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test14> <https://w3id.org/def/vtc#desiredBehaviour> "EnergySensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test15
+<https://w3id.org/def/vtc#Test15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test15> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test15> <https://w3id.org/def/vtc#desiredBehaviour> "FloodSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test16
+<https://w3id.org/def/vtc#Test16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test16> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test16> <https://w3id.org/def/vtc#desiredBehaviour> "GPSEmergencyButton subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test17
+<https://w3id.org/def/vtc#Test17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test17> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test17> <https://w3id.org/def/vtc#desiredBehaviour> "HeatingSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test18
+<https://w3id.org/def/vtc#Test18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test18> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test18> <https://w3id.org/def/vtc#desiredBehaviour> "AirConditionningBasic subClassOf HeatingSensor" .
+# 
+# https://w3id.org/def/vtc#Test19
+<https://w3id.org/def/vtc#Test19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test19> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test19> <https://w3id.org/def/vtc#desiredBehaviour> "BoilerSensor subClassOf HeatingSensor" .
+# 
+# https://w3id.org/def/vtc#Test2
+<https://w3id.org/def/vtc#Test2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test2> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test2> <https://w3id.org/def/vtc#desiredBehaviour> "Sensor subClassOf Device" .
+# 
+# https://w3id.org/def/vtc#Test20
+<https://w3id.org/def/vtc#Test20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test20> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test20> <https://w3id.org/def/vtc#desiredBehaviour> "HeatPumpAirToAir subClassOf HeatingSensor" .
+# 
+# https://w3id.org/def/vtc#Test21
+<https://w3id.org/def/vtc#Test21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test21> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test21> <https://w3id.org/def/vtc#desiredBehaviour> "HeatPumpAirToWater subClassOf HeatingSensor" .
+# 
+# https://w3id.org/def/vtc#Test22
+<https://w3id.org/def/vtc#Test22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test22> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test22> <https://w3id.org/def/vtc#desiredBehaviour> "BoilerBiomass subClassOf BoilerSensor" .
+# 
+# https://w3id.org/def/vtc#Test23
+<https://w3id.org/def/vtc#Test23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test23> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test23> <https://w3id.org/def/vtc#desiredBehaviour> "BoilerNgas subClassOf BoilerSensor" .
+# 
+# https://w3id.org/def/vtc#Test24
+<https://w3id.org/def/vtc#Test24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test24> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test24> <https://w3id.org/def/vtc#desiredBehaviour> "BoilerOil subClassOf BoilerSensor" .
+# 
+# https://w3id.org/def/vtc#Test25
+<https://w3id.org/def/vtc#Test25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test25> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test25> <https://w3id.org/def/vtc#desiredBehaviour> "HumiditySensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test26
+<https://w3id.org/def/vtc#Test26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test26> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test26> <https://w3id.org/def/vtc#desiredBehaviour> "LightBulb subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test27
+<https://w3id.org/def/vtc#Test27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test27> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test27> <https://w3id.org/def/vtc#desiredBehaviour> "MonitoringSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test28
+<https://w3id.org/def/vtc#Test28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test28> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test28> <https://w3id.org/def/vtc#desiredBehaviour> "MotionSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test29
+<https://w3id.org/def/vtc#Test29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test29> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test29> <https://w3id.org/def/vtc#desiredBehaviour> "PersonCounterSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test3
+<https://w3id.org/def/vtc#Test3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test3> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test3> <https://w3id.org/def/vtc#desiredBehaviour> "Relay subClassOf Actuator" .
+# 
+# https://w3id.org/def/vtc#Test30
+<https://w3id.org/def/vtc#Test30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test30> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test30> <https://w3id.org/def/vtc#desiredBehaviour> "PresenceSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test31
+<https://w3id.org/def/vtc#Test31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test31> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test31> <https://w3id.org/def/vtc#desiredBehaviour> "PressureSensor subClassOf  Sensor" .
+# 
+# https://w3id.org/def/vtc#Test32
+<https://w3id.org/def/vtc#Test32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test32> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test32> <https://w3id.org/def/vtc#desiredBehaviour> "PV subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test33
+<https://w3id.org/def/vtc#Test33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test33> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test33> <https://w3id.org/def/vtc#desiredBehaviour> "PVFaçade subClassOf PV" .
+# 
+# https://w3id.org/def/vtc#Test34
+<https://w3id.org/def/vtc#Test34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test34> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test34> <https://w3id.org/def/vtc#desiredBehaviour> "PVGround subClassOf PV" .
+# 
+# https://w3id.org/def/vtc#Test35
+<https://w3id.org/def/vtc#Test35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test35> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test35> <https://w3id.org/def/vtc#desiredBehaviour> "PVRoofFlat subClassOf PV" .
+# 
+# https://w3id.org/def/vtc#Test36
+<https://w3id.org/def/vtc#Test36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test36> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test36> <https://w3id.org/def/vtc#desiredBehaviour> "PVRoofStanled subClassOf PV" .
+# 
+# https://w3id.org/def/vtc#Test37
+<https://w3id.org/def/vtc#Test37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test37> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test37> <https://w3id.org/def/vtc#desiredBehaviour> "PVBIntegrated subClassOf PV" .
+# 
+# https://w3id.org/def/vtc#Test38
+<https://w3id.org/def/vtc#Test38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test38> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test38> <https://w3id.org/def/vtc#desiredBehaviour> "QRGeneratorSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test39
+<https://w3id.org/def/vtc#Test39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test39> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test39> <https://w3id.org/def/vtc#desiredBehaviour> "SmartPlug subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test4
+<https://w3id.org/def/vtc#Test4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test4> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test4> <https://w3id.org/def/vtc#desiredBehaviour> "SmartValve subClassOf Actuator" .
+# 
+# https://w3id.org/def/vtc#Test40
+<https://w3id.org/def/vtc#Test40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test40> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test40> <https://w3id.org/def/vtc#desiredBehaviour> "SoilMoistureSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test41
+<https://w3id.org/def/vtc#Test41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test41> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test41> <https://w3id.org/def/vtc#desiredBehaviour> "SoundSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test42
+<https://w3id.org/def/vtc#Test42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test42> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test42> <https://w3id.org/def/vtc#desiredBehaviour> "ThermometerSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test43
+<https://w3id.org/def/vtc#Test43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test43> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test43> <https://w3id.org/def/vtc#desiredBehaviour> "UltraSoundSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test44
+<https://w3id.org/def/vtc#Test44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test44> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test44> <https://w3id.org/def/vtc#desiredBehaviour> "WasteBinSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test45
+<https://w3id.org/def/vtc#Test45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test45> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test45> <https://w3id.org/def/vtc#desiredBehaviour> "WaterAMRSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test46
+<https://w3id.org/def/vtc#Test46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test46> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test46> <https://w3id.org/def/vtc#desiredBehaviour> "WeatherSensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test47
+<https://w3id.org/def/vtc#Test47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test47> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test47> <https://w3id.org/def/vtc#desiredBehaviour> "AccumulatedPercipitation subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test48
+<https://w3id.org/def/vtc#Test48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test48> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test48> <https://w3id.org/def/vtc#desiredBehaviour> "AmbientProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test49
+<https://w3id.org/def/vtc#Test49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test49> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test49> <https://w3id.org/def/vtc#desiredBehaviour> "AirQuality subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test5
+<https://w3id.org/def/vtc#Test5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test5> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test5> <https://w3id.org/def/vtc#desiredBehaviour> "Switch subClassOf Actuator" .
+# 
+# https://w3id.org/def/vtc#Test50
+<https://w3id.org/def/vtc#Test50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test50> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test50> <https://w3id.org/def/vtc#desiredBehaviour> "HumidityAmbientProperty subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test51
+<https://w3id.org/def/vtc#Test51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test51> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test51> <https://w3id.org/def/vtc#desiredBehaviour> "AmbientSolarRadiation subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test52
+<https://w3id.org/def/vtc#Test52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test52> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test52> <https://w3id.org/def/vtc#desiredBehaviour> "TemperatureAmbientProperty subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test53
+<https://w3id.org/def/vtc#Test53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test53> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test53> <https://w3id.org/def/vtc#desiredBehaviour> "CloudCover subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test54
+<https://w3id.org/def/vtc#Test54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test54> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test54> <https://w3id.org/def/vtc#desiredBehaviour> "FloodAmbientProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test55
+<https://w3id.org/def/vtc#Test55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test55> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test55> <https://w3id.org/def/vtc#desiredBehaviour> "Noise subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test56
+<https://w3id.org/def/vtc#Test56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test56> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test56> <https://w3id.org/def/vtc#desiredBehaviour> "Percipitation subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test57
+<https://w3id.org/def/vtc#Test57> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test57> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test57> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test57> <https://w3id.org/def/vtc#desiredBehaviour> "Pressure subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test58
+<https://w3id.org/def/vtc#Test58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test58> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test58> <https://w3id.org/def/vtc#desiredBehaviour> "Weather subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test59
+<https://w3id.org/def/vtc#Test59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test59> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test59> <https://w3id.org/def/vtc#desiredBehaviour> "WindAmbientProperty subClassOf AmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test6
+<https://w3id.org/def/vtc#Test6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test6> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test6> <https://w3id.org/def/vtc#desiredBehaviour> "WaterValveActuator subClassOf Actuator" .
+# 
+# https://w3id.org/def/vtc#Test60
+<https://w3id.org/def/vtc#Test60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test60> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test60> <https://w3id.org/def/vtc#desiredBehaviour> "Ammonia subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test61
+<https://w3id.org/def/vtc#Test61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test61> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test61> <https://w3id.org/def/vtc#desiredBehaviour> "CarbonDioxide subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test62
+<https://w3id.org/def/vtc#Test62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test62> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test62> <https://w3id.org/def/vtc#desiredBehaviour> "CarbonMonoxide subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test63
+<https://w3id.org/def/vtc#Test63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test63> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test63> <https://w3id.org/def/vtc#desiredBehaviour> "CoarseParticulateMatter subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test64
+<https://w3id.org/def/vtc#Test64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test64> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test64> <https://w3id.org/def/vtc#desiredBehaviour> "FineParticlesMatter subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test65
+<https://w3id.org/def/vtc#Test65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test65> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test65> <https://w3id.org/def/vtc#desiredBehaviour> "NitrogenDioxide subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test66
+<https://w3id.org/def/vtc#Test66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test66> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test66> <https://w3id.org/def/vtc#desiredBehaviour> "NitrogenMonoxide subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test67
+<https://w3id.org/def/vtc#Test67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test67> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test67> <https://w3id.org/def/vtc#desiredBehaviour> "Ozone subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test68
+<https://w3id.org/def/vtc#Test68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test68> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test68> <https://w3id.org/def/vtc#desiredBehaviour> "SulphurDioxide subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test69
+<https://w3id.org/def/vtc#Test69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test69> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test69> <https://w3id.org/def/vtc#desiredBehaviour> "UltraFineParticlesMatter subClassOf AirQuality" .
+# 
+# https://w3id.org/def/vtc#Test7
+<https://w3id.org/def/vtc#Test7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test7> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test7> <https://w3id.org/def/vtc#desiredBehaviour> "Accelerometer subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test70
+<https://w3id.org/def/vtc#Test70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test70> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test70> <https://w3id.org/def/vtc#desiredBehaviour> "EnergyProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test71
+<https://w3id.org/def/vtc#Test71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test71> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test71> <https://w3id.org/def/vtc#desiredBehaviour> "HealthProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test72
+<https://w3id.org/def/vtc#Test72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test72> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test72> <https://w3id.org/def/vtc#desiredBehaviour> "LightProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test73
+<https://w3id.org/def/vtc#Test73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test73> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test73> <https://w3id.org/def/vtc#desiredBehaviour> "LuminusFlux subClassOf LightProperty" .
+# 
+# https://w3id.org/def/vtc#Test74
+<https://w3id.org/def/vtc#Test74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test74> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test74> <https://w3id.org/def/vtc#desiredBehaviour> "MotionProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test75
+<https://w3id.org/def/vtc#Test75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test75> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test75> <https://w3id.org/def/vtc#desiredBehaviour> "OperatingProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test76
+<https://w3id.org/def/vtc#Test76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test76> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test76> <https://w3id.org/def/vtc#desiredBehaviour> "SoilMoisture subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test77
+<https://w3id.org/def/vtc#Test77> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test77> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test77> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test77> <https://w3id.org/def/vtc#desiredBehaviour> "SoundProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test78
+<https://w3id.org/def/vtc#Test78> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test78> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test78> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test78> <https://w3id.org/def/vtc#desiredBehaviour> "SpaceProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test79
+<https://w3id.org/def/vtc#Test79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test79> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test79> <https://w3id.org/def/vtc#desiredBehaviour> "StatusProperty subClassOf Property" .
+# 
+# https://w3id.org/def/vtc#Test8
+<https://w3id.org/def/vtc#Test8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test8> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test8> <https://w3id.org/def/vtc#desiredBehaviour> "AirQualitySensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test80
+<https://w3id.org/def/vtc#Test80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test80> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test80> <https://w3id.org/def/vtc#desiredBehaviour> "ActReason subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test81
+<https://w3id.org/def/vtc#Test81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test81> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test81> <https://w3id.org/def/vtc#desiredBehaviour> "Alert subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test82
+<https://w3id.org/def/vtc#Test82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test82> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test82> <https://w3id.org/def/vtc#desiredBehaviour> "Error subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test83
+<https://w3id.org/def/vtc#Test83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test83> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test83> <https://w3id.org/def/vtc#desiredBehaviour> "Presence subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test84
+<https://w3id.org/def/vtc#Test84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test84> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test84> <https://w3id.org/def/vtc#desiredBehaviour> "StorageCapacity subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test85
+<https://w3id.org/def/vtc#Test85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test85> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test85> <https://w3id.org/def/vtc#desiredBehaviour> "SwitchStatus subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test86
+<https://w3id.org/def/vtc#Test86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test86> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test86> <https://w3id.org/def/vtc#desiredBehaviour> "TRAFX subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test87
+<https://w3id.org/def/vtc#Test87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test87> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test87> <https://w3id.org/def/vtc#desiredBehaviour> "PersonCounter subClassOf TRAFXProperty" .
+# 
+# https://w3id.org/def/vtc#Test88
+<https://w3id.org/def/vtc#Test88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test88> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test88> <https://w3id.org/def/vtc#desiredBehaviour> "QRCounter subClassOf StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test89
+<https://w3id.org/def/vtc#Test89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test89> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test89> <https://w3id.org/def/vtc#desiredBehaviour> "AccumulatedWater type FloodAmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test9
+<https://w3id.org/def/vtc#Test9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test9> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test9> <https://w3id.org/def/vtc#desiredBehaviour> "BatterySensor subClassOf Sensor" .
+# 
+# https://w3id.org/def/vtc#Test90
+<https://w3id.org/def/vtc#Test90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test90> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test90> <https://w3id.org/def/vtc#desiredBehaviour> "Active type StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test91
+<https://w3id.org/def/vtc#Test91> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test91> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test91> <https://w3id.org/def/vtc#desiredBehaviour> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test91> <https://w3id.org/def/vtc#desiredBehaviour> "ActiveEnergy type EnergyProperty" .
+# 
+# https://w3id.org/def/vtc#Test92
+<https://w3id.org/def/vtc#Test92> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test92> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test92> <https://w3id.org/def/vtc#desiredBehaviour> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test92> <https://w3id.org/def/vtc#desiredBehaviour> "AirPressureAtSea type Pressure" .
+# 
+# https://w3id.org/def/vtc#Test93
+<https://w3id.org/def/vtc#Test93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test93> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test93> <https://w3id.org/def/vtc#desiredBehaviour> "Alarm type ActReason" .
+# 
+# https://w3id.org/def/vtc#Test94
+<https://w3id.org/def/vtc#Test94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test94> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test94> <https://w3id.org/def/vtc#desiredBehaviour> "AmbientTemperature type TemperatureAmbientProperty" .
+# 
+# https://w3id.org/def/vtc#Test95
+<https://w3id.org/def/vtc#Test95> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test95> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test95> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test95> <https://w3id.org/def/vtc#desiredBehaviour> "AmountPercipitation type Percipitation" .
+# 
+# https://w3id.org/def/vtc#Test96
+<https://w3id.org/def/vtc#Test96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test96> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test96> <https://w3id.org/def/vtc#desiredBehaviour> "AngularUnit type SpaceProperty" .
+# 
+# https://w3id.org/def/vtc#Test97
+<https://w3id.org/def/vtc#Test97> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test97> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test97> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test97> <https://w3id.org/def/vtc#desiredBehaviour> "AtmosphericPressure type Pressure" .
+# 
+# https://w3id.org/def/vtc#Test98
+<https://w3id.org/def/vtc#Test98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test98> <https://w3id.org/def/vtc#desiredBehaviour> "Available type StatusProperty" .
+# 
+# https://w3id.org/def/vtc#Test99
+<https://w3id.org/def/vtc#Test99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test99> <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteAdapters> .
+<https://w3id.org/def/vtc#Test99> <https://w3id.org/def/vtc#desiredBehaviour> "AverageMovementShare type MotionProperty" .
+# 
+# https://w3id.org/def/vtc#TestSuiteAdapters
+<https://w3id.org/def/vtc#TestSuiteAdapters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#TestSuiteAdapters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestSuite> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
