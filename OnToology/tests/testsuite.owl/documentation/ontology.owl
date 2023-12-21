@@ -1,0 +1,1475 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://auroral.iot.linkeddata.es/tests/adapters#"
+     xml:base="https://auroral.iot.linkeddata.es/tests/adapters"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vtc="https://w3id.org/def/vtc#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/tests/adapters#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#belongsTo -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#belongsTo"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#desiredBehaviour -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#desiredBehaviour"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestCaseDesign -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestCaseDesign"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuite -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestSuite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test1">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Actuator subClassOf Device</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test10 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test10">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>CoolingSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test100 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test100">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AverageMovementTime type MotionProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test101 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test101">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BasalMetabolicRate type HealthProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test102 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test102">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Battery type ActReason</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test103 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test103">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BatteryLevel type EnergyProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test104 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test104">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BeaconMac type SpaceProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test105 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test105">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BodyFatPercentage type HealthProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test106 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test106">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BodyMassIndex type HealthProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test107 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test107">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BoneMineralContent type HealthProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test108 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test108">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Button type ActReason</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test109 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test109">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>CaloriesBurned type HealthProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test11 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test11">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AirConditionningBasic subClassOf CoolingSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test110 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test110">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Cloudiness type CloudCover</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test111 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test111">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>CO2Concentration type CarbonDioxide</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test112 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test112">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>COConcentration type CarbonMonoxide</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test113 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test113">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Depth type OperatingProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test114 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test114">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DeviceStatus type StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test115 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test115">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DevPosition type SpaceProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test116 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test116">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DewpointTemperature type TemperatureAmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test117 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test117">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DiastolicBloodPressure type HealthProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test118 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test118">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DiffuseRadiation type AmbientSolarRadiation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test119 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test119">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DiffuseRadiationInstant type AmbientSolarRadiation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test12 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test12">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HeatPumpAirToAir subClassOf CoolingSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test120 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test120">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DirectNormalIrradiance type AmbientSolarRadiation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test121 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test121">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DirectNormalIrradianceInstant type AmbientSolarRadiation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test122 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test122">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DirectRadiation type AmbientSolarRadiation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test123 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test123">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DirectRadiationInstant type AmbientSolarRadiation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test124 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test124">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Distance type SpaceProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test125 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test125">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>DistanceWlaked type MotionProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test126 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test126">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>ElectricCurrent type EnergyProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test13 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test13">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HeatPumpAirToWater subClassOf CoolingSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test14 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test14">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>EnergySensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test15 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test15">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>FloodSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test16 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test16">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>GPSEmergencyButton subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test17 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test17">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HeatingSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test18 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test18">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AirConditionningBasic subClassOf HeatingSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test19 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test19">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BoilerSensor subClassOf HeatingSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test2">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Sensor subClassOf Device</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test20 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test20">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HeatPumpAirToAir subClassOf HeatingSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test21 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test21">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HeatPumpAirToWater subClassOf HeatingSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test22 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test22">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BoilerBiomass subClassOf BoilerSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test23 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test23">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BoilerNgas subClassOf BoilerSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test24 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test24">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BoilerOil subClassOf BoilerSensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test25 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test25">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HumiditySensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test26 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test26">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>LightBulb subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test27 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test27">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>MonitoringSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test28 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test28">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>MotionSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test29 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test29">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PersonCounterSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test3">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Relay subClassOf Actuator</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test30 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test30">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PresenceSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test31 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test31">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PressureSensor subClassOf  Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test32 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test32">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PV subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test33 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test33">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PVFaçade subClassOf PV</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test34 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test34">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PVGround subClassOf PV</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test35 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test35">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PVRoofFlat subClassOf PV</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test36 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test36">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PVRoofStanled subClassOf PV</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test37 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test37">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PVBIntegrated subClassOf PV</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test38 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test38">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>QRGeneratorSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test39 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test39">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SmartPlug subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test4">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SmartValve subClassOf Actuator</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test40 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test40">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SoilMoistureSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test41 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test41">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SoundSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test42 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test42">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>ThermometerSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test43 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test43">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>UltraSoundSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test44 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test44">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>WasteBinSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test45 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test45">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>WaterAMRSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test46 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test46">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>WeatherSensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test47 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test47">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AccumulatedPercipitation subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test48 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test48">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AmbientProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test49 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test49">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AirQuality subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test5">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Switch subClassOf Actuator</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test50 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test50">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HumidityAmbientProperty subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test51 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test51">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AmbientSolarRadiation subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test52 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test52">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>TemperatureAmbientProperty subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test53 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test53">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>CloudCover subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test54 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test54">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>FloodAmbientProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test55 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test55">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Noise subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test56 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test56">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Percipitation subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test57 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test57">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Pressure subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test58 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test58">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Weather subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test59 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test59">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>WindAmbientProperty subClassOf AmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test6">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>WaterValveActuator subClassOf Actuator</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test60 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test60">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Ammonia subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test61 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test61">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>CarbonDioxide subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test62 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test62">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>CarbonMonoxide subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test63 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test63">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>CoarseParticulateMatter subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test64 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test64">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>FineParticlesMatter subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test65 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test65">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>NitrogenDioxide subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test66 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test66">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>NitrogenMonoxide subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test67 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test67">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Ozone subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test68 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test68">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SulphurDioxide subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test69 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test69">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>UltraFineParticlesMatter subClassOf AirQuality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test7">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Accelerometer subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test70 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test70">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>EnergyProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test71 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test71">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>HealthProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test72 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test72">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>LightProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test73 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test73">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>LuminusFlux subClassOf LightProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test74 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test74">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>MotionProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test75 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test75">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>OperatingProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test76 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test76">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SoilMoisture subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test77 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test77">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SoundProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test78 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test78">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SpaceProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test79 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test79">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>StatusProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test8 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test8">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AirQualitySensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test80 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test80">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>ActReason subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test81 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test81">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Alert subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test82 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test82">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Error subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test83 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test83">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Presence subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test84 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test84">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>StorageCapacity subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test85 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test85">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>SwitchStatus subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test86 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test86">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>TRAFX subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test87 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test87">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>PersonCounter subClassOf TRAFXProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test88 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test88">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>QRCounter subClassOf StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test89 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test89">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AccumulatedWater type FloodAmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test9 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test9">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>BatterySensor subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test90 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test90">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Active type StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test91 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test91">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>ActiveEnergy type EnergyProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test92 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test92">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AirPressureAtSea type Pressure</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test93 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test93">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>Alarm type ActReason</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test94 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test94">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AmbientTemperature type TemperatureAmbientProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test95 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test95">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AmountPercipitation type Percipitation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test96 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test96">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AngularUnit type SpaceProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test97 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test97">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AtmosphericPressure type Pressure</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test98 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test98">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Available type StatusProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test99 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test99">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteAdapters"/>
+        <vtc:desiredBehaviour>AverageMovementShare type MotionProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuiteAdapters -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#TestSuiteAdapters">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestSuite"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
