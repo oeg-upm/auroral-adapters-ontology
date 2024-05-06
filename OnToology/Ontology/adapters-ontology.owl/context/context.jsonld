@@ -85,6 +85,9 @@
     "SmartValve" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SmartValve"
     },
+    "Waste" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Waste"
+    },
     "measuresProperty" : {
       "@id" : "https://saref.etsi.org/core#measuresProperty",
       "@type" : "@id"
