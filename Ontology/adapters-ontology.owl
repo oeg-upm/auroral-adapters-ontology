@@ -11,8 +11,8 @@
 @base <https://auroral.iot.linkeddata.es/def/adapters#> .
 
 <https://auroral.iot.linkeddata.es/def/adapters#> rdf:type owl:Ontology ;
-                                                   <http://purl.org/dc/elements/1.1/contributor> "Artur Romao (Detechnologies, project ALICE4EU)" ,
-                                                                                                 "Nuno Marques (Detechnologies, project ALICE4EU)" ;
+                                                   <http://purl.org/dc/elements/1.1/contributor> "Artur Romao (Dectechnologies, project ALICE4EU)" ,
+                                                                                                 "Nuno Marques (Dectechnologies, project ALICE4EU)" ;
                                                    <http://purl.org/dc/elements/1.1/creator> "Ahlem Rhayem" ,
                                                                                              "Andrea Cimmino" ,
                                                                                              "Juan Cano de Benito" ,
