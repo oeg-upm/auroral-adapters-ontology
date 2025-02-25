@@ -7,6 +7,8 @@
 @base <https://auroral.iot.linkeddata.es/def/adapters#> .
 
 <https://auroral.iot.linkeddata.es/def/adapters#> rdf:type owl:Ontology ;
+                                                   <http://purl.org/dc/elements/1.1/contributor> "Artur Romao (Detechnologies, project ALICE4EU)" ,
+                                                                                                 "Nuno Marques (Detechnologies, project ALICE4EU)" ;
                                                    <http://purl.org/dc/elements/1.1/creator> "Ahlem Rhayem" ,
                                                                                              "Andrea Cimmino" ,
                                                                                              "Juan Cano de Benito" ,
@@ -20,6 +22,10 @@
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
@@ -949,6 +955,12 @@
                     :SpaceProperty .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#BeatsPerMinute
+:BeatsPerMinute rdf:type owl:NamedIndividual ,
+                         <https://saref.etsi.org/core#UnitOfMeasure> ;
+                rdfs:label "beats per minute" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#BodyFatPercentage
 :BodyFatPercentage rdf:type owl:NamedIndividual ,
                             :HealthProperty ;
@@ -959,6 +971,12 @@
 :BodyMassIndex rdf:type owl:NamedIndividual ,
                         :HealthProperty ;
                rdfs:comment "Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women." .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#BodyTemperature
+:BodyTemperature rdf:type owl:NamedIndividual ,
+                          :HealthProperty ;
+                 rdfs:label "Body temperature" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#BoneMineralContent
@@ -1125,6 +1143,12 @@
                                  :Waste .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Glycemia
+:Glycemia rdf:type owl:NamedIndividual ,
+                   :HealthProperty ;
+          rdfs:label "Glycemia" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#GridCapacity
 :GridCapacity rdf:type owl:NamedIndividual ,
                        :EnergyProperty .
@@ -1222,6 +1246,18 @@
                         :CloudCover .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#MilligramPerDecilitre
+:MilligramPerDecilitre rdf:type owl:NamedIndividual ,
+                                <https://saref.etsi.org/core#UnitOfMeasure> ;
+                       rdfs:label "milligram per decilitre" .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#MillimetresOfMercury
+:MillimetresOfMercury rdf:type owl:NamedIndividual ,
+                               <https://saref.etsi.org/core#UnitOfMeasure> ;
+                      rdfs:label "millimetres of mercury" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation
 :MinimumPrecipitation rdf:type owl:NamedIndividual ,
                                :Precipitation .
@@ -1270,6 +1306,12 @@
                  rdfs:comment "O3 Concentration" .
 
 
+###  https://auroral.iot.linkeddata.es/def/adapters#ObstructiveSleepApnea
+:ObstructiveSleepApnea rdf:type owl:NamedIndividual ,
+                                :HealthProperty ;
+                       rdfs:label "Obstructive sleep apnea" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#Off
 :Off rdf:type owl:NamedIndividual ,
               :StatusProperty .
@@ -1288,6 +1330,12 @@
 ###  https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature
 :OutdoorAmbientTemperature rdf:type owl:NamedIndividual ,
                                     :TemperatureAmbientProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#OxygenLevel
+:OxygenLevel rdf:type owl:NamedIndividual ,
+                      :HealthProperty ;
+             rdfs:label "Oxygen level" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#PM10Concentration

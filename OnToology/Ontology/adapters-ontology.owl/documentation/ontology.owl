@@ -10,6 +10,8 @@
      xmlns:sosa="http://www.w3.org/ns/sosa/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/def/adapters#">
+        <dc:contributor>Artur Romao (Detechnologies, project ALICE4EU)</dc:contributor>
+        <dc:contributor>Nuno Marques (Detechnologies, project ALICE4EU)</dc:contributor>
         <dc:creator>Ahlem Rhayem</dc:creator>
         <dc:creator>Andrea Cimmino</dc:creator>
         <dc:creator>Juan Cano de Benito</dc:creator>
@@ -32,6 +34,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -1530,6 +1539,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#BeatsPerMinute -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#BeatsPerMinute">
+        <rdf:type rdf:resource="https://saref.etsi.org/core#UnitOfMeasure"/>
+        <rdfs:label>beats per minute</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#BodyFatPercentage -->
 
 
@@ -1546,6 +1565,16 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#BodyMassIndex">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"/>
         <rdfs:comment>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#BodyTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#BodyTemperature">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label>Body temperature</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1842,6 +1871,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#Glycemia -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#Glycemia">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label>Glycemia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#GridCapacity -->
 
 
@@ -2015,6 +2054,26 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#MilligramPerDecilitre -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#MilligramPerDecilitre">
+        <rdf:type rdf:resource="https://saref.etsi.org/core#UnitOfMeasure"/>
+        <rdfs:label>milligram per decilitre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#MillimetresOfMercury -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#MillimetresOfMercury">
+        <rdf:type rdf:resource="https://saref.etsi.org/core#UnitOfMeasure"/>
+        <rdfs:label>millimetres of mercury</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation -->
 
 
@@ -2099,6 +2158,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#ObstructiveSleepApnea -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#ObstructiveSleepApnea">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label>Obstructive sleep apnea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#Off -->
 
 
@@ -2131,6 +2200,16 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#OutdoorAmbientTemperature">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/adapters#OxygenLevel -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/adapters#OxygenLevel">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label>Oxygen level</rdfs:label>
     </owl:NamedIndividual>
     
 

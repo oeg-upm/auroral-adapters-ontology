@@ -1,4 +1,7 @@
 [ {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -22,6 +25,11 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Artur Romao (Detechnologies, project ALICE4EU)"
+  }, {
+    "@value" : "Nuno Marques (Detechnologies, project ALICE4EU)"
+  } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Ahlem Rhayem"
   }, {
@@ -282,6 +290,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BeatsPerMinute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "beats per minute"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BodyFatPercentage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -298,6 +315,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women."
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BodyTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Body temperature"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#BoilerBiomass",
@@ -696,6 +722,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Waste"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Glycemia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Glycemia"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#GridCapacity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -928,6 +963,24 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#CloudCover"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#MilligramPerDecilitre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "milligram per decilitre"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#MillimetresOfMercury",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "millimetres of mercury"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#MinimumPrecipitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1063,6 +1116,15 @@
     "@value" : "O3 Concentration"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#ObstructiveSleepApnea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Obstructive sleep apnea"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Off",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1097,6 +1159,15 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#OxygenLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#HealthProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Oxygen level"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Ozone",
